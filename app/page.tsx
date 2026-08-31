@@ -78,8 +78,8 @@ export default function Home() {
     try {
       setIsDownloading(true);
       const html2pdf = (await import("html2pdf.js")).default;
-      const opt = {
-        margin: [15, 15, 15, 15],
+      const opt: any = {
+        margin: 15,
         filename: `${data.projectName.replace(/\s+/g, "_")}_Documentation.pdf`,
         image: { type: 'jpeg', quality: 0.98 },
         html2canvas: { scale: 2, useCORS: true, windowWidth: 800 },
