@@ -17,11 +17,12 @@ export async function POST(req: Request) {
     }
 
     // 1. Fetch Real Links from GitHub and Reddit in parallel
-    const ghRes = await fetch(`https://api.github.com/search/repositories?q=${encodeURIComponent(query)}&sort=stars&order=desc&per_page=3`, { headers: { 'User-Agent': 'Project-Researcher-App' } }).catch(() => null);
-    const ghData = ghRes ? await ghRes.json().catch(() => null) : null;
-      
-    const redditRes = await fetch(`https://www.reddit.com/search.json?q=${encodeURIComponent(query)}&limit=2`, { headers: { 'User-Agent': 'Project-Researcher-App' } }).catch(() => null);
-    const redditData = redditRes ? await redditRes.json().catch(() => null) : null;
+    const [ghData, redditData] = await Promise.all([
+      fetch(`https://api.github.com/search/repositories?q=${encodeURIComponent(query)}&sort=stars&order=desc&per_page=3`, { headers: { 'User-Agent': 'Project-Researcher-App' } })
+        .then(res => res.json()).catch(() => null),
+      fetch(`https://www.reddit.com/search.json?q=${encodeURIComponent(query)}&limit=2`, { headers: { 'User-Agent': 'Project-Researcher-App' } })
+        .then(res => res.json()).catch(() => null)
+    ]);
 
     let similarProjectsText = "No similar projects found.";
     if (ghData && ghData.items && ghData.items.length > 0) {
@@ -36,7 +37,7 @@ export async function POST(req: Request) {
       Here are some real-world open source projects matching this query:
       ${similarProjectsText}
 
-      Generate a detailed project plan for a high-quality project that matches this query. 
+      Generate a detailed project plan for a high-quality project that matches this query. Keep the PRD and TRD sections concise and highly structured to optimize response speed.
       If your generated project is heavily inspired by or based on a real, existing open-source repository or project, provide its source platform (e.g., "github", "linkedin", "reddit"), the exact name/path (e.g., "alokkitchloo/pulse-crm-ai"), and its URL.
 
       Respond ONLY in valid JSON format with the following exact structure:
@@ -52,8 +53,8 @@ export async function POST(req: Request) {
         "trd": "# Technical Requirements Document\\n\\n...",
         "flow": "# Architecture & Flow\\n\\n...",
         "fileStructure": "# File Structure\\n\\n...",
-        "analysis": "A detailed analysis of the real-world projects provided above, comparing them and suggesting which one is the absolute best reference for the user's specific goal.",
-        "devPrompt": "A massive, comprehensive system prompt that a developer can copy-paste into an AI coding assistant (like Cursor or Claude) to build this entire project. It must analyze the PRD, TRD, and Flow to synthesize the ultimate master prompt, including suggested UI/UX design aesthetics, system architecture decisions, and the best tech stack."
+        "analysis": "A brief analysis of the real-world projects provided above, comparing them and suggesting which one is the absolute best reference for the user's specific goal.",
+        "devPrompt": "A massive, comprehensive system prompt that a developer can copy-paste into an AI coding assistant (like Cursor or Claude) to build this entire project."
       }
       
       Note: The "source" field is optional. If it is a completely original concept not based on a specific repo, you can set "source": null.
