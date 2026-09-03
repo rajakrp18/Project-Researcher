@@ -1,28 +1,12 @@
 {
-  "name": "project_researcher",
+  "name": "monorepo-root",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --webpack",
-    "build": "next build --webpack",
-    "start": "next start",
-    "lint": "eslint"
+    "dev:researcher": "npm run dev --workspace=project-researcher",
+    "dev:contact-finder": "npm run dev --workspace=contact-finder -- -p 3001"
   },
-  "dependencies": {
-    "@google/genai": "^2.19.0",
-    "html2pdf.js": "^0.14.0",
-    "lucide-react": "^1.37.0",
-    "next": "16.3.3",
-    "react": "19.2.8",
-    "react-dom": "19.2.8",
-    "react-markdown": "^10.1.0"
-  },
-  "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "16.3.3",
-    "typescript": "^5"
-  }
+  "workspaces": [
+    "apps/*"
+  ]
 }
