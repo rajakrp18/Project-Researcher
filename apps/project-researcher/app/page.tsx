@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Search, FileText, Activity, FolderTree, ExternalLink, Code2, Copy, Check, BarChart, ArrowRight } from "lucide-react";
 import ReactMarkdown from "react-markdown";
+import ThemeToggle from "./components/ThemeToggle";
 
 type ProjectData = {
   projectName: string;
@@ -70,6 +71,9 @@ export default function Home() {
   return (
     <main className="container">
       <header className="header">
+        <div className="theme-toggle-wrapper">
+          <ThemeToggle />
+        </div>
         <div className="logo-row">
           <div className="logo-icon">
             <Code2 size={28} />
@@ -150,12 +154,12 @@ export default function Home() {
               <h3 style={{ marginBottom: "1rem", color: "var(--text-main)" }}>Similar Projects</h3>
               {projectData.links.length === 0 && <p style={{ color: 'var(--text-muted)' }}>No exact matches found.</p>}
               {projectData.links.map((link, idx) => (
-                <a key={idx} href={link.url} target="_blank" rel="noreferrer" className="link-card">
-                  <span className="link-title" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <a key={idx} href={link.url} target="_blank" rel="noreferrer" className="link-card" title={link.title}>
+                  <span className="link-title">
                     {getIconForLink(link.type)}
-                    {link.title}
+                    <span className="link-text">{link.title}</span>
                   </span>
-                  <ArrowRight size={16} style={{ color: "var(--text-muted)", opacity: 0.5 }} />
+                  <ArrowRight size={16} style={{ color: "var(--text-muted)", opacity: 0.5, flexShrink: 0 }} />
                 </a>
               ))}
             </div>

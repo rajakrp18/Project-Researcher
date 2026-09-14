@@ -1,11 +1,15 @@
-import puppeteer from 'puppeteer';
+import puppeteer from 'puppeteer-extra';
+import StealthPlugin from 'puppeteer-extra-plugin-stealth';
+import { Browser } from 'puppeteer';
 import { FetchedDocument } from '../types';
+
+puppeteer.use(StealthPlugin());
 import { EngineConfig } from '../config';
 import { parseHtml } from './HtmlParser';
 
 export class BrowserFetcher {
   
-  async fetchPage(url: string, browser: puppeteer.Browser, provider = 'direct'): Promise<FetchedDocument | null> {
+  async fetchPage(url: string, browser: Browser, provider = 'direct'): Promise<FetchedDocument | null> {
     let page;
     try {
       page = await browser.newPage();
@@ -16,21 +20,21 @@ export class BrowserFetcher {
       await page.setRequestInterception(true);
       page.on('request', (req) => {
         const type = req.resourceType();
-        if (type === 'image' || type === 'stylesheet' || type === 'font' || type === 'media') {
+        if (type === 'stylesheet' || type === 'font' || type === 'media' || type === 'image') {
           req.abort();
         } else {
           req.continue();
         }
       });
 
-      const response = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: EngineConfig.fetchTimeoutMs });
+      const response = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: EngineConfig.fetchTimeoutMs || 8000 });
       
       if (!response || !response.ok()) {
         await page.close();
         return null;
       }
 
-      await new Promise(resolve => setTimeout(resolve, 1000)); // Reduced from 2s to 1s to save time
+      await new Promise(resolve => setTimeout(resolve, 300)); // fast wait for DOM ready
 
       const rawHtml = await page.content();
       let content = parseHtml(rawHtml);
@@ -49,6 +53,7 @@ export class BrowserFetcher {
         provider,
       };
     } catch (err: any) {
+      console.error(`[BrowserFetcher] Error fetching ${url}:`, err.message);
       if (page) await page.close().catch(() => {});
       return null;
     }
@@ -57,18 +62,19 @@ export class BrowserFetcher {
   async fetchBatch(urls: string[], provider = 'direct'): Promise<FetchedDocument[]> {
     if (!urls || urls.length === 0) return [];
 
-    let browser;
+    let browser: Browser | undefined;
     const results: FetchedDocument[] = [];
     
     try {
       // Launch ONE browser for the entire batch
       browser = await puppeteer.launch({
         headless: true,
+        protocolTimeout: 60000,
         args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'],
       });
 
-      // Process in smaller batches of 5 tabs at a time to prevent RAM crashing
-      const BATCH_SIZE = 5;
+      // Process in smaller batches of 3 tabs at a time to prevent RAM crashing
+      const BATCH_SIZE = 3;
       for (let i = 0; i < urls.length; i += BATCH_SIZE) {
         const batchUrls = urls.slice(i, i + BATCH_SIZE);
         const batchResults = await Promise.all(
@@ -84,6 +90,7 @@ export class BrowserFetcher {
 
       await browser.close();
     } catch (err) {
+      console.error('[BrowserFetcher] Error launching browser or fetching batch:', err);
       if (browser) await browser.close().catch(() => {});
     }
 

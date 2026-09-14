@@ -50,6 +50,7 @@ export interface FetchedDocument {
   contentType: 'html' | 'pdf' | 'text' | 'unknown';
   fetchedAt: number;
   provider: string;
+  screenshotBase64?: string;
   error?: string;
 }
 
@@ -89,6 +90,7 @@ export interface PhoneCandidate {
 
 export interface LLMExtractor {
   extractContacts(pageText: string, subject: Subject): Promise<LLMExtraction>;
+  isSameEntity?(nameA: string, nameB: string): Promise<boolean>;
 }
 
 export interface Evidence {
@@ -113,6 +115,7 @@ export interface InvestigationResult {
   durationMs: number;
   stopReason: 'HIGH_CONFIDENCE' | 'BUDGET_EXHAUSTED' | 'NO_MORE_QUERIES' | 'ERROR';
   timestamp: number;
+  isCached?: boolean;
 }
 
 export interface BatchResult {

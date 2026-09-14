@@ -1,5 +1,5 @@
 import { AttributionType, ExtractedPhone } from '../types';
-import { resolveEntity } from './EntityResolver';
+import { resolveEntitySync } from './EntityResolver';
 import { extractNames, filterPersonNames } from '../extractors/NameExtractor';
 
 const RWA_PATTERNS = [
@@ -70,7 +70,7 @@ export function classifyAttribution(
     if (pattern.test(context)) {
       const names = filterPersonNames(extractNames(context));
       const nonSubjectNames = names.filter(n => {
-        const match = resolveEntity(n.name, subjectName, fatherName);
+        const match = resolveEntitySync(n.name, subjectName, fatherName);
         return match.matchType === 'NONE';
       });
       const owner = nonSubjectNames[0]?.name;
@@ -91,12 +91,12 @@ export function classifyAttribution(
     return { attribution: 'GENERIC', relationship: 'generic' };
   }
 
-  const subjectMatch = resolveEntity(subjectName, subjectName, fatherName);
+  const subjectMatch = resolveEntitySync(subjectName, subjectName, fatherName);
   const subjectInContext = context.toUpperCase().includes(subjectName.toUpperCase());
   const fatherInContext = fatherName ? context.toUpperCase().includes(fatherName.toUpperCase()) : false;
 
   const otherNames = names.filter(n => {
-    const match = resolveEntity(n.name, subjectName, fatherName);
+    const match = resolveEntitySync(n.name, subjectName, fatherName);
     return match.matchType === 'NONE';
   });
 

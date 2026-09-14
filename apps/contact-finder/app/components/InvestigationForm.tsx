@@ -12,17 +12,20 @@ interface InvestigationFormProps {
     city?: string;
     company?: string;
     notes?: string;
+    forceRerun?: boolean;
   }) => void;
   loading: boolean;
+  onStop?: () => void;
 }
 
-export default function InvestigationForm({ onSubmit, loading }: InvestigationFormProps) {
+export default function InvestigationForm({ onSubmit, loading, onStop }: InvestigationFormProps) {
   const [name, setName] = useState('');
   const [fatherName, setFatherName] = useState('');
   const [address, setAddress] = useState('');
   const [company, setCompany] = useState('');
   const [notes, setNotes] = useState('');
   const [showAdvanced, setShowAdvanced] = useState(false);
+  const [forceRerun, setForceRerun] = useState(false);
 
   const parsed = address ? parseAddress(address) : null;
 
@@ -35,6 +38,7 @@ export default function InvestigationForm({ onSubmit, loading }: InvestigationFo
       address: address.trim(),
       company: company.trim() || undefined,
       notes: notes.trim() || undefined,
+      forceRerun
     });
   };
 
@@ -144,10 +148,46 @@ export default function InvestigationForm({ onSubmit, loading }: InvestigationFo
         )}
       </div>
 
-      <button type="submit" className="investigate-btn" disabled={loading || !name.trim() || !address.trim()}>
-        <Search size={18} />
-        {loading ? 'Investigating...' : 'Investigate'}
-      </button>
+      <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: '12px', marginBottom: '16px' }}>
+        <label style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "0.9rem", color: "var(--text-muted)", cursor: "pointer", fontWeight: 500, userSelect: "none", padding: "6px 12px", borderRadius: "6px", background: "var(--surface)", border: "1px solid var(--border)", whiteSpace: "nowrap", transition: "all 0.2s" }}>
+          <input 
+            type="checkbox" 
+            checked={forceRerun}
+            onChange={(e) => setForceRerun(e.target.checked)}
+            disabled={loading}
+            style={{ accentColor: "var(--accent)", width: "14px", height: "14px", cursor: "pointer" }}
+          />
+          Ignore Cache
+        </label>
+      </div>
+
+      <div style={{ display: 'flex', gap: '12px', width: '100%', marginTop: '0' }}>
+        <button type="submit" className="investigate-btn" disabled={loading || !name.trim() || !address.trim()} style={{ flex: 1, marginTop: '0' }}>
+          <Search size={18} />
+          {loading ? 'Investigating...' : 'Investigate'}
+        </button>
+        {loading && onStop && (
+          <button 
+            type="button" 
+            onClick={onStop}
+            style={{ 
+              padding: '10px 20px', 
+              background: '#ef4444', 
+              color: 'white', 
+              border: 'none', 
+              borderRadius: '8px',
+              cursor: 'pointer',
+              fontWeight: 600,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              transition: 'all 0.2s'
+            }}
+          >
+            Stop
+          </button>
+        )}
+      </div>
     </form>
   );
 }

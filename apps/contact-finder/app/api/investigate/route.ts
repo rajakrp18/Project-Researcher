@@ -6,7 +6,7 @@ export async function POST(req: Request) {
   try {
     const body = await req.json();
 
-    const { name, fatherName, address, city, company, notes } = body;
+    const { name, fatherName, address, city, company, notes, forceRerun } = body;
 
     if (!name || !address) {
       return NextResponse.json(
@@ -25,7 +25,7 @@ export async function POST(req: Request) {
     };
 
     const orchestrator = new InvestigationOrchestrator();
-    const result = await orchestrator.investigate(subject);
+    const result = await orchestrator.investigate(subject, !!forceRerun);
 
     return NextResponse.json(result);
   } catch (error: any) {

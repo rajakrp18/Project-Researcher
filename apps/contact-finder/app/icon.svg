@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <!-- Person Silhouette (Emerald Green) -->
+  <circle cx="224" cy="176" r="56" fill="#10b981"/>
+  <path d="M112 336 C112 264, 336 264, 336 336 L336 368 C296 384, 152 384, 112 368 Z" fill="#10b981"/>
+  
+  <!-- Magnifying Glass Ring (Blue) -->
+  <circle cx="224" cy="224" r="176" stroke="#3b82f6" stroke-width="48" fill="none"/>
+  
+  <!-- Magnifying Glass Handle (Blue) -->
+  <line x1="352" y1="352" x2="480" y2="480" stroke="#3b82f6" stroke-width="56" stroke-linecap="round"/>
+</svg>

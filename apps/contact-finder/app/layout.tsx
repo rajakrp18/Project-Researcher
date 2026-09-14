@@ -13,14 +13,20 @@ export const metadata: Metadata = {
   description: "Find phone numbers for Indian contacts using AI-powered web search, multi-provider investigation, and intelligent contact attribution.",
 };
 
+import { ThemeProvider } from "./components/ThemeProvider";
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={inter.variable}>
-      <body>{children}</body>
+    <html lang="en" className={inter.variable} suppressHydrationWarning style={{ overflowX: "hidden", overflowY: "hidden" }}>
+      <body style={{ overflowY: "auto", height: "100vh" }}>
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }

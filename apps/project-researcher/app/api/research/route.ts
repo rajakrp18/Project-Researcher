@@ -1,9 +1,6 @@
 import { GoogleGenAI } from '@google/genai';
 import { NextResponse } from 'next/server';
 
-const apiKey = process.env.GEMINI_API_KEY || '';
-const ai = new GoogleGenAI({ apiKey });
-
 export async function POST(req: Request) {
   try {
     const { query } = await req.json();
@@ -12,8 +9,11 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: 'Query is required' }, { status: 400 });
     }
 
-    if (!apiKey) {
-      return NextResponse.json({ error: 'Gemini API key is not configured' }, { status: 500 });
+    const geminiKey = (process.env.GEMINI_API_KEY || '').trim();
+    const openrouterKey = (process.env.OPENROUTER_API_KEY || '').trim();
+
+    if (!geminiKey.startsWith('AIzaSy') && !openrouterKey) {
+      return NextResponse.json({ error: 'No valid Gemini or OpenRouter API key is configured' }, { status: 500 });
     }
 
     // 1. Fetch Real Links from GitHub and Reddit in parallel
@@ -26,7 +26,7 @@ export async function POST(req: Request) {
 
     let similarProjectsText = "No similar projects found.";
     if (ghData && ghData.items && ghData.items.length > 0) {
-      similarProjectsText = ghData.items.map((item: any) => `- ${item.full_name}: ${item.description}`).join("\\n");
+      similarProjectsText = ghData.items.map((item: any) => `- ${item.full_name}: ${item.description}`).join("\n");
     }
 
     // 2. Fetch LLM Data
@@ -60,19 +60,45 @@ export async function POST(req: Request) {
       Note: The "source" field is optional. If it is a completely original concept not based on a specific repo, you can set "source": null.
     `;
 
-    const response = await ai.models.generateContent({
-        model: 'gemini-3.6-flash',
+    let resultText = '';
+
+    if (geminiKey.startsWith('AIzaSy')) {
+      const ai = new GoogleGenAI({ apiKey: geminiKey });
+      const response = await ai.models.generateContent({
+        model: 'gemini-2.5-flash',
         contents: prompt,
         config: {
           temperature: 0.2,
           responseMimeType: 'application/json'
         }
-    });
-
-    const resultText = response.text || '';
+      });
+      resultText = response.text || '';
+    } else if (openrouterKey) {
+      const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${openrouterKey}`,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          model: 'google/gemini-2.5-flash',
+          max_tokens: 8000,
+          response_format: { type: 'json_object' },
+          messages: [{ role: 'user', content: prompt }]
+        })
+      });
+      const data = await res.json();
+      if (data.error) {
+        throw new Error(data.error.message || 'OpenRouter API Error');
+      }
+      resultText = data.choices?.[0]?.message?.content || '';
+    } else {
+      throw new Error('Invalid GEMINI_API_KEY format and no OPENROUTER_API_KEY provided.');
+    }
     
     let cleanJson = resultText.trim();
     if (cleanJson.startsWith('```json')) cleanJson = cleanJson.substring(7);
+    if (cleanJson.startsWith('```')) cleanJson = cleanJson.substring(3);
     if (cleanJson.endsWith('```')) cleanJson = cleanJson.substring(0, cleanJson.length - 3);
 
     const parsedResult = JSON.parse(cleanJson);
@@ -93,7 +119,8 @@ export async function POST(req: Request) {
     return NextResponse.json(parsedResult);
 
   } catch (error: any) {
-    console.error('Gemini API Error:', error.message);
+    console.error('API Error:', error.message);
     return NextResponse.json({ error: error.message || 'Failed to generate project data' }, { status: 500 });
   }
 }
+

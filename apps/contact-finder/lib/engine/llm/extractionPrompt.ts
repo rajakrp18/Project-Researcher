@@ -26,21 +26,7 @@ Rules:
 - If a phone appears near the subject's father's name, relationship is "father"
 - Look for patterns like "Mr X", "Mrs Y", "Contact: ", "Phone: ", "Mobile: "
 - Include ALL phones found, even if uncertain about the owner
-
-Respond ONLY in valid JSON:
-{
-  "phones": [
-    {
-      "number": "9876543210",
-      "owner": "Person Name or null",
-      "relationship": "self|father|spouse|child|relative|business_partner|neighbor|colleague|unknown",
-      "business": "Business name or null",
-      "address": "Address or null"
-    }
-  ]
-}
-
-If no phones found, respond: { "phones": [] }
+- Ensure you adhere to the requested schema.
 
 TEXT TO ANALYZE:
 ${pageText.slice(0, 15000)}`;

@@ -8,6 +8,8 @@ import { TradeIndiaProvider } from './TradeIndiaProvider';
 import { CompanyCheckProvider } from './CompanyCheckProvider';
 import { QuickCompanyProvider } from './QuickCompanyProvider';
 import { PerplexityProvider } from './PerplexityProvider';
+import { ExploriumProvider } from './ExploriumProvider';
+import { ApifyZaubaProvider } from './ApifyZaubaProvider';
 
 export class ProviderRegistry {
   private providers: SearchProvider[] = [];
@@ -19,6 +21,8 @@ export class ProviderRegistry {
   private registerDefaults() {
     const candidates: SearchProvider[] = [
       new TinyFishProvider(),
+      new ExploriumProvider(),
+      new ApifyZaubaProvider(),
       new PerplexityProvider(),
       new SerpAPIProvider(),
       new JustDialProvider(),

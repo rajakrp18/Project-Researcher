@@ -1,5 +1,6 @@
 import { PhoneCandidate, Evidence, AttributionType, NameMatchType, ParsedAddress } from '../types';
 import { EngineConfig } from '../config';
+import Fuse from 'fuse.js';
 
 export function scoreCandidate(
   phone: string,
@@ -16,13 +17,46 @@ export function scoreCandidate(
   score += scoring.attribution[attribution] || 0;
 
   if (parsedAddress && candidateAddress) {
-    const upperCandidate = candidateAddress.toUpperCase();
-    if (parsedAddress.houseNumber && upperCandidate.includes(parsedAddress.houseNumber)) {
-      score += scoring.addressMatch.sameHouseNumber;
-    } else if (parsedAddress.area && upperCandidate.includes(parsedAddress.area)) {
-      score += scoring.addressMatch.sameArea;
-    } else if (parsedAddress.city && upperCandidate.includes(parsedAddress.city)) {
-      score += scoring.addressMatch.sameCity;
+    let matchedArea = false;
+    
+    if (parsedAddress.area && parsedAddress.area.length > 2) {
+      const fuse = new Fuse([candidateAddress], { includeScore: true, threshold: 0.1, ignoreLocation: true });
+      if (fuse.search(parsedAddress.area).length > 0) {
+        score += scoring.addressMatch.sameArea;
+        matchedArea = true;
+      }
+    } else if (parsedAddress.city && parsedAddress.city.length > 2) {
+      const fuse = new Fuse([candidateAddress], { includeScore: true, threshold: 0.1, ignoreLocation: true });
+      if (fuse.search(parsedAddress.city).length > 0) {
+        score += scoring.addressMatch.sameCity;
+      }
+    }
+
+    if (parsedAddress.houseNumber) {
+      // Escape special characters for regex
+      const escapedHouse = parsedAddress.houseNumber.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const regex = new RegExp(`\\b${escapedHouse}\\b`, 'i');
+      if (regex.test(candidateAddress)) {
+        // Only award the massive points if the house number is highly unique (e.g., E-862) 
+        // OR if the house number is generic (e.g., 20) but we ALSO matched the Area name.
+        if (parsedAddress.houseNumber.length > 3 || matchedArea) {
+          score += scoring.addressMatch.sameHouseNumber;
+        } else {
+          // If it's a short/generic number and area didn't match, give a much smaller bonus to avoid false positives.
+          score += 5;
+        }
+      }
+    }
+  }
+
+  // Bonus for evidence snippet containing exact locality/city co-occurrence
+  if (parsedAddress) {
+    const locality = (parsedAddress.area || parsedAddress.city || '').toLowerCase();
+    if (locality && locality.length > 2) {
+      const containsLocalityInSnippet = evidence.some(e => (e.snippet || '').toLowerCase().includes(locality));
+      if (containsLocalityInSnippet) {
+        score += 10;
+      }
     }
   }
 

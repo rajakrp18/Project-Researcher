@@ -51,6 +51,7 @@ Provide the phone numbers and the context around them. Keep the response factual
       if (answerText.trim()) {
         results.push({
           url: 'https://perplexity.ai/synthesized-answer', // Placeholder URL for the orchestrator
+          title: 'Perplexity Synthesized AI Answer',
           snippet: answerText,
           provider: this.name,
         });
@@ -62,6 +63,7 @@ Provide the phone numbers and the context around them. Keep the response factual
         if (citationUrl) {
           results.push({
             url: citationUrl,
+            title: typeof citation === 'object' && citation.title ? citation.title : 'Perplexity Source Citation',
             snippet: typeof citation === 'object' ? citation.snippet : '',
             provider: this.name,
           });

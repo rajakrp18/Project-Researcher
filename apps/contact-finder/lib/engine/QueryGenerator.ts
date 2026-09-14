@@ -5,64 +5,64 @@ export function generateQueries(subject: Subject, parsed: ParsedAddress): string
   const queries: string[] = [];
   const name = subject.name;
   const surname = extractSurname(name);
+  const fullAddress = subject.address ? subject.address.trim().replace(/"/g, '') : '';
   const city = parsed.city || subject.city || '';
   const area = parsed.area || '';
   const house = parsed.houseNumber || '';
   const father = subject.fatherName || '';
   const company = subject.company || '';
 
-  // Strategy 1: Local Business & Extremely Specific House Search (Highest Priority)
-  if (house && area) {
-    queries.push(`"${house} ${area}" ${city} (shop OR clinic OR depot OR business OR office OR dairy)`);
-    // Crucial for obituaries, public directories, and RWA listings
-    queries.push(`"${house} ${area.split(' ').slice(0, 2).join(' ')}" "${surname}"`);
+  const locality = area || city;
+
+  // Strategy 1: Full Address FIRST, then Name SECOND with AND operator in double quotes
+  if (fullAddress) {
+    queries.push(`"${fullAddress}" AND "${name}"`);
+    queries.push(`"${fullAddress}" AND "${name}" (phone OR mobile OR contact OR office)`);
   }
 
-  // Strategy 2: Exact Company Match (Highest Priority)
+  if (house && locality) {
+    queries.push(`"${house} ${locality}" AND "${name}"`);
+    if (surname) {
+      queries.push(`"${house} ${locality}" AND "${surname}"`);
+    }
+  }
+
+  if (locality) {
+    // Primary Locality FIRST -> Full Name SECOND with AND
+    queries.push(`"${locality}" AND "${name}"`);
+    queries.push(`"${locality}" AND "${name}" (phone OR mobile OR contact OR office OR address)`);
+    if (area && city && area.toLowerCase() !== city.toLowerCase()) {
+      queries.push(`"${area} ${city}" AND "${name}"`);
+    }
+  }
+
+  // Strategy 2: Exact Company & Father Context (Address First)
   if (company) {
-    queries.push(`"${name}" "${company}" contact`);
+    if (locality) {
+      queries.push(`"${locality}" AND "${name}" "${company}"`);
+    }
+    queries.push(`"${company}" AND "${name}" contact`);
   }
 
-  // Strategy 3: Family & Public Records (LocateFamily, Times of India)
-  queries.push(`"${name}" ${city} (site:locatefamily.com OR site:timesofindia.indiatimes.com OR site:webindia123.com)`);
-
-  // Strategy 4: B2B & Trade Directories (Grouped to save query budget)
-  queries.push(`"${name}" ${city} (site:indiamart.com OR site:justdial.com OR site:exportersindia.com OR site:indianyellowpages.com OR site:tradeindia.com)`);
-  
-  // Strategy 4: Corporate, Professionals, & Wealth
-  queries.push(`"${name}" (site:zaubacorp.com OR site:linkedin.com OR site:apollo.io OR site:advisorkhoj.com OR site:wealthmaker.in)`);
-  
-  // Strategy 5: PDFs & Documents (PDFCoffee, Scribd, general PDFs)
-  queries.push(`"${name}" ${city} (site:pdfcoffee.com OR site:scribd.com OR filetype:pdf)`);
-
-  // Strategy 6: Memberships, NGOs, & Associations
-  queries.push(`"${name}" ${city} (directory OR association OR member OR NGO OR voters)`);
-
-  // Strategy 7: Secondary B2B Sources
-  queries.push(`"${name}" ${city} (site:bhartibiz.com OR site:daily4trade.com OR site:bizinfosystem.in OR site:dataexports.in OR site:pinozip.com)`);
-  
-  // Fallback 1: Loose Company Match (No quotes around name)
-  if (company) {
-    queries.push(`${name} "${company}" contact`);
-  }
-  
-  // Fallback 2: Loose B2B Directory Match
-  queries.push(`${name} ${city} (site:indiamart.com OR site:justdial.com OR site:zaubacorp.com)`);
-
-  // Strategy 7: Secondary B2B & Medical
-  queries.push(`"${name}" ${city} (site:bhartibiz.com OR site:daily4trade.com OR site:bizinfosystem.in OR site:dataexports.in OR site:pinozip.com)`);
-
-  // Fallbacks based on available data
-  if (father) {
-    queries.push(`"${name}" "${father}" ${city}`);
+  if (father && locality) {
+    queries.push(`"${locality}" AND "${name}" "${father}"`);
   }
 
-  if (company) {
-    queries.push(`"${name}" "${company}" contact`);
+  // Strategy 3: Domain-Scoped Search with Address First + AND
+  if (locality) {
+    queries.push(`"${locality}" AND "${name}" (site:locatefamily.com OR site:timesofindia.indiatimes.com OR site:webindia123.com)`);
+    queries.push(`"${locality}" AND "${name}" (site:indiamart.com OR site:justdial.com OR site:exportersindia.com OR site:tradeindia.com)`);
+    queries.push(`"${locality}" AND "${name}" (site:zaubacorp.com OR site:linkedin.com OR site:apollo.io OR site:advisorkhoj.com)`);
+    queries.push(`"${locality}" AND "${name}" (site:pdfcoffee.com OR site:scribd.com OR filetype:pdf)`);
+    queries.push(`"${locality}" AND "${name}" (directory OR association OR member OR NGO OR voters)`);
+  } else {
+    queries.push(`"${name}" (site:zaubacorp.com OR site:linkedin.com OR site:apollo.io)`);
+    queries.push(`"${name}" (directory OR association OR member OR voters)`);
   }
 
-  if (house && area) {
-    queries.push(`"${house} ${area.split(' ').slice(0, 2).join(' ')}" "${surname}"`);
+  // Strategy 4: Surname + Locality fallbacks (Address First)
+  if (surname && locality) {
+    queries.push(`"${locality}" AND "${surname}" (phone OR contact OR directory)`);
   }
 
   // Deduplicate and return

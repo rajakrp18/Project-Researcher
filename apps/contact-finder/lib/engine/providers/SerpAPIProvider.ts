@@ -31,7 +31,7 @@ export class SerpAPIProvider implements SearchProvider {
       });
 
       const res = await fetch(`https://serpapi.com/search.json?${params.toString()}`, {
-        signal: AbortSignal.timeout(EngineConfig.fetchTimeoutMs),
+        signal: AbortSignal.timeout(30000),
       });
 
       if (!res.ok) {

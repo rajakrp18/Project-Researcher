@@ -1,12 +1,7 @@
 import { SearchResult } from '../types';
-import { BrowserFetcher } from '../fetch/BrowserFetcher';
 
 export class ZaubaCorpScraper {
-  private fetcher: BrowserFetcher;
-
-  constructor() {
-    this.fetcher = new BrowserFetcher();
-  }
+  constructor() {}
 
   /**
    * Bypasses Google and searches ZaubaCorp directly for a company name.

@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { InvestigationResult } from '@/lib/engine/types';
-import { Phone, Clock, Search, FileText, Copy, Check, Zap } from 'lucide-react';
+import { Phone, Clock, Search, FileText, Copy, Check, Zap, ExternalLink } from 'lucide-react';
 import AttributionBadge from './AttributionBadge';
 import ConfidenceBadge from './ConfidenceBadge';
 import EvidenceChain from './EvidenceChain';
@@ -111,6 +111,30 @@ export default function InvestigationResults({ result }: { result: Investigation
                   🏢 {candidate.business}
                 </div>
               )}
+
+              {(() => {
+                const validUrl = candidate.evidence.find(e => e.sourceUrl && e.sourceUrl !== 'SERP')?.sourceUrl;
+                if (!validUrl) return null;
+                return (
+                  <div style={{ marginTop: '8px', fontSize: '13px', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                    <ExternalLink size={14} color="var(--text-muted)" />
+                    <a 
+                      href={validUrl} 
+                      target="_blank" 
+                      rel="noreferrer"
+                      style={{ color: '#2563eb', textDecoration: 'none', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', display: 'inline-block', maxWidth: '350px' }}
+                    >
+                      {(() => {
+                        try {
+                          return new URL(validUrl).hostname.replace('www.', '');
+                        } catch {
+                          return validUrl;
+                        }
+                      })()}
+                    </a>
+                  </div>
+                );
+              })()}
 
               <EvidenceChain evidence={candidate.evidence} />
             </div>

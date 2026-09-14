@@ -1,7 +1,7 @@
 export const EngineConfig = {
   queryBudget: 12, // Doubled to allow for fallback queries
   maxRetriesPerCase: 2,
-  fetchTimeoutMs: 25000, // Increased to 25s: advanced Google Dorks take longer to process
+  fetchTimeoutMs: 8000, // 8s timeout for rapid page scraping
   fetchBatchSize: 5,
   maxDocumentLength: 30000,
   contextWindowChars: 200,
@@ -9,7 +9,7 @@ export const EngineConfig = {
   confidence: {
     highThreshold: 75,
     mediumThreshold: 45,
-    minReportable: 20,
+    minReportable: 25, // Refined threshold to filter out random noise numbers < 25%
   },
 
   scoring: {
@@ -55,9 +55,9 @@ export const EngineConfig = {
   },
 
   rateLimit: {
-    geminiRetries: 0, // Disabled retries: if it rate limits, skip immediately
-    geminiBaseDelayMs: 1000,
-    geminiMaxDelayMs: 8000,
+    geminiRetries: 2,
+    geminiBaseDelayMs: 1500, // Reduced from 20000ms to prevent hanging timeouts
+    geminiMaxDelayMs: 6000,  // Max 6s delay
     searchDelayMs: 300,
   },
 
