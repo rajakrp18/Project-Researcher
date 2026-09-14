@@ -186320,5 +186320,2354 @@
     "durationMs": 503576,
     "stopReason": "BUDGET_EXHAUSTED",
     "timestamp": 1789220711768
+  },
+  "f021b7ff2ade7f9db81c2c95aa8fcd3b": {
+    "subject": {
+      "name": "PREMKUMAR BHAGWATSA RAN",
+      "address": "FLAT NO.A1, 146, R.M.V.CLUSTERS,LOTTEGO LLA, HALLI, R.M.V. EXTN., PHASE II, BANGALORE, Bangalore Rural, Karnataka, INDIA - 560094",
+      "city": "Bangalore Rural"
+    },
+    "parsedAddress": {
+      "raw": "FLAT NO.A1, 146, R.M.V.CLUSTERS,LOTTEGO LLA, HALLI, R.M.V. EXTN., PHASE II, BANGALORE, Bangalore Rural, Karnataka, INDIA - 560094",
+      "pinCode": "560094",
+      "city": "BANGALORE",
+      "houseNumber": "A1",
+      "area": "FLAT NO. 146 R.M.V.CLUSTERS LOTTEGO LLA HALLI R.M.V. EXTN. BANGALORE RURAL KARNATAKA INDIA -"
+    },
+    "phones": [
+      {
+        "phone": "9900542801",
+        "owner": "Prem Kumar",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/521066591/Mob-Nos-Hni-Ccrds-Traders",
+            "provider": "direct",
+            "snippet": ". Prem Kumar S9900149657Mr. Honnappa . .9980545227M/S . . Alpine resourceslpine Resource9880253314Mr. Rajeeva G9880082906Mr. Nityananda .9900542803M/S Yogakshema Builders and developersa Builders and 9900542801M/S Yogakshema Builders and developersa Builders and 9880611101Mr. Mohamed . Sajanith.9980",
+            "fetchedAt": 1789365516089,
+            "phone": "9900542801",
+            "ownerName": "Prem Kumar",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      }
+    ],
+    "queriesUsed": 13,
+    "queryBudget": 12,
+    "documentsFetched": 45,
+    "totalEvidenceItems": 200,
+    "providersUsed": [
+      "serpapi",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "quickcompany"
+    ],
+    "durationMs": 350986,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789365633673
+  },
+  "f518daca81bbe9160898ef63a8c10fe3": {
+    "subject": {
+      "name": "RAJA RAO",
+      "address": "C/50, VANASHRI, OPP. DIAMOND TALKIES,L.T. ROAD, BORIVALI (WEST), MUMBAI, Mumbai Suburban, Maharashtra, INDIA - 400092",
+      "city": "Mumbai Suburban"
+    },
+    "parsedAddress": {
+      "raw": "C/50, VANASHRI, OPP. DIAMOND TALKIES,L.T. ROAD, BORIVALI (WEST), MUMBAI, Mumbai Suburban, Maharashtra, INDIA - 400092",
+      "pinCode": "400092",
+      "city": "MUMBAI",
+      "houseNumber": "50",
+      "area": "C/ VANASHRI OPP. DIAMOND TALKIES L.T. ROAD BORIVALI (WEST) MUMBAI SUBURBAN MAHARASHTRA INDIA -"
+    },
+    "phones": [],
+    "queriesUsed": 12,
+    "queryBudget": 12,
+    "documentsFetched": 43,
+    "totalEvidenceItems": 70,
+    "providersUsed": [
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "quickcompany",
+      "tinyfish",
+      "serpapi"
+    ],
+    "durationMs": 393483,
+    "stopReason": "BUDGET_EXHAUSTED",
+    "timestamp": 1789366176062
+  },
+  "658b73be768cf8dff47e8ecafe7a0dc7": {
+    "subject": {
+      "name": "VARUN JUNEJA",
+      "address": "NO. 353, SECTOR 9-D, CHANDIGARH, Chandigarh, Chandigarh, INDIA",
+      "city": "Chandigarh"
+    },
+    "parsedAddress": {
+      "raw": "NO. 353, SECTOR 9-D, CHANDIGARH, Chandigarh, Chandigarh, INDIA",
+      "city": "CHANDIGARH",
+      "area": "NO. -D CHANDIGARH CHANDIGARH INDIA",
+      "houseNumber": "353"
+    },
+    "phones": [
+      {
+        "phone": "8001802065",
+        "owner": "Alumni Akashdeep Sharma",
+        "attribution": "PROXY_PERSON",
+        "confidence": 25,
+        "matchType": "NONE",
+        "evidence": [
+          {
+            "sourceUrl": "https://ubsplacement.puchd.ac.in/alumni.php",
+            "provider": "serpapi",
+            "snippet": "Alumni Akashdeep Sharma CEO. DGM-HR Dabur. No(s): 1800-180-2065, +91 172 2534818, 2534866 (from 9:30 am to 1:00 pm. Panjab University, Chandigarh, India.",
+            "fetchedAt": 1789366447197,
+            "phone": "8001802065",
+            "ownerName": "Alumni Akashdeep Sharma",
+            "extractionMethod": "regex"
+          },
+          {
+            "sourceUrl": "https://ubsplacement.puchd.ac.in",
+            "provider": "direct",
+            "snippet": "nations. UBS has a well-organized placement cell. This vibrant cell is driven by the students themselves. For more information about University Business School - visit ubs.puchd.ac.in Enquiry No(s): 1800-180-2065, +91 172 2534818, 2534866 (from 9:30 am to 1:00 pm & 2:30 pm to 5:00 pm on working days",
+            "fetchedAt": 1789366407073,
+            "phone": "8001802065",
+            "ownerName": "University Business School",
+            "extractionMethod": "regex"
+          },
+          {
+            "sourceUrl": "https://ubsplacement.puchd.ac.in/alumni.php",
+            "provider": "direct",
+            "snippet": "ad Big 92.7 FM Vipul Kukreja Founder & CEO M2S Consulting India Pvt. Ltd. Vishal Kukreja Sr. Vice President- HR Dhanlaxmi Bank Vivek Mohan President Global Services, Alcatel-Lucent 47 Enquiry No(s): 1800-180-2065, +91 172 2534818, 2534866 (from 9:30 am to 1:00 pm & 2:30 pm to 5:00 pm on working days",
+            "fetchedAt": 1789366408422,
+            "phone": "8001802065",
+            "ownerName": "Vipul Kukreja Founder",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      }
+    ],
+    "queriesUsed": 13,
+    "queryBudget": 12,
+    "documentsFetched": 38,
+    "totalEvidenceItems": 6,
+    "providersUsed": [
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "quickcompany",
+      "tinyfish",
+      "serpapi"
+    ],
+    "durationMs": 268762,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789366495170
+  },
+  "ae9dc4f215728a42ccbb8fc40a7526c8": {
+    "subject": {
+      "name": "ANILKUMAR GOVINDLAL CHANDAK",
+      "address": "01 SAROJ APPT TAGOR NAGAR BHD RAJA STHAN HIGH SCHOOL LATU R INDIA    Maharashtra - 413512"
+    },
+    "parsedAddress": {
+      "raw": "01 SAROJ APPT TAGOR NAGAR BHD RAJA STHAN HIGH SCHOOL LATU R INDIA    Maharashtra - 413512",
+      "pinCode": "413512",
+      "houseNumber": "01",
+      "area": "SAROJ APPT TAGOR NAGAR BHD RAJA STHAN HIGH SCHOOL LATU R INDIA MAHARASHTRA -"
+    },
+    "phones": [
+      {
+        "phone": "6000085601",
+        "attribution": "AMBIGUOUS",
+        "confidence": 100,
+        "matchType": "NONE",
+        "evidence": [
+          {
+            "sourceUrl": "https://tatainvestment.com",
+            "provider": "tinyfish",
+            "snippet": "... ANILKUMAR . GOVINDLAL . CHANDAK . 01 SAROJ APPT TAGOR NAGAR BHD RAJASTHAN HIGH . SCHOOL LATUR . INDIA . Maharashtra . 413512. IC001201060000856011Amount for unclaimed ... 114 halaman",
+            "fetchedAt": 1789367997123,
+            "phone": "6000085601",
+            "extractionMethod": "regex"
+          },
+          {
+            "sourceUrl": "https://www.scribd.com/document/443572726/Tata-Investment-2016-pdf",
+            "provider": "tinyfish",
+            "snippet": "2016 ANILKUMAR GOVINDLAL CHANDAK 01 SAROJ APPT TAGOR NAGAR BHD RAJASTHAN HIGH INDIA Maharashtra 413512 IC001201060000856011Amount for unclaimed and unpaid ...",
+            "fetchedAt": 1789368190509,
+            "phone": "6000085601",
+            "ownerName": "BHD RAJASTHAN HIGH INDIA",
+            "extractionMethod": "regex"
+          },
+          {
+            "sourceUrl": "https://www.scribd.com/document/856422696/Unclaimed-unpaid-dividend-account-details",
+            "provider": "tinyfish",
+            "snippet": "40 ANILKUMAR GOVINDLAL CHANDAK 01 SAROJ APPT TAGOR NAGAR BHD RAJASTHAN HIGH SCHOOL LATUR 413512 00IC1201060000856011 500.00 41 ANIRUDDHA B PHATAK D-401 ...",
+            "fetchedAt": 1789368191466,
+            "phone": "6000085601",
+            "ownerName": "BHD RAJASTHAN HIGH SCHOOL",
+            "extractionMethod": "regex"
+          },
+          {
+            "sourceUrl": "https://tatainvestment.com/images/Details-of-Unpaid-Unclaimed-Dividend.pdf",
+            "provider": "serpapi",
+            "snippet": "... CHANDAK. 01 SAROJ APPT TAGOR NAGAR BHD RAJASTHAN HIGH. SCHOOL LATUR. INDIA. Maharashtra. 413512. IC001201060000856011Amount for unclaimed and unpaid Dividend.",
+            "fetchedAt": 1789368197616,
+            "phone": "6000085601",
+            "extractionMethod": "regex"
+          }
+        ]
+      },
+      {
+        "phone": "8700001052",
+        "owner": "MEERUT CANTT MEERUT",
+        "attribution": "PROXY_PERSON",
+        "confidence": 25,
+        "matchType": "NONE",
+        "evidence": [
+          {
+            "sourceUrl": "https://centralbank.bank.in/sites/default/files/CBI_2010-11_FINAL.pdf",
+            "provider": "serpapi",
+            "snippet": "GP-125 GANGA NAGAR MAWANA ROAD. MEERUT CANTT MEERUT. INDIA. Uttar Pradesh. 250001. CENT1303870000105221. 161.00 04-Sep-2018. AJAY GOSWAMI.",
+            "fetchedAt": 1789368080082,
+            "phone": "8700001052",
+            "ownerName": "MEERUT CANTT MEERUT",
+            "extractionMethod": "regex"
+          },
+          {
+            "sourceUrl": "https://centralbank.bank.in",
+            "provider": "tinyfish",
+            "snippet": "GP-125 GANGA NAGAR MAWANA ROAD. MEERUT CANTT MEERUT. INDIA . Uttar Pradesh. 250001. CENT1303870000105221. 161.00 04-Sep-2018. AJAY GOSWAMI. 488 halaman",
+            "fetchedAt": 1789368191768,
+            "phone": "8700001052",
+            "ownerName": "MEERUT CANTT MEERUT",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "8700001021",
+        "owner": "MEERUT CANTT MEERUT",
+        "attribution": "PROXY_PERSON",
+        "confidence": 25,
+        "matchType": "NONE",
+        "evidence": [
+          {
+            "sourceUrl": "https://centralbank.bank.in/sites/default/files/CBI_2010-11_FINAL.pdf",
+            "provider": "serpapi",
+            "snippet": "GP-125 GANGA NAGAR MAWANA ROAD. MEERUT CANTT MEERUT. INDIA. Uttar Pradesh. 250001. CENT1303870000105221. 161.00 04-Sep-2018. AJAY GOSWAMI.",
+            "fetchedAt": 1789368080686,
+            "phone": "8700001021",
+            "ownerName": "MEERUT CANTT MEERUT",
+            "extractionMethod": "regex"
+          },
+          {
+            "sourceUrl": "https://centralbank.bank.in",
+            "provider": "tinyfish",
+            "snippet": "GP-125 GANGA NAGAR MAWANA ROAD. MEERUT CANTT MEERUT. INDIA . Uttar Pradesh. 250001. CENT1303870000105221. 161.00 04-Sep-2018. AJAY GOSWAMI. 488 halaman",
+            "fetchedAt": 1789368192122,
+            "phone": "8700001021",
+            "ownerName": "MEERUT CANTT MEERUT",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      }
+    ],
+    "queriesUsed": 12,
+    "queryBudget": 12,
+    "documentsFetched": 37,
+    "totalEvidenceItems": 15,
+    "providersUsed": [
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "quickcompany",
+      "tinyfish",
+      "serpapi"
+    ],
+    "durationMs": 255893,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789368197985
+  },
+  "c1e2c9d783032796f9c7b08abee68381": {
+    "subject": {
+      "name": "SURESH TOLARAM SARDA",
+      "address": "AT POST ANSING DIST :- WASHIM ANSING INDIA Maharashtra - 444507"
+    },
+    "parsedAddress": {
+      "raw": "AT POST ANSING DIST :- WASHIM ANSING INDIA Maharashtra - 444507",
+      "pinCode": "444507",
+      "area": "AT POST ANSING DIST :- WASHIM ANSING INDIA MAHARASHTRA -"
+    },
+    "phones": [],
+    "queriesUsed": 10,
+    "queryBudget": 12,
+    "documentsFetched": 49,
+    "totalEvidenceItems": 3,
+    "providersUsed": [
+      "serpapi",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "quickcompany",
+      "tinyfish"
+    ],
+    "durationMs": 190620,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789368415658
+  },
+  "b70e0d8da2eacfbf790b43dae1519642": {
+    "subject": {
+      "name": "AMEY SHASTRI",
+      "address": "WARD NO 29 STATION ROAD BALAGHAT BALAGHAT  INDIA   Ma dhya Pradesh - 481001"
+    },
+    "parsedAddress": {
+      "raw": "WARD NO 29 STATION ROAD BALAGHAT BALAGHAT  INDIA   Ma dhya Pradesh - 481001",
+      "pinCode": "481001",
+      "houseNumber": "29",
+      "area": "WARD NOSTATION ROAD BALAGHAT BALAGHAT INDIA MA DHYA PRADESH -"
+    },
+    "phones": [
+      {
+        "phone": "8100135806",
+        "owner": "Madhya Pradesh",
+        "attribution": "AMBIGUOUS",
+        "confidence": 55,
+        "matchType": "NONE",
+        "evidence": [
+          {
+            "sourceUrl": "https://tatainvestment.com/images/Details-of-Unpaid-Unclaimed-Dividend.pdf",
+            "provider": "tinyfish",
+            "snippet": "AMEY SHASTRI WARD NO 29 STATION ROAD BALAGHAT BALAGHAT INDIA Madhya Pradesh 481001 35806Amount for unclaimed and unpaid Dividend 85.00 09-MAY-2023",
+            "fetchedAt": 1789368489365,
+            "phone": "8100135806",
+            "ownerName": "Madhya Pradesh",
+            "extractionMethod": "regex"
+          }
+        ]
+      }
+    ],
+    "queriesUsed": 12,
+    "queryBudget": 12,
+    "documentsFetched": 61,
+    "totalEvidenceItems": 27,
+    "providersUsed": [
+      "tinyfish",
+      "serpapi",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "quickcompany"
+    ],
+    "durationMs": 260193,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789368702338
+  },
+  "11bca8a5fc849270a39e52e2333f61a6": {
+    "subject": {
+      "name": "SANJAY KUMAR",
+      "address": "HARADVARI LAL VILL- NARAT POST- BUHANA JHUNJHUN U INDIA Rajasthan - 333502"
+    },
+    "parsedAddress": {
+      "raw": "HARADVARI LAL VILL- NARAT POST- BUHANA JHUNJHUN U INDIA Rajasthan - 333502",
+      "pinCode": "333502",
+      "area": "HARADVARI LAL VILL- NARAT POST- BUHANA JHUNJHUN U INDIA RAJASTHAN -"
+    },
+    "phones": [
+      {
+        "phone": "6050044001",
+        "owner": "HARADVARI LAL VILL",
+        "attribution": "AMBIGUOUS",
+        "confidence": 50,
+        "matchType": "NONE",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com",
+            "provider": "tinyfish",
+            "snippet": "31 thg 3, 2021 — 2020 SANJAY KUMAR HARADVARI LAL ... HARADVARI LAL VILL- NARAT POST- BUHANA JHUNJHUNU INDIA Rajasthan 333502 00IC1201060500440014 Amount for ...",
+            "fetchedAt": 1789368971954,
+            "phone": "6050044001",
+            "ownerName": "HARADVARI LAL VILL",
+            "extractionMethod": "regex"
+          },
+          {
+            "sourceUrl": "https://www.scribd.com/document/852606505/Details-of-Unpaid-Unclaimed-Dividend-31-03-2021-Tata-Investment",
+            "provider": "tinyfish",
+            "snippet": "2020 SANJAY KUMAR HARADVARI LAL ... HARADVARI LAL VILL- NARAT POST- BUHANA JHUNJHUNU INDIA Rajasthan 333502 00IC1201060500440014 Amount for ...",
+            "fetchedAt": 1789368972546,
+            "phone": "6050044001",
+            "ownerName": "HARADVARI LAL VILL",
+            "extractionMethod": "regex"
+          },
+          {
+            "sourceUrl": "https://www.scribd.com/document/856422696/Unclaimed-unpaid-dividend-account-details",
+            "provider": "tinyfish",
+            "snippet": "573 SANJAY KUMAR HARADVARI LAL VILL- NARAT POST- BUHANA JHUNJHUNU 333502 00IC1201060500440014 180.00 574 SANJAY UTTAMCHAND JAIN 27 PADMINI MARG UDAIPUR ...",
+            "fetchedAt": 1789368972855,
+            "phone": "6050044001",
+            "ownerName": "NARAT POST",
+            "extractionMethod": "regex"
+          }
+        ]
+      },
+      {
+        "phone": "9057203861",
+        "owner": "SANJAY KUMAR",
+        "attribution": "DIRECT_PERSON",
+        "confidence": 50,
+        "matchType": "EXACT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.indiacustomercare.com/jhunjhunu-district-all-important-contact-no",
+            "provider": "tinyfish",
+            "snippet": "9057203861, cto-jhunjhunu@rajasthan.gov.in, Near Collectorate, CMHO Office, Jhunjhunu ... Sanjay Kumar, 8114454927, blo.doit.bissau@rajasthan ...",
+            "fetchedAt": 1789368810703,
+            "phone": "9057203861",
+            "ownerName": "SANJAY KUMAR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "self"
+      },
+      {
+        "phone": "8114454927",
+        "owner": "SANJAY KUMAR",
+        "attribution": "DIRECT_PERSON",
+        "confidence": 50,
+        "matchType": "EXACT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.indiacustomercare.com/jhunjhunu-district-all-important-contact-no",
+            "provider": "tinyfish",
+            "snippet": "9057203861, cto-jhunjhunu@rajasthan.gov.in, Near Collectorate, CMHO Office, Jhunjhunu ... Sanjay Kumar, 8114454927, blo.doit.bissau@rajasthan ...",
+            "fetchedAt": 1789368810703,
+            "phone": "8114454927",
+            "ownerName": "SANJAY KUMAR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "self"
+      }
+    ],
+    "queriesUsed": 10,
+    "queryBudget": 12,
+    "documentsFetched": 28,
+    "totalEvidenceItems": 92,
+    "providersUsed": [
+      "tinyfish",
+      "serpapi",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "quickcompany"
+    ],
+    "durationMs": 263068,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789368992742
+  },
+  "490972e9cdea58c30b3d818faec97ed5": {
+    "subject": {
+      "name": "MADHULATA SHUKLA NAURANGABAD LAKHIMPUR-KHERI",
+      "address": "INDIA    Uttar Prades h - 262701"
+    },
+    "parsedAddress": {
+      "raw": "INDIA    Uttar Prades h - 262701",
+      "pinCode": "262701",
+      "area": "INDIA UTTAR PRADES H -"
+    },
+    "phones": [
+      {
+        "phone": "9154000148",
+        "owner": "ATH KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "ATH KHERI 09154000120 KH0062651SURI KIRANA STORE12MILL ROAD GOLA 09154000129 KH0064946GUPTA PAIN STORES13MOHMMADDI ROAD GOLA 09154000134 KH0065164SRI SHYAM JI RICE INDUSTRIES14MOHAMDI ROAD GOLA KHERI 09154000148 KH0076756RAM KIRANA STORES15MAIN ROAD GOLA GOKRANNATH KHERI 09154000153 KH0068639RAYAL B",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000148",
+            "ownerName": "ATH KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000172",
+        "owner": "GOKRANNATH KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "A KHERI 09154000148 KH0076756RAM KIRANA STORES15MAIN ROAD GOLA GOKRANNATH KHERI 09154000153 KH0068639RAYAL BRICK FIELD16PANGI KHERI 09154000167 KH0068272SUSHIL KUMAR & BROTHERS17GOLA GOKRANNATH KHERI 09154000172 KH0070149NIGAM OIL TRADERS18DHAURHARA KHIRI 09154000186 KH0071435MISHRA MEDICAL STORES19",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000172",
+            "ownerName": "GOKRANNATH KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000186",
+        "owner": "GOLA GOKRANNATH KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "D GOLA GOKRANNATH KHERI 09154000153 KH0068639RAYAL BRICK FIELD16PANGI KHERI 09154000167 KH0068272SUSHIL KUMAR & BROTHERS17GOLA GOKRANNATH KHERI 09154000172 KH0070149NIGAM OIL TRADERS18DHAURHARA KHIRI 09154000186 KH0071435MISHRA MEDICAL STORES19MAIN ROAD LAKHIMPUR 09154000191 KH0070332GOYAL BROTHERS2",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000186",
+            "ownerName": "GOLA GOKRANNATH KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000191",
+        "owner": "PANGI KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "PANGI KHERI 09154000167 KH0068272SUSHIL KUMAR & BROTHERS17GOLA GOKRANNATH KHERI 09154000172 KH0070149NIGAM OIL TRADERS18DHAURHARA KHIRI 09154000186 KH0071435MISHRA MEDICAL STORES19MAIN ROAD LAKHIMPUR 09154000191 KH0070332GOYAL BROTHERS20BANKEY GANJ LAKHIMPUR 09154000200 KH0071107BHASIN SONS21PUNJABI",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000191",
+            "ownerName": "PANGI KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000200",
+        "owner": "OLA GOKRANNATH KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "OLA GOKRANNATH KHERI 09154000172 KH0070149NIGAM OIL TRADERS18DHAURHARA KHIRI 09154000186 KH0071435MISHRA MEDICAL STORES19MAIN ROAD LAKHIMPUR 09154000191 KH0070332GOYAL BROTHERS20BANKEY GANJ LAKHIMPUR 09154000200 KH0071107BHASIN SONS21PUNJABI MARKET GOLA KHERI 09154000209 KH0071132SEXENA STORES22GOLA",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000200",
+            "ownerName": "OLA GOKRANNATH KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000209",
+        "owner": "GANJ LAKHIMPUR",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "8DHAURHARA KHIRI 09154000186 KH0071435MISHRA MEDICAL STORES19MAIN ROAD LAKHIMPUR 09154000191 KH0070332GOYAL BROTHERS20BANKEY GANJ LAKHIMPUR 09154000200 KH0071107BHASIN SONS21PUNJABI MARKET GOLA KHERI 09154000209 KH0071132SEXENA STORES22GOLA GOKRANNATH KHERI 09154000214 KH0071524ANSARI HARDWARE STORE",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000209",
+            "ownerName": "GANJ LAKHIMPUR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000214",
+        "owner": "GANJ LAKHIMPUR",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "S19MAIN ROAD LAKHIMPUR 09154000191 KH0070332GOYAL BROTHERS20BANKEY GANJ LAKHIMPUR 09154000200 KH0071107BHASIN SONS21PUNJABI MARKET GOLA KHERI 09154000209 KH0071132SEXENA STORES22GOLA GOKRANNATH KHERI 09154000214 KH0071524ANSARI HARDWARE STORES23LAKHIMPUR ROAD GOLA GOKRANNATH KHERI 09154000228 KH0121",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000214",
+            "ownerName": "GANJ LAKHIMPUR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000228",
+        "owner": "MARKET GOLA KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "09154000200 KH0071107BHASIN SONS21PUNJABI MARKET GOLA KHERI 09154000209 KH0071132SEXENA STORES22GOLA GOKRANNATH KHERI 09154000214 KH0071524ANSARI HARDWARE STORES23LAKHIMPUR ROAD GOLA GOKRANNATH KHERI 09154000228 KH0121824BANSAL MEDICAL AGENCY24VERMA MARKET LAKHIMPUR 09154000233 KH0072397TRILOCHAN SI",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000228",
+            "ownerName": "MARKET GOLA KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000233",
+        "owner": "GOKRANNATH KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "0209 KH0071132SEXENA STORES22GOLA GOKRANNATH KHERI 09154000214 KH0071524ANSARI HARDWARE STORES23LAKHIMPUR ROAD GOLA GOKRANNATH KHERI 09154000228 KH0121824BANSAL MEDICAL AGENCY24VERMA MARKET LAKHIMPUR 09154000233 KH0072397TRILOCHAN SINGH DALJIT SINGH25BHOOR GOLA GOKRANNATH KHERI 09154000247 KH0125631",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000233",
+            "ownerName": "GOKRANNATH KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000247",
+        "owner": "MARKET LAKHIMPUR",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "HARDWARE STORES23LAKHIMPUR ROAD GOLA GOKRANNATH KHERI 09154000228 KH0121824BANSAL MEDICAL AGENCY24VERMA MARKET LAKHIMPUR 09154000233 KH0072397TRILOCHAN SINGH DALJIT SINGH25BHOOR GOLA GOKRANNATH KHERI 09154000247 KH0125631INDIAN STEELS26BUS STATION ROAD LAKHIMPUR 09154000252 KH0072640MUSA RAM SHIV RA",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000247",
+            "ownerName": "MARKET LAKHIMPUR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000252",
+        "owner": "MARKET LAKHIMPUR",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "28 KH0121824BANSAL MEDICAL AGENCY24VERMA MARKET LAKHIMPUR 09154000233 KH0072397TRILOCHAN SINGH DALJIT SINGH25BHOOR GOLA GOKRANNATH KHERI 09154000247 KH0125631INDIAN STEELS26BUS STATION ROAD LAKHIMPUR 09154000252 KH0072640MUSA RAM SHIV RAM DASS27LRP ROAD LAKHIMPUR 09154000266 KH0072639AJAY BIDI STORE",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000252",
+            "ownerName": "MARKET LAKHIMPUR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000271",
+        "owner": "GOKRANNATH KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "GOKRANNATH KHERI 09154000247 KH0125631INDIAN STEELS26BUS STATION ROAD LAKHIMPUR 09154000252 KH0072640MUSA RAM SHIV RAM DASS27LRP ROAD LAKHIMPUR 09154000266 KH0072639AJAY BIDI STORES28KHUTAR ROAD GOLA 09154000271 KH0073060KHURANA AUTO MOBIELS29BUS STATION ROAD LAKHIMPUR 09154000285 KH0074430NIGAM KHA",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000271",
+            "ownerName": "GOKRANNATH KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000464",
+        "owner": "OKRANNATH KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "OKRANNATH KHERI 09154000445 KH0078993JALALPUR ENT UDHYOG44ZALALPUR GOLA KHIRI 09154000450 KH0079073AQAR ENTERPRISES45NAURANGABAD LAKHIMPUR 09154000459 KH0079150ARUN MACHINERY STORES46DHAURAHRA KHEERI 09154000464 KH0079315UNIK SELS CORPORATION47KASHI NAGAR LAKHIMPUR 09154000478 KH0079781KAMAL AGENCIE",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000464",
+            "ownerName": "OKRANNATH KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000483",
+        "owner": "MAIDAN GOLA GOKRANNATH KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "R 09154000459 KH0079150ARUN MACHINERY STORES46DHAURAHRA KHEERI 09154000464 KH0079315UNIK SELS CORPORATION47KASHI NAGAR LAKHIMPUR 09154000478 KH0079781KAMAL AGENCIES48MELA MAIDAN GOLA GOKRANNATH KHERI 09154000483 KH0129158CAREWELL AUTO & ENGG.WORKS49RAJGARH LAKHIMPUR 09154000497 KH0080192NEW SAHANI M",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000483",
+            "ownerName": "MAIDAN GOLA GOKRANNATH KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000497",
+        "owner": "MAIDAN GOLA GOKRANNATH KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "4000464 KH0079315UNIK SELS CORPORATION47KASHI NAGAR LAKHIMPUR 09154000478 KH0079781KAMAL AGENCIES48MELA MAIDAN GOLA GOKRANNATH KHERI 09154000483 KH0129158CAREWELL AUTO & ENGG.WORKS49RAJGARH LAKHIMPUR 09154000497 KH0080192NEW SAHANI MEDICAL STORES50LAKHIMPUR ROAD GOLA KHIRI 09154000506 KH0050722CHAND",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000497",
+            "ownerName": "MAIDAN GOLA GOKRANNATH KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000506",
+        "owner": "MAIDAN GOLA GOKRANNATH KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "KH0079781KAMAL AGENCIES48MELA MAIDAN GOLA GOKRANNATH KHERI 09154000483 KH0129158CAREWELL AUTO & ENGG.WORKS49RAJGARH LAKHIMPUR 09154000497 KH0080192NEW SAHANI MEDICAL STORES50LAKHIMPUR ROAD GOLA KHIRI 09154000506 KH0050722CHANDRA MEDICAL STORES51ALIGANJ ROAD GOLA 09154000511 KH0080345MARSH ENGINEERS5",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000506",
+            "ownerName": "MAIDAN GOLA GOKRANNATH KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000530",
+        "owner": "TAWON LAKHIMPUR",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "LAKHIMPUR ROAD GOLA KHIRI 09154000506 KH0050722CHANDRA MEDICAL STORES51ALIGANJ ROAD GOLA 09154000511 KH0080345MARSH ENGINEERS52MEERPUR KHIRI 09154000525 KH0081081FANCY JWAILERS53KHIRI TAWON LAKHIMPUR 09154000530 KH0081044JABBAD ALI TIMBER MARCHANT54ALIGANJ ROAD GOLA GOKRANNATH KHERI 09154000539 KH00",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000530",
+            "ownerName": "TAWON LAKHIMPUR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000539",
+        "owner": "TAWON LAKHIMPUR",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "GOLA 09154000511 KH0080345MARSH ENGINEERS52MEERPUR KHIRI 09154000525 KH0081081FANCY JWAILERS53KHIRI TAWON LAKHIMPUR 09154000530 KH0081044JABBAD ALI TIMBER MARCHANT54ALIGANJ ROAD GOLA GOKRANNATH KHERI 09154000539 KH0080940SUDHIR KIRANA STORES55DHOURHARA KHIRI Page 1 of 93 TIN NO. UPTTNO FIRM - NAME F",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000539",
+            "ownerName": "TAWON LAKHIMPUR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000558",
+        "owner": "GOKRANNATH KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "GOKRANNATH KHERI 09154000539 KH0080940SUDHIR KIRANA STORES55DHOURHARA KHIRI Page 1 of 93 TIN NO. UPTTNO FIRM - NAME FIRM-ADDRESSSl.No 09154000544 KH0080927NATIONAL MEDICAL STORE56MAIN ROAD LAKHIMPUR 09154000558 KH0081788PANKAJ PROVIJEN STORES57LAKHIMPUR ROAD GOLA 09154000563 KH0081412ABDUL VARDAR AR",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000558",
+            "ownerName": "GOKRANNATH KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000605",
+        "owner": "MANDI GOLA KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "LA 09154000577 KH0000765SUNDER MEDICAL STORES59HOSPITAL ROAD LAKHIMPUR 09154000582 KH0081473SHYAM LAGHU UDYOG60SUBJI MANDI GOLA KHERI 09154000596 KH0082261AVADH GLASS HOUSE61THARVARAN GANJ LAKHIM PUR 09154000605 KH0082224GUPTA METAL STORES62BAMRIYA KHIRI 09154000610 KH0082350RAMESH TRADING CO.63KHEE",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000605",
+            "ownerName": "MANDI GOLA KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000610",
+        "owner": "MANDI GOLA KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "ROAD LAKHIMPUR 09154000582 KH0081473SHYAM LAGHU UDYOG60SUBJI MANDI GOLA KHERI 09154000596 KH0082261AVADH GLASS HOUSE61THARVARAN GANJ LAKHIM PUR 09154000605 KH0082224GUPTA METAL STORES62BAMRIYA KHIRI 09154000610 KH0082350RAMESH TRADING CO.63KHEERI TOWN LAKHIMPUR 09154000619 KH0032647KULJIT MOTERS64KH",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000610",
+            "ownerName": "MANDI GOLA KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000619",
+        "owner": "ANDI GOLA KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "ANDI GOLA KHERI 09154000596 KH0082261AVADH GLASS HOUSE61THARVARAN GANJ LAKHIM PUR 09154000605 KH0082224GUPTA METAL STORES62BAMRIYA KHIRI 09154000610 KH0082350RAMESH TRADING CO.63KHEERI TOWN LAKHIMPUR 09154000619 KH0032647KULJIT MOTERS64KHUTAR ROAD GOLA GOKRANNATH KHERI 09154000624 KH0082552ESHAN PAP",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000619",
+            "ownerName": "ANDI GOLA KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000681",
+        "owner": "HOSPITAL MARKET LAKHIMPUR",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "657 KH0083364VERMA AGENCIS68KAMNATH HOSPITAL MARKET LAKHIMPUR 09154000662 KH0083186AHMAD YAAR KHAN CONTRACTOR69NAI BASTI LAKHIMPUR 09154000676 KH0084354SATYA PRAKASH SINGH CONT.70BADKHERVA,LAKHIMPUR. 09154000681 KH0084758NEW BENGAL ELECTRICALS71NAURANGABAD,KHIRI. 09154000695 KH0085186VERMA AUTO SPAI",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000681",
+            "ownerName": "HOSPITAL MARKET LAKHIMPUR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000761",
+        "owner": "AD LAKHIMPUR KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "AD LAKHIMPUR KHERI 09154000737 KH0086358MUNNA SCHAN THEKADAR76NAI BASTI LAKHIMPUR 09154000742 KH0086573AMAR MEDICAL STORES77RAJAGANJ KHERI 09154000756 KH0086827RAJAT MEDICAL STORES78MAHEVA GANJ KHERI 09154000761 KH0086217SANJAY TRADERS79BAJPAI COLONEY LAKHIMPUR 09154000775 KH0087830DEEN AOUSHDHALYA8",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000761",
+            "ownerName": "AD LAKHIMPUR KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000775",
+        "owner": "NAI BASTI LAKHIMPUR",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "NAI BASTI LAKHIMPUR 09154000742 KH0086573AMAR MEDICAL STORES77RAJAGANJ KHERI 09154000756 KH0086827RAJAT MEDICAL STORES78MAHEVA GANJ KHERI 09154000761 KH0086217SANJAY TRADERS79BAJPAI COLONEY LAKHIMPUR 09154000775 KH0087830DEEN AOUSHDHALYA80HOSPITAL ROAD LAKHIMPUR KHERI 09154000780 KH0088375KUMAR MEDI",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000775",
+            "ownerName": "NAI BASTI LAKHIMPUR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000780",
+        "owner": "GANJ KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "J KHERI 09154000756 KH0086827RAJAT MEDICAL STORES78MAHEVA GANJ KHERI 09154000761 KH0086217SANJAY TRADERS79BAJPAI COLONEY LAKHIMPUR 09154000775 KH0087830DEEN AOUSHDHALYA80HOSPITAL ROAD LAKHIMPUR KHERI 09154000780 KH0088375KUMAR MEDICAL STORES81KHAMARIYA KHERI 09154000789 KH0087385ANUPAM JEWELLARS82HO",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000780",
+            "ownerName": "GANJ KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000789",
+        "owner": "ANJ KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "ANJ KHERI 09154000761 KH0086217SANJAY TRADERS79BAJPAI COLONEY LAKHIMPUR 09154000775 KH0087830DEEN AOUSHDHALYA80HOSPITAL ROAD LAKHIMPUR KHERI 09154000780 KH0088375KUMAR MEDICAL STORES81KHAMARIYA KHERI 09154000789 KH0087385ANUPAM JEWELLARS82HOSPITAL ROAD LAKHIMPUR 09154000794 KH0087777AGARWAL UDYOG83M",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000789",
+            "ownerName": "ANJ KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000803",
+        "owner": "LAKHIMPUR KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "D LAKHIMPUR KHERI 09154000780 KH0088375KUMAR MEDICAL STORES81KHAMARIYA KHERI 09154000789 KH0087385ANUPAM JEWELLARS82HOSPITAL ROAD LAKHIMPUR 09154000794 KH0087777AGARWAL UDYOG83MAHARAJ NAGAR LAKHIMPUR 09154000803 KH0087397AJMANI FLOUR MILL P.LTD.84L R P ROAD RAJAPUR LAKHIMPUR 09154000817 KH0089390PRA",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000803",
+            "ownerName": "LAKHIMPUR KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000874",
+        "owner": "CHAURAHRA LAKHIMPUR",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "154000855 KH0090218PREM MEDICAL STORES89MAIN ROAD LAKHIMPUR 09154000860 KH0089675SATIESH MEDICAL STORES90EMLI CHAURAHRA LAKHIMPUR 09154000869 KH0090937SARKAR BAHADUR SINGH THEKADAR91SAMAIYA LAKHIMPUR 09154000874 KH0090815BHARAT MEDICAL STORE92KHAMARIYA KHERI 09154000888 KH0091146PUNJAB & COMPANY THE",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000874",
+            "ownerName": "CHAURAHRA LAKHIMPUR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000888",
+        "owner": "CHAURAHRA LAKHIMPUR",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "09154000860 KH0089675SATIESH MEDICAL STORES90EMLI CHAURAHRA LAKHIMPUR 09154000869 KH0090937SARKAR BAHADUR SINGH THEKADAR91SAMAIYA LAKHIMPUR 09154000874 KH0090815BHARAT MEDICAL STORE92KHAMARIYA KHERI 09154000888 KH0091146PUNJAB & COMPANY THEKEDAR SUPPLIERS93BAJPAI COLONEY LAKHIMPUR KHERI 09154000893 ",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000888",
+            "ownerName": "CHAURAHRA LAKHIMPUR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000921",
+        "owner": "COLONEY LAKHIMPUR KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "KH0090815BHARAT MEDICAL STORE92KHAMARIYA KHERI 09154000888 KH0091146PUNJAB & COMPANY THEKEDAR SUPPLIERS93BAJPAI COLONEY LAKHIMPUR KHERI 09154000893 KH0091753BHANDARI BROTHERS94KHUTAR ROAD GOLA KHERI 09154000921 KH0091134NEERAJ ARORA THEKADAR95BAJPAI COLONEY LAKHIMPUR KHERI 09154000935 KH0092302DEEP ",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000921",
+            "ownerName": "COLONEY LAKHIMPUR KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000935",
+        "owner": "COLONEY LAKHIMPUR KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "& COMPANY THEKEDAR SUPPLIERS93BAJPAI COLONEY LAKHIMPUR KHERI 09154000893 KH0091753BHANDARI BROTHERS94KHUTAR ROAD GOLA KHERI 09154000921 KH0091134NEERAJ ARORA THEKADAR95BAJPAI COLONEY LAKHIMPUR KHERI 09154000935 KH0092302DEEP FARMECY96MOHAMDI ROAD GOLA KHERI 09154000940 KH0092124A.B.C.SALES & SERVICE",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000935",
+            "ownerName": "COLONEY LAKHIMPUR KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000940",
+        "owner": "COLONEY LAKHIMPUR KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "RI 09154000893 KH0091753BHANDARI BROTHERS94KHUTAR ROAD GOLA KHERI 09154000921 KH0091134NEERAJ ARORA THEKADAR95BAJPAI COLONEY LAKHIMPUR KHERI 09154000935 KH0092302DEEP FARMECY96MOHAMDI ROAD GOLA KHERI 09154000940 KH0092124A.B.C.SALES & SERVICE97HOSPITAL ROAD LAKHIMPUR KHERI 09154000949 KH0092439RAMAP",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000940",
+            "ownerName": "COLONEY LAKHIMPUR KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000949",
+        "owner": "COLONEY LAKHIMPUR KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "921 KH0091134NEERAJ ARORA THEKADAR95BAJPAI COLONEY LAKHIMPUR KHERI 09154000935 KH0092302DEEP FARMECY96MOHAMDI ROAD GOLA KHERI 09154000940 KH0092124A.B.C.SALES & SERVICE97HOSPITAL ROAD LAKHIMPUR KHERI 09154000949 KH0092439RAMAPUR OILS98RAMAPUR KHERI 09154000954 KH0092565JANANI AGENCIES99BELOBI MARKET",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000949",
+            "ownerName": "COLONEY LAKHIMPUR KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000954",
+        "owner": "LAKHIMPUR KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "Y LAKHIMPUR KHERI 09154000935 KH0092302DEEP FARMECY96MOHAMDI ROAD GOLA KHERI 09154000940 KH0092124A.B.C.SALES & SERVICE97HOSPITAL ROAD LAKHIMPUR KHERI 09154000949 KH0092439RAMAPUR OILS98RAMAPUR KHERI 09154000954 KH0092565JANANI AGENCIES99BELOBI MARKET LAKHIMPUR KHERI 09154000968 KH0093417RATAN ICE F",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000954",
+            "ownerName": "LAKHIMPUR KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000968",
+        "owner": "LA KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "LA KHERI 09154000940 KH0092124A.B.C.SALES & SERVICE97HOSPITAL ROAD LAKHIMPUR KHERI 09154000949 KH0092439RAMAPUR OILS98RAMAPUR KHERI 09154000954 KH0092565JANANI AGENCIES99BELOBI MARKET LAKHIMPUR KHERI 09154000968 KH0093417RATAN ICE FACTORY100SITAPUR ROAD LAKHIMPUR KHERI 09154000973 KH0093187ASHUTOESH",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000968",
+            "ownerName": "LA KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000973",
+        "owner": "HIMPUR KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "HIMPUR KHERI 09154000949 KH0092439RAMAPUR OILS98RAMAPUR KHERI 09154000954 KH0092565JANANI AGENCIES99BELOBI MARKET LAKHIMPUR KHERI 09154000968 KH0093417RATAN ICE FACTORY100SITAPUR ROAD LAKHIMPUR KHERI 09154000973 KH0093187ASHUTOESH SUGAR INDUSTRIES101AGRA LAKHIMPUR KHERI 09154000987 KH0093959PUNJAB T",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000973",
+            "ownerName": "HIMPUR KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000987",
+        "owner": "MARKET LAKHIMPUR KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "54 KH0092565JANANI AGENCIES99BELOBI MARKET LAKHIMPUR KHERI 09154000968 KH0093417RATAN ICE FACTORY100SITAPUR ROAD LAKHIMPUR KHERI 09154000973 KH0093187ASHUTOESH SUGAR INDUSTRIES101AGRA LAKHIMPUR KHERI 09154000987 KH0093959PUNJAB TENT HOUSE102BUS STATION ROAD LAKHIMPUR KHERI 09154000992 KH0093062AGARW",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000987",
+            "ownerName": "MARKET LAKHIMPUR KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154000992",
+        "owner": "LAKHIMPUR KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "093417RATAN ICE FACTORY100SITAPUR ROAD LAKHIMPUR KHERI 09154000973 KH0093187ASHUTOESH SUGAR INDUSTRIES101AGRA LAKHIMPUR KHERI 09154000987 KH0093959PUNJAB TENT HOUSE102BUS STATION ROAD LAKHIMPUR KHERI 09154000992 KH0093062AGARWAL SHOES103BUS STATION ROAD LAKHIMPUR 09154001006 KH0094355SRI KRISHNA LOH",
+            "fetchedAt": 1789369210044,
+            "phone": "9154000992",
+            "ownerName": "LAKHIMPUR KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154001006",
+        "owner": "LAKHIMPUR KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "73 KH0093187ASHUTOESH SUGAR INDUSTRIES101AGRA LAKHIMPUR KHERI 09154000987 KH0093959PUNJAB TENT HOUSE102BUS STATION ROAD LAKHIMPUR KHERI 09154000992 KH0093062AGARWAL SHOES103BUS STATION ROAD LAKHIMPUR 09154001006 KH0094355SRI KRISHNA LOHA BHANDAR104RAMAPUR LAKHIMPUR KHERI 09154001011 KH0093782SUNIL K",
+            "fetchedAt": 1789369210044,
+            "phone": "9154001006",
+            "ownerName": "LAKHIMPUR KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154001030",
+        "owner": "LAKHIMPUR KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "BHANDAR104RAMAPUR LAKHIMPUR KHERI 09154001011 KH0093782SUNIL KUMAR SINGH THEKEDAR105SHARDA NAGAR LAKHIMPUR 09154001025 KH0094493ADHISHASI ABHIYANTA PRANTIYA KHAND106SARVAJANIK NIRMAN VIBHAG LAKHIMPUR 09154001030 KH0094291JAYENDRA BAHADUR SINGH THEKADAR107SAIDAPUR KARANPUR KHERI 09154001039 KH0094901",
+            "fetchedAt": 1789369210044,
+            "phone": "9154001030",
+            "ownerName": "LAKHIMPUR KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154001077",
+        "owner": "MARKET GOLA GOKRANNATH KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "044 KH0095091JAIN SONS109MAIN ROAD KHERI 09154001058 KH0095559SAHNI DEPARTMENTAL STORES110PUNJABI MARKET GOLA GOKRANNATH KHERI 09154001063 KH0095192SHAHNI TRADERS111ALIGANJ ROAD GOLA GOKRANNATH KHERI 09154001077 KH0096210JANTA TENT HOUSE112KHUTAR ROAD GOLA 09154001082 KH0095370AVON TENT HOUSE113KHUT",
+            "fetchedAt": 1789369210044,
+            "phone": "9154001077",
+            "ownerName": "MARKET GOLA GOKRANNATH KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154001082",
+        "owner": "MARKET GOLA GOKRANNATH KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "95559SAHNI DEPARTMENTAL STORES110PUNJABI MARKET GOLA GOKRANNATH KHERI 09154001063 KH0095192SHAHNI TRADERS111ALIGANJ ROAD GOLA GOKRANNATH KHERI 09154001077 KH0096210JANTA TENT HOUSE112KHUTAR ROAD GOLA 09154001082 KH0095370AVON TENT HOUSE113KHUTAR ROAD GOLA 09154001096 KH0095887JANTA KHAD BHANDAR114SA",
+            "fetchedAt": 1789369210044,
+            "phone": "9154001082",
+            "ownerName": "MARKET GOLA GOKRANNATH KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154001096",
+        "owner": "RANNATH KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "RANNATH KHERI 09154001063 KH0095192SHAHNI TRADERS111ALIGANJ ROAD GOLA GOKRANNATH KHERI 09154001077 KH0096210JANTA TENT HOUSE112KHUTAR ROAD GOLA 09154001082 KH0095370AVON TENT HOUSE113KHUTAR ROAD GOLA 09154001096 KH0095887JANTA KHAD BHANDAR114SANSARPUR KHREE Page 2 of 93 TIN NO. UPTTNO FIRM - NAME FI",
+            "fetchedAt": 1789369210044,
+            "phone": "9154001096",
+            "ownerName": "RANNATH KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154001143",
+        "owner": "GOLA GOKRANNATH KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "ESSSl.No 09154001105 KH0095940KAMAL MEDICAL STORE115MOH.ROAD GOLA KHIRI 09154001110 KH0096513PUNEET MEDICAL STORE116ALIGANJ ROAD GOLA 09154001124 KH0095964RATHAUR MEDICAL STORES117SANSARPUR LAKHIMPUR 09154001143 KH0096626MANSURI FOOT WEAR118TEERTH GOLA GOKRANNATH KHERI 09154001157 KH0097349SHUBHAM D",
+            "fetchedAt": 1789369210044,
+            "phone": "9154001143",
+            "ownerName": "GOLA GOKRANNATH KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154001157",
+        "owner": "GOLA GOKRANNATH KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "I 09154001110 KH0096513PUNEET MEDICAL STORE116ALIGANJ ROAD GOLA 09154001124 KH0095964RATHAUR MEDICAL STORES117SANSARPUR LAKHIMPUR 09154001143 KH0096626MANSURI FOOT WEAR118TEERTH GOLA GOKRANNATH KHERI 09154001157 KH0097349SHUBHAM DISTRIBUTERS119MAHARAJ NAGAR LAKHIMPUR 09154001176 KH0098238SANGAM TENT",
+            "fetchedAt": 1789369210044,
+            "phone": "9154001157",
+            "ownerName": "GOLA GOKRANNATH KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154001176",
+        "owner": "GOLA GOKRANNATH KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "4001124 KH0095964RATHAUR MEDICAL STORES117SANSARPUR LAKHIMPUR 09154001143 KH0096626MANSURI FOOT WEAR118TEERTH GOLA GOKRANNATH KHERI 09154001157 KH0097349SHUBHAM DISTRIBUTERS119MAHARAJ NAGAR LAKHIMPUR 09154001176 KH0098238SANGAM TENT HOUSE120PIPARIA SITAPUR ROAD LAKHIMPUR 09154001181 KH0097426VIVEK T",
+            "fetchedAt": 1789369210044,
+            "phone": "9154001176",
+            "ownerName": "GOLA GOKRANNATH KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154001181",
+        "owner": "GOLA GOKRANNATH KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "3 KH0096626MANSURI FOOT WEAR118TEERTH GOLA GOKRANNATH KHERI 09154001157 KH0097349SHUBHAM DISTRIBUTERS119MAHARAJ NAGAR LAKHIMPUR 09154001176 KH0098238SANGAM TENT HOUSE120PIPARIA SITAPUR ROAD LAKHIMPUR 09154001181 KH0097426VIVEK TRADING CO.121PHOOL BEHAD KHREE 09154001195 KH0097919ABDUL AZIZ BOX VYAPA",
+            "fetchedAt": 1789369210044,
+            "phone": "9154001181",
+            "ownerName": "GOLA GOKRANNATH KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154001322",
+        "owner": "MARKET LAKHIMPUR",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "9A.B.PHARMACEUTICALS132VERMA MARKET LAKHIMPUR 09154001303 KH0100009WELCOM AUTO SPARES133NEAR G.G.I.COLLAGE,EYE HOSPITAL ROAD 09154001317 KH0100565TRIBHUVANLAL MOHANLAL CEMENT VYAPAR134DHAURAHRA KHIRI 09154001322 KH0100440GOLA CROCKRY HOUSE135PUNJABI MARKET GOLA KHIRI 09154001336 KH0100893NEERAJ TENT",
+            "fetchedAt": 1789369210044,
+            "phone": "9154001322",
+            "ownerName": "MARKET LAKHIMPUR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154001393",
+        "owner": "DHAURAHRA LAKHIMPUR",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "8SRIVASTVA TRADERS140KASBA DHAURAHRA LAKHIMPUR 09154001374 KH0101264GURU KRIPA AUTOMOBILES141MAHARAJ NAGAR LAKHIMPUR 09154001388 KH0101846SHEELU INVERTOR & BATTRY SERVICE142OPP.ABKARI GODAM LAKHIMPUR 09154001393 KH0101491ANMOL MEDICAL AGENCIES143AIRA ROAD NAURANGABAD LAKHIMPUR 09154001402 KH0102003M",
+            "fetchedAt": 1789369210044,
+            "phone": "9154001393",
+            "ownerName": "DHAURAHRA LAKHIMPUR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154001402",
+        "owner": "ABKARI GODAM LAKHIMPUR",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "AUTOMOBILES141MAHARAJ NAGAR LAKHIMPUR 09154001388 KH0101846SHEELU INVERTOR & BATTRY SERVICE142OPP.ABKARI GODAM LAKHIMPUR 09154001393 KH0101491ANMOL MEDICAL AGENCIES143AIRA ROAD NAURANGABAD LAKHIMPUR 09154001402 KH0102003MANOJ TRADERS144LAKHIMPUR ROAD GOLA KHIRI 09154001416 KH0101693MOHIT MEDICAL AGE",
+            "fetchedAt": 1789369210044,
+            "phone": "9154001402",
+            "ownerName": "ABKARI GODAM LAKHIMPUR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154001529",
+        "owner": "GANJ LAKHIMPUR",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "54001501 KH0103847YASH TRADERS154MAHEBA GANJ LAKHIMPUR 09154001515 KH0103927CHAND MACHINERY STORES155SHUKLA WARD DHAURAHRA LAKHIMPUR 09154001520 KH0104044KAMAL KIRANA STORES156RAMAPUR LAKHIMPUR KHIRI 09154001529 KH0104108NURUL HASAN KHAN THEKEDAR157SHARDA NAGAR COLONY LAKHIMPUR 09154001548 KH0104788",
+            "fetchedAt": 1789369210044,
+            "phone": "9154001529",
+            "ownerName": "GANJ LAKHIMPUR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154001553",
+        "owner": "LAKHIMPUR KHIRI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "54001520 KH0104044KAMAL KIRANA STORES156RAMAPUR LAKHIMPUR KHIRI 09154001529 KH0104108NURUL HASAN KHAN THEKEDAR157SHARDA NAGAR COLONY LAKHIMPUR 09154001548 KH0104788BIJUA FILLING STATION158BIJUA KHIRI 09154001553 KH0104905SANJAY CYCLE STORE159DHAKHERWA CHAURAHA,DHAURAHRA,KHIRI 09154001567 KH0104598JA",
+            "fetchedAt": 1789369210044,
+            "phone": "9154001553",
+            "ownerName": "LAKHIMPUR KHIRI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154001609",
+        "owner": "GANJ LAKHIMPUR",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "083PRAGATI CEMENT STORES162AIRA ROAD NAURANGA BAD LAKHIMPUR 09154001591 KH0105637SINHA AGENCIES163HAFIZPUR,BEHIND DHARMKANTA GOLA KHIRI 09154001600 KH0105604SRI BALAJI TRADERS164MAHEBA GANJ LAKHIMPUR 09154001609 KH0106263GUPTA TENT SERVICE165KHUTAR ROAD GOLA 09154001614 KH0105920STAR AURVEDIC STORE1",
+            "fetchedAt": 1789369210044,
+            "phone": "9154001609",
+            "ownerName": "GANJ LAKHIMPUR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154001614",
+        "owner": "GANJ LAKHIMPUR",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "09154001591 KH0105637SINHA AGENCIES163HAFIZPUR,BEHIND DHARMKANTA GOLA KHIRI 09154001600 KH0105604SRI BALAJI TRADERS164MAHEBA GANJ LAKHIMPUR 09154001609 KH0106263GUPTA TENT SERVICE165KHUTAR ROAD GOLA 09154001614 KH0105920STAR AURVEDIC STORE166VILL SARVA TYRE MILL PURVA LAKHIMPUR 09154001628 KH0106125",
+            "fetchedAt": 1789369210044,
+            "phone": "9154001614",
+            "ownerName": "GANJ LAKHIMPUR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154001628",
+        "owner": "GANJ LAKHIMPUR",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "54001600 KH0105604SRI BALAJI TRADERS164MAHEBA GANJ LAKHIMPUR 09154001609 KH0106263GUPTA TENT SERVICE165KHUTAR ROAD GOLA 09154001614 KH0105920STAR AURVEDIC STORE166VILL SARVA TYRE MILL PURVA LAKHIMPUR 09154001628 KH0106125SHIV PRASAD THEKEDAR167VILL TENDUA KHIRI 09154001633 KH0106012DHANUKA BROTHERS1",
+            "fetchedAt": 1789369210044,
+            "phone": "9154001628",
+            "ownerName": "GANJ LAKHIMPUR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154001652",
+        "owner": "ILL PURVA LAKHIMPUR",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "ILL PURVA LAKHIMPUR 09154001628 KH0106125SHIV PRASAD THEKEDAR167VILL TENDUA KHIRI 09154001633 KH0106012DHANUKA BROTHERS168KUMHARAN TOLA GOLA 09154001647 KH0106882RATHI BOOK DEPO169SADAR CHAURAHA GOLA 09154001652 KH0106586HARSHIT INDUSTRIES170LALHAPUR GOLA KHIRI Page 3 of 93 TIN NO. UPTTNO FIRM - NAM",
+            "fetchedAt": 1789369210044,
+            "phone": "9154001652",
+            "ownerName": "ILL PURVA LAKHIMPUR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154001699",
+        "owner": "TOLA GOLA GOKRANNATH KHERI",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "KH0107127RAMJEET SINGH THEKEDAR171KUMHARAN TOLA GOLA GOKRANNATH KHERI 09154001671 KH0106845MANAS AGENCIES17218 ASHIRVAD MARKET HOSPITAL ROAD 09154001685 KH0107152ASHU AGENCIES173MILL ROAD GOLA KHIRI. 09154001699 KH0107443SHUBHAM OFFSET174ZILA PARISHAD MARKET LAKHIMPUR 09154001713 KH0108218SHYAM JI A",
+            "fetchedAt": 1789369210044,
+            "phone": "9154001699",
+            "ownerName": "TOLA GOLA GOKRANNATH KHERI",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154001713",
+        "owner": "PARISHAD MARKET LAKHIMPUR",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "09154001671 KH0106845MANAS AGENCIES17218 ASHIRVAD MARKET HOSPITAL ROAD 09154001685 KH0107152ASHU AGENCIES173MILL ROAD GOLA KHIRI. 09154001699 KH0107443SHUBHAM OFFSET174ZILA PARISHAD MARKET LAKHIMPUR 09154001713 KH0108218SHYAM JI AND CO.175MANDI ASHTHAL,LAKHIMPUR KHIRI. 09154001727 KH0107581SHIV SHAK",
+            "fetchedAt": 1789369210044,
+            "phone": "9154001713",
+            "ownerName": "PARISHAD MARKET LAKHIMPUR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154001727",
+        "owner": "PARISHAD MARKET LAKHIMPUR",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "09154001685 KH0107152ASHU AGENCIES173MILL ROAD GOLA KHIRI. 09154001699 KH0107443SHUBHAM OFFSET174ZILA PARISHAD MARKET LAKHIMPUR 09154001713 KH0108218SHYAM JI AND CO.175MANDI ASHTHAL,LAKHIMPUR KHIRI. 09154001727 KH0107581SHIV SHAKTI TRADERS176AIRA ROAD NAURANGABAD LAKHIMPUR 09154001732 KH0107480B.R.S",
+            "fetchedAt": 1789369210044,
+            "phone": "9154001727",
+            "ownerName": "PARISHAD MARKET LAKHIMPUR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154001732",
+        "owner": "PARISHAD MARKET LAKHIMPUR",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "107443SHUBHAM OFFSET174ZILA PARISHAD MARKET LAKHIMPUR 09154001713 KH0108218SHYAM JI AND CO.175MANDI ASHTHAL,LAKHIMPUR KHIRI. 09154001727 KH0107581SHIV SHAKTI TRADERS176AIRA ROAD NAURANGABAD LAKHIMPUR 09154001732 KH0107480B.R.SERVICE STATION177BANKEGANJ KHIRI 09154001746 KH0108344RASTOGI STATIONERS17",
+            "fetchedAt": 1789369210044,
+            "phone": "9154001732",
+            "ownerName": "PARISHAD MARKET LAKHIMPUR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154001798",
+        "owner": "TOLA GOLA LAKHIMPUR",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "5 KH0108510SRIKANT AWASTHI THEKEDAR179SHARDA NAGAR LAKHIMPUR 09154001779 KH0108797GOPAL TRADING CO.180KUBHARAN TOLA GOLA LAKHIMPUR. 09154001784 KH0108926ASHISH ENTERPRISES181SHAHPURA KOTHI LAKHIMPUR. 09154001798 KH0109176MEGHA MEDICALS182HOSPITAL ROAD LAKHIMPUR. 09154001807 KH0109310RUPESH KUMAR SIN",
+            "fetchedAt": 1789369210044,
+            "phone": "9154001798",
+            "ownerName": "TOLA GOLA LAKHIMPUR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154001807",
+        "owner": "TOLA GOLA LAKHIMPUR",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "154001779 KH0108797GOPAL TRADING CO.180KUBHARAN TOLA GOLA LAKHIMPUR. 09154001784 KH0108926ASHISH ENTERPRISES181SHAHPURA KOTHI LAKHIMPUR. 09154001798 KH0109176MEGHA MEDICALS182HOSPITAL ROAD LAKHIMPUR. 09154001807 KH0109310RUPESH KUMAR SINGHAL THEKEDAR183PUNJABI COLONY LAKHIMPUR. 09154001812 KH0109573",
+            "fetchedAt": 1789369210044,
+            "phone": "9154001807",
+            "ownerName": "TOLA GOLA LAKHIMPUR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154001812",
+        "owner": "KOTHI LAKHIMPUR",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "4 KH0108926ASHISH ENTERPRISES181SHAHPURA KOTHI LAKHIMPUR. 09154001798 KH0109176MEGHA MEDICALS182HOSPITAL ROAD LAKHIMPUR. 09154001807 KH0109310RUPESH KUMAR SINGHAL THEKEDAR183PUNJABI COLONY LAKHIMPUR. 09154001812 KH0109573SRI GURU TEG BAHADUR GRAMOUDYOG S.S184RAIHRIA,MOHAMMDI,KHIRI. 09154001826 KH010",
+            "fetchedAt": 1789369210044,
+            "phone": "9154001812",
+            "ownerName": "KOTHI LAKHIMPUR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154001864",
+        "owner": "HOSPITAL LAKHIMPUR",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": ". 09154001831 KH0109928SHAGUN TENT HOUSE186CENEMA ROAD GOLA KHIRI. 09154001845 KH0110097JEEVAN AUTOMOBILES187L.P.R.ROAD LAKHIMPUR. 09154001859 KH0110073GATTANI MEDICAL STORE188KHUTAR ROAD GOLA KHIRI. 09154001864 KH0110061PAVAN ELECTRONICS189SHIKANDERABAD GOLA,KHIRI. 09154001878 KH0110416LAXMI MEDICA",
+            "fetchedAt": 1789369210044,
+            "phone": "9154001864",
+            "ownerName": "HOSPITAL LAKHIMPUR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154001878",
+        "owner": "HOSPITAL LAKHIMPUR",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "09154001845 KH0110097JEEVAN AUTOMOBILES187L.P.R.ROAD LAKHIMPUR. 09154001859 KH0110073GATTANI MEDICAL STORE188KHUTAR ROAD GOLA KHIRI. 09154001864 KH0110061PAVAN ELECTRONICS189SHIKANDERABAD GOLA,KHIRI. 09154001878 KH0110416LAXMI MEDICAL STORE190KAMNATH HOSPITAL LAKHIMPUR. 09154001883 KH0110587VIKAS SU",
+            "fetchedAt": 1789369210044,
+            "phone": "9154001878",
+            "ownerName": "HOSPITAL LAKHIMPUR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154001883",
+        "owner": "HOSPITAL LAKHIMPUR",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "1859 KH0110073GATTANI MEDICAL STORE188KHUTAR ROAD GOLA KHIRI. 09154001864 KH0110061PAVAN ELECTRONICS189SHIKANDERABAD GOLA,KHIRI. 09154001878 KH0110416LAXMI MEDICAL STORE190KAMNATH HOSPITAL LAKHIMPUR. 09154001883 KH0110587VIKAS SUVIDHA KENDRA191VILL SARSAVAN KHIRI 09154001897 KH0075925KAMAL WIRE HOUS",
+            "fetchedAt": 1789369210044,
+            "phone": "9154001883",
+            "ownerName": "HOSPITAL LAKHIMPUR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154001897",
+        "owner": "HOSPITAL LAKHIMPUR",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "154001864 KH0110061PAVAN ELECTRONICS189SHIKANDERABAD GOLA,KHIRI. 09154001878 KH0110416LAXMI MEDICAL STORE190KAMNATH HOSPITAL LAKHIMPUR. 09154001883 KH0110587VIKAS SUVIDHA KENDRA191VILL SARSAVAN KHIRI 09154001897 KH0075925KAMAL WIRE HOUSE192KACHEHRI ROAD LAKHIMPUR 09154001906 KH0110719GURUPREET FERNI",
+            "fetchedAt": 1789369210044,
+            "phone": "9154001897",
+            "ownerName": "HOSPITAL LAKHIMPUR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154001906",
+        "owner": "HOSPITAL LAKHIMPUR",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "09154001878 KH0110416LAXMI MEDICAL STORE190KAMNATH HOSPITAL LAKHIMPUR. 09154001883 KH0110587VIKAS SUVIDHA KENDRA191VILL SARSAVAN KHIRI 09154001897 KH0075925KAMAL WIRE HOUSE192KACHEHRI ROAD LAKHIMPUR 09154001906 KH0110719GURUPREET FERNITURES193LAKHIMPUR ROAD GOLA KHIRI. 09154001911 KH0111431SAB KUCHH",
+            "fetchedAt": 1789369210044,
+            "phone": "9154001906",
+            "ownerName": "HOSPITAL LAKHIMPUR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154001963",
+        "owner": "STAND LAKHIMPUR",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "VAT197SUDARSHAN BUILDING COART ROAD LAKHIMPUR. 09154001944 KH0111492CHAUDHERY BOOK SELLERS198BUS STAND LAKHIMPUR. 09154001958 KH0111657DHARMENDRA AUTO AGENCIES199NEAR ALLAHABAD BANK BIJUVA LAKHIMPUR. 09154001963 KH0111669MAA VAISHNO GENERAL STORE200VILL,POST,BAHERVA,KHIRI. 09154001977 KH0112279AMIT ",
+            "fetchedAt": 1789369210044,
+            "phone": "9154001963",
+            "ownerName": "STAND LAKHIMPUR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154001982",
+        "owner": "ALLAHABAD BANK BIJUVA LAKHIMPUR",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "1657DHARMENDRA AUTO AGENCIES199NEAR ALLAHABAD BANK BIJUVA LAKHIMPUR. 09154001963 KH0111669MAA VAISHNO GENERAL STORE200VILL,POST,BAHERVA,KHIRI. 09154001977 KH0112279AMIT MEDICOS201BADKHERWA LAKHIMPUR. 09154001982 KH0112307ASHISH SHOE CO.202SHOP NO-16 BARKHERVA SITAPUR ROAD 09154001996 KH0112408THE BH",
+            "fetchedAt": 1789369210044,
+            "phone": "9154001982",
+            "ownerName": "ALLAHABAD BANK BIJUVA LAKHIMPUR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154002067",
+        "owner": "KHERA LAKHIMPUR",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "KH0112951S.D.FUIEL CENTRE208BAS KHERA LAKHIMPUR. 09154002048 KH0113156ADHISHASHI ABHIYANTA VIDUT VITRAN KHAND-209D C ROAD LAKHIMPUR. 09154002053 KH0113257SMT.RAJESH GARG210BHATNAGAR COLONY LAKHIMPUR. 09154002067 KH0113726MAA VAISHNO ENTERPRISES211MAHARAJ NAGAR LAKHIMPUR. 09154002072 KH0113524SRIJI F",
+            "fetchedAt": 1789369210044,
+            "phone": "9154002067",
+            "ownerName": "KHERA LAKHIMPUR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9154002128",
+        "owner": "GUR MANDI LAKHIMPUR",
+        "attribution": "PROXY_PERSON",
+        "confidence": 35,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/662161426/Lakhimpur-Kheri",
+            "provider": "direct",
+            "snippet": "PRADEEP KUMAR215NAVEEN GUR MANDI LAKHIMPUR. 09154002109 KH0114462MAA BAHGWATI FILLING STATION216ISANAGAR KATAILI ROAD,VILL VIRSINGPUR 09154002114 KH0114146SURESH READYMADE STORE217ALI GANJ ROAD GOLA 09154002128 KH0114627BRIGHT COMUNICATIONS218MAIN ROAD LAKHIMPUR 09154002133 KH0114741RAMPAL SINGH THE",
+            "fetchedAt": 1789369210044,
+            "phone": "9154002128",
+            "ownerName": "GUR MANDI LAKHIMPUR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      }
+    ],
+    "queriesUsed": 10,
+    "queryBudget": 12,
+    "documentsFetched": 32,
+    "totalEvidenceItems": 227,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "quickcompany"
+    ],
+    "durationMs": 336570,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789369355758
+  },
+  "df86ae3d34d51c9a222d8a6c76b5bf13": {
+    "subject": {
+      "name": "AWDHESH KUMAR VERMA",
+      "address": "MOHALLA-MAHARAJ NAGAR TRIMURTI TRADERS KHERI  ROAD NEAR ANUPAM NURSING HOM E INDIA    Uttar Pradesh - 262701"
+    },
+    "parsedAddress": {
+      "raw": "MOHALLA-MAHARAJ NAGAR TRIMURTI TRADERS KHERI  ROAD NEAR ANUPAM NURSING HOM E INDIA    Uttar Pradesh - 262701",
+      "pinCode": "262701",
+      "area": "MOHALLA-MAHARAJ NAGAR TRIMURTI TRADERS KHERI ROAD NEAR ANUPAM NURSING HOM E INDIA UTTAR PRADESH -"
+    },
+    "phones": [],
+    "queriesUsed": 10,
+    "queryBudget": 12,
+    "documentsFetched": 47,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "quickcompany",
+      "tinyfish"
+    ],
+    "durationMs": 193796,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789369576565
+  },
+  "4695b9be9a26db733927a8179faa4438": {
+    "subject": {
+      "name": "ANIL KUMAR YADAV",
+      "address": "WARD NO. 35 OLD CHHAPAKHANA DIST. CHHINDWARA CHHINDWAR A INDIA   Madhya Pradesh - 480001"
+    },
+    "parsedAddress": {
+      "raw": "WARD NO. 35 OLD CHHAPAKHANA DIST. CHHINDWARA CHHINDWAR A INDIA   Madhya Pradesh - 480001",
+      "pinCode": "480001",
+      "houseNumber": "35",
+      "area": "WARD NO. OLD CHHAPAKHANA DIST. CHHINDWARA CHHINDWAR A INDIA MADHYA PRADESH -"
+    },
+    "phones": [
+      {
+        "phone": "8000136861",
+        "owner": "Anil Rathi",
+        "attribution": "PROXY_PERSON",
+        "confidence": 30,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.zaubacorp.com/company-by-address/C-O-MR-ANIL-RATHI-RATHI-COMPLEX-PENASONIC-LALBAG-R-1-26-CHHINDWARA-MADHYA-PRADESH-INDIA-480001",
+            "provider": "direct",
+            "snippet": "Company Director Address Search Companies at address C O MR ANIL RATHI RATHI COMPLEX PENASONIC LALBAG R 1 26 CHHINDWARA MADHYA PRADESH INDIA 480001 3686199 records found. Showing first 500. OSIYA SUGAR MILLS PRIVATE LIMITED U74999MP2018PTC046190 C/O Mr. Anil Rathi, Rathi Complex Penasonic,Lalbag, R-",
+            "fetchedAt": 1789369757597,
+            "phone": "8000136861",
+            "ownerName": "Anil Rathi",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "8000136899",
+        "owner": "Anil Rathi",
+        "attribution": "PROXY_PERSON",
+        "confidence": 30,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.zaubacorp.com/company-by-address/C-O-MR-ANIL-RATHI-RATHI-COMPLEX-PENASONIC-LALBAG-R-1-26-CHHINDWARA-MADHYA-PRADESH-INDIA-480001",
+            "provider": "direct",
+            "snippet": "Company Director Address Search Companies at address C O MR ANIL RATHI RATHI COMPLEX PENASONIC LALBAG R 1 26 CHHINDWARA MADHYA PRADESH INDIA 480001 3686199 records found. Showing first 500. OSIYA SUGAR MILLS PRIVATE LIMITED U74999MP2018PTC046190 C/O Mr. Anil Rathi, Rathi Complex Penasonic,Lalbag, R-",
+            "fetchedAt": 1789369757597,
+            "phone": "8000136899",
+            "ownerName": "Anil Rathi",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      }
+    ],
+    "queriesUsed": 12,
+    "queryBudget": 12,
+    "documentsFetched": 60,
+    "totalEvidenceItems": 8,
+    "providersUsed": [
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "quickcompany",
+      "tinyfish"
+    ],
+    "durationMs": 271331,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789369892674
+  },
+  "0191b205e0683b31d7f3fcca2cc6c655": {
+    "subject": {
+      "name": "HARISHBHAI CHIMANLAL BRAHMBHATT",
+      "address": "26 MANAV MANDIR PLOT VISTAR PA NCHVATI VISTAR TAL - KALOL BORISAN A INDIA Gujarat - 382721"
+    },
+    "parsedAddress": {
+      "raw": "26 MANAV MANDIR PLOT VISTAR PA NCHVATI VISTAR TAL - KALOL BORISAN A INDIA Gujarat - 382721",
+      "pinCode": "382721",
+      "houseNumber": "26",
+      "area": "MANAV MANDIR PLOT VISTAR PA NCHVATI VISTAR TAL - KALOL BORISAN A INDIA GUJARAT -"
+    },
+    "phones": [],
+    "queriesUsed": 12,
+    "queryBudget": 12,
+    "documentsFetched": 41,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "quickcompany",
+      "tinyfish"
+    ],
+    "durationMs": 341142,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789370477365
+  },
+  "97423cbc6e99eb3d31cc4706606ba310": {
+    "subject": {
+      "name": "TEDLA KRISHNA MOHAN",
+      "address": "H.NO:23-26 MAIN BAZAR MIRYALGUDA MIRYALGUD A INDIA   Andhra Pradesh - 508207"
+    },
+    "parsedAddress": {
+      "raw": "H.NO:23-26 MAIN BAZAR MIRYALGUDA MIRYALGUD A INDIA   Andhra Pradesh - 508207",
+      "pinCode": "508207",
+      "houseNumber": "23",
+      "area": "H.NO:-26 MAIN BAZAR MIRYALGUDA MIRYALGUD A INDIA ANDHRA PRADESH -"
+    },
+    "phones": [],
+    "queriesUsed": 12,
+    "queryBudget": 12,
+    "documentsFetched": 39,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "quickcompany"
+    ],
+    "durationMs": 362043,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789371391038
+  },
+  "c7153bd5443a8db8888239d7f72f9b87": {
+    "subject": {
+      "name": "SUVARNA C ALANKARE",
+      "address": "STATION AREA, AT PO.MURTIZAPUR NEAR SAI MANDIR , DIST. AKOLA MURTIZAPU R INDIA    Maharashtra - 444107"
+    },
+    "parsedAddress": {
+      "raw": "STATION AREA, AT PO.MURTIZAPUR NEAR SAI MANDIR , DIST. AKOLA MURTIZAPU R INDIA    Maharashtra - 444107",
+      "pinCode": "444107",
+      "area": "STATION AREA AT PO.MURTIZAPUR NEAR SAI MANDIR DIST. AKOLA MURTIZAPU R INDIA MAHARASHTRA -"
+    },
+    "phones": [],
+    "queriesUsed": 10,
+    "queryBudget": 12,
+    "documentsFetched": 40,
+    "totalEvidenceItems": 1,
+    "providersUsed": [
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "quickcompany",
+      "tinyfish"
+    ],
+    "durationMs": 255077,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789382534482
+  },
+  "8caa5479332559d2e3b9757a4c9c4271": {
+    "subject": {
+      "name": "MANJUSHREE RANDER",
+      "address": "120,MAKRANA TH.MAKRANA DIST. NAGAUR INDIA Ra jasthan - 341505"
+    },
+    "parsedAddress": {
+      "raw": "120,MAKRANA TH.MAKRANA DIST. NAGAUR INDIA Ra jasthan - 341505",
+      "pinCode": "341505",
+      "houseNumber": "120",
+      "area": "MAKRANA TH.MAKRANA DIST. NAGAUR INDIA RA JASTHAN -"
+    },
+    "phones": [
+      {
+        "phone": "9000241082",
+        "attribution": "AMBIGUOUS",
+        "confidence": 55,
+        "matchType": "NONE",
+        "evidence": [
+          {
+            "sourceUrl": "https://tatainvestment.com",
+            "provider": "tinyfish",
+            "snippet": "2016. MANJUSHREE . RANDER . 120 , MAKRANA TH . MAKRANA DIST . NAGAUR . INDIA . Rajasthan . 341505 . IC001201090002410828Amount for unclaimed and unpaid Dividend. 114 頁",
+            "fetchedAt": 1789382589118,
+            "phone": "9000241082",
+            "extractionMethod": "regex"
+          }
+        ]
+      }
+    ],
+    "queriesUsed": 12,
+    "queryBudget": 12,
+    "documentsFetched": 37,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "quickcompany"
+    ],
+    "durationMs": 198992,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789382761169
+  },
+  "7d8b208c4bfd3192643c3edcdfd67a6b": {
+    "subject": {
+      "name": "SEEMA RAZDAN",
+      "address": "H.NO:565, SEC-4 CHANNI HIMMAT JAMMU INDIA  Jammu an - 180015"
+    },
+    "parsedAddress": {
+      "raw": "H.NO:565, SEC-4 CHANNI HIMMAT JAMMU INDIA  Jammu an - 180015",
+      "pinCode": "180015",
+      "city": "JAMMU",
+      "houseNumber": "565",
+      "area": "H.NO: SEC-4 CHANNI HIMMAT JAMMU INDIA AN -"
+    },
+    "phones": [],
+    "queriesUsed": 13,
+    "queryBudget": 12,
+    "documentsFetched": 56,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "quickcompany"
+    ],
+    "durationMs": 285228,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789383074045
+  },
+  "74d524887d395af275ab04fbca773c2c": {
+    "subject": {
+      "name": "MUPPALLA C DHARMADEEP",
+      "address": "A-203 GOPALAN GRANDEUR.NEAR HOODI CIRCLE.BROOKE FIELD RD HOODI VILLAGE K R INDIA Karnataka - 560048"
+    },
+    "parsedAddress": {
+      "raw": "A-203 GOPALAN GRANDEUR.NEAR HOODI CIRCLE.BROOKE FIELD RD HOODI VILLAGE K R INDIA Karnataka - 560048",
+      "pinCode": "560048",
+      "houseNumber": "A-203",
+      "area": "GOPALAN GRANDEUR.NEAR HOODI CIRCLE.BROOKE FIELD RD HOODI VILLAGE K R INDIA KARNATAKA -"
+    },
+    "phones": [],
+    "queriesUsed": 12,
+    "queryBudget": 12,
+    "documentsFetched": 42,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "quickcompany"
+    ],
+    "durationMs": 265088,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789383366172
+  },
+  "67feca74f0384c57b2b1278cc42c302b": {
+    "subject": {
+      "name": "MANISHA N PUROHIT",
+      "address": "70, NR. MOHANLAL DHARAMSHALA PARISAR, STATION ROAD , GONDIA DESHBANDHU WARD , INDIA    Maharashtra - 441601"
+    },
+    "parsedAddress": {
+      "raw": "70, NR. MOHANLAL DHARAMSHALA PARISAR, STATION ROAD , GONDIA DESHBANDHU WARD , INDIA    Maharashtra - 441601",
+      "pinCode": "441601",
+      "houseNumber": "70",
+      "area": "NR. MOHANLAL DHARAMSHALA PARISAR STATION ROAD GONDIA DESHBANDHU WARD INDIA MAHARASHTRA -"
+    },
+    "phones": [],
+    "queriesUsed": 12,
+    "queryBudget": 12,
+    "documentsFetched": 56,
+    "totalEvidenceItems": 17,
+    "providersUsed": [
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "quickcompany",
+      "tinyfish"
+    ],
+    "durationMs": 330193,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789383723954
+  },
+  "f6f5f44e6d66e09fb4a75ce3e1c5c3ec": {
+    "subject": {
+      "name": "RAMANAND BIHANI",
+      "address": "201, SUNDER NAGAR-B BHESTAN SURAT INDIA GUJARAT - 394023"
+    },
+    "parsedAddress": {
+      "raw": "201, SUNDER NAGAR-B BHESTAN SURAT INDIA GUJARAT - 394023",
+      "pinCode": "394023",
+      "city": "SURAT",
+      "houseNumber": "201",
+      "area": "SUNDER NAGAR-B BHESTAN INDIA GUJARAT -"
+    },
+    "phones": [],
+    "queriesUsed": 13,
+    "queryBudget": 12,
+    "documentsFetched": 37,
+    "totalEvidenceItems": 2,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "quickcompany"
+    ],
+    "durationMs": 238112,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789384022523
+  },
+  "6bdc9ac06f03cfe1690524665f634a80": {
+    "subject": {
+      "name": "INDU BALA MATHUR",
+      "address": "128,HOLI KA CHOWK NAYA BAS JODHPUR INDIA Rajast han - 342001"
+    },
+    "parsedAddress": {
+      "raw": "128,HOLI KA CHOWK NAYA BAS JODHPUR INDIA Rajast han - 342001",
+      "pinCode": "342001",
+      "city": "JODHPUR",
+      "houseNumber": "128",
+      "area": "HOLI KA CHOWK NAYA BAS INDIA RAJAST HAN -"
+    },
+    "phones": [],
+    "queriesUsed": 13,
+    "queryBudget": 12,
+    "documentsFetched": 53,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "quickcompany"
+    ],
+    "durationMs": 312884,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789384362407
+  },
+  "97657e367cb2708cdec00fd8e1475d6d": {
+    "subject": {
+      "name": "SARITA TRIPATHI",
+      "address": "C/O. S.C TRIPATHI 49 BRTF , NEAR DTO OFFICE, HANUMANGARHJN. HANUMANGARHJK N INDIA Rajasthan - 335512"
+    },
+    "parsedAddress": {
+      "raw": "C/O. S.C TRIPATHI 49 BRTF , NEAR DTO OFFICE, HANUMANGARHJN. HANUMANGARHJK N INDIA Rajasthan - 335512",
+      "pinCode": "335512",
+      "houseNumber": "49",
+      "area": "C/O. S.C TRIPATHIBRTF NEAR DTO OFFICE HANUMANGARHJN. HANUMANGARHJK N INDIA RAJASTHAN -"
+    },
+    "phones": [],
+    "queriesUsed": 12,
+    "queryBudget": 12,
+    "documentsFetched": 31,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "quickcompany",
+      "tinyfish"
+    ],
+    "durationMs": 296256,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789384685800
+  },
+  "b6db731392bd136cbf0a252dcc9cd533": {
+    "subject": {
+      "name": "CHIRAG KUMAR SHAH",
+      "address": "H. NO. 5-6-98/14A VIVEK NAGAR NIRMAL NIRMAL I NDIA   Andhra Pradesh - 504106"
+    },
+    "parsedAddress": {
+      "raw": "H. NO. 5-6-98/14A VIVEK NAGAR NIRMAL NIRMAL I NDIA   Andhra Pradesh - 504106",
+      "pinCode": "504106",
+      "houseNumber": "5",
+      "area": "H. NO. -6-98/14A VIVEK NAGAR NIRMAL NIRMAL I NDIA ANDHRA PRADESH -"
+    },
+    "phones": [
+      {
+        "phone": "9911045000",
+        "owner": "Pradeep Kumar Rai",
+        "attribution": "PROXY_PERSON",
+        "confidence": 30,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://scbaindia.org",
+            "provider": "direct",
+            "snippet": "ick to view more Videos) 📸 SCBA Event Photo Gallery 🔒 Online Services Portal SCBA EXECUTIVE COMMITTEE - 2026-27 Mr. Pradeep Kumar Rai (Sr.) President www.pradeeprai.com pradeep@pradeerai.com Mobile:9911045000 Mr. Rahul Kaushik (Sr.) Vice-President rahul2681@gmail.com Mobile: 9818791820 Ms. Pragya ",
+            "fetchedAt": 1789385496441,
+            "phone": "9911045000",
+            "ownerName": "Pradeep Kumar Rai",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9818791820",
+        "owner": "Pradeep Kumar Rai",
+        "attribution": "PROXY_PERSON",
+        "confidence": 30,
+        "matchType": "VARIANT",
+        "evidence": [
+          {
+            "sourceUrl": "https://scbaindia.org",
+            "provider": "direct",
+            "snippet": "SCBA EXECUTIVE COMMITTEE - 2026-27 Mr. Pradeep Kumar Rai (Sr.) President www.pradeeprai.com pradeep@pradeerai.com Mobile:9911045000 Mr. Rahul Kaushik (Sr.) Vice-President rahul2681@gmail.com Mobile: 9818791820 Ms. Pragya Baghel Hony.  Secretary aorpragya@gmail.com Mobile: 09810396999 Mr. Meenesh Dub",
+            "fetchedAt": 1789385496441,
+            "phone": "9818791820",
+            "ownerName": "Pradeep Kumar Rai",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      },
+      {
+        "phone": "9014173716",
+        "owner": "Andhra Pradesh",
+        "attribution": "PROXY_PERSON",
+        "confidence": 25,
+        "matchType": "NONE",
+        "evidence": [
+          {
+            "sourceUrl": "https://pmfme.mofpi.gov.in",
+            "provider": "tinyfish",
+            "snippet": "... Andhra Pradesh . Alluri Sitharama. Raju. Bakuru Ratna Kumari drp745-21 9014173716 rithvikdhanya@gmail.com. 5. Andhra Pradesh . Alluri Sitharama. Raju. Borra ... Read more 235 pages",
+            "fetchedAt": 1789385535578,
+            "phone": "9014173716",
+            "ownerName": "Andhra Pradesh",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unknown_person"
+      }
+    ],
+    "queriesUsed": 12,
+    "queryBudget": 12,
+    "documentsFetched": 27,
+    "totalEvidenceItems": 24,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "quickcompany"
+    ],
+    "durationMs": 270732,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789385545972
   }
 }
