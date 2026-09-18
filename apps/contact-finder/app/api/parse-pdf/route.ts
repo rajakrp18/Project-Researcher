@@ -54,14 +54,36 @@ export async function POST(req: Request) {
       parsedRows = await tryParseWithGemini(buffer);
     }
 
-    // Map output to BatchRow format expected by /bulk
-    const batchRows = parsedRows.map((r, idx) => ({
-      folio: r.folio || `FOLIO-${idx + 1}`,
-      name: r.name || 'Unknown Name',
-      address: r.address || '',
-      city: r.city || r.state || '',
-      status: "pending"
-    }));
+    // Map output to BatchRow format expected by /bulk with C/O separation and foreign address flagging
+    const batchRows = parsedRows.map((r, idx) => {
+      let rawName = r.name || 'Unknown Name';
+      let rawAddress = r.address || '';
+      
+      // Separate C/O out of name if glued
+      const coMatch = rawName.match(/\s*(C\s*\/\s*O|CARE OF|S\s*\/\s*O|D\s*\/\s*O|W\s*\/\s*O)\s*(.*)/i);
+      let careOf = '';
+      if (coMatch) {
+        rawName = rawName.substring(0, coMatch.index).trim();
+        careOf = coMatch[0].trim();
+        if (!rawAddress.toLowerCase().includes('c/o')) {
+          rawAddress = careOf + (rawAddress ? ', ' + rawAddress : '');
+        }
+      }
+
+      // Foreign address detection
+      const foreignMarkers = ['UNITED ARAB', 'DUBAI', 'U.A.E', 'UAE', 'P O BOX', 'PO BOX', 'SAUDI', 'QATAR', 'OMAN', 'KUWAIT', 'SINGAPORE', 'U.S.A', 'USA', 'UNITED KINGDOM', 'LONDON', 'CANADA', 'AUSTRALIA'];
+      const addressUpper = (rawAddress + ' ' + (r.country || '')).toUpperCase();
+      const isForeign = foreignMarkers.some(m => addressUpper.includes(m));
+
+      return {
+        folio: r.folio || `FOLIO-${idx + 1}`,
+        name: rawName || 'Unknown Name',
+        address: rawAddress,
+        city: isForeign ? 'FOREIGN_OUT_OF_SCOPE' : (r.city || r.state || ''),
+        status: isForeign ? "out_of_scope" : "pending",
+        notes: isForeign ? "OUT_OF_SCOPE_FOREIGN_ADDRESS" : undefined
+      };
+    });
 
     return NextResponse.json({ rows: batchRows });
 

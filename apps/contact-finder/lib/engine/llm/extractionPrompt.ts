@@ -8,26 +8,30 @@ export function buildExtractionPrompt(pageText: string, subject: Subject): strin
     subject.company ? `Company: ${subject.company}` : '',
   ].filter(Boolean).join('\n');
 
-  return `You are an expert at extracting contact information from Indian web pages.
+  return `You are an OSINT intelligence analyst extracting contact details for an investigation.
 
-SUBJECT (the person we are investigating):
+SUBJECT (the target entity):
 ${subjectInfo}
 
-TASK: From the text below, extract ALL Indian mobile phone numbers (10-digit numbers starting with 6, 7, 8, or 9). For each phone number found, identify:
-1. The exact phone number (digits only, 10 digits)
-2. The name of the person this phone belongs to (if mentioned near the phone)
-3. The relationship to the subject: "self", "father", "mother", "spouse", "child", "sibling", "relative", "business_partner", "neighbor", "colleague", "unknown"
-4. Any business or organization name associated with this phone
-5. The address associated with this phone (if mentioned)
+TASK: Carefully analyze the provided text snippet. Return a phone number ONLY when there is explicit evidence in the text connecting the phone to:
+1. The subject directly
+2. A named person connected to the subject (e.g. father, mother, spouse, relative, business associate, colleague)
+3. A business, office, or shop located at the subject's address
+4. An association or organization related to the subject
 
-Rules:
-- Only extract valid Indian mobile numbers (10 digits, starting with 6-9)
-- If a phone appears near the subject's name, relationship is "self"
-- If a phone appears near the subject's father's name, relationship is "father"
-- Look for patterns like "Mr X", "Mrs Y", "Contact: ", "Phone: ", "Mobile: "
-- Include ALL phones found, even if uncertain about the owner
-- Ensure you adhere to the requested schema.
+CRITICAL RULES:
+- Only return a phone number if the surrounding text explicitly names the subject, a stated family member/guardian, or the exact building premises.
+- DO NOT use any outside knowledge or guess 'self' merely from proximity.
+- If a number belongs to an unrelated third party, directory header, or unrelated business, IGNORE IT.
+- Cap extracted results to a maximum of 10 relevant candidates per text snippet.
+- If no connected phone numbers exist, return {"phones": []}.
+- For each valid phone number, extract:
+  - "number": 10-digit Indian mobile number (digits only, starting with 6-9)
+  - "owner": Full name of the phone owner (if explicitly mentioned in immediate text)
+  - "relationship": "self", "father", "mother", "spouse", "child", "colleague", "rwa_official", "broker", "business_partner", or "unknown"
+  - "business": Name of the company/shop (if mentioned)
+  - "address": Address associated with the phone (if mentioned)
 
-TEXT TO ANALYZE:
-${pageText.slice(0, 15000)}`;
+TEXT SNIPPET TO ANALYZE:
+${pageText.slice(0, 4000)}`;
 }

@@ -7,6 +7,8 @@ export interface BatchRowCandidate {
   confidence: number;
   sourceUrl?: string;
   relationship?: string;
+  category?: 'A' | 'B' | 'C' | 'D' | 'Rejected';
+  reason?: string;
 }
 
 export interface BatchRowData {
@@ -14,10 +16,11 @@ export interface BatchRowData {
   name: string;
   address: string;
   city: string;
-  status: "pending" | "processing" | "success" | "error";
+  status: "pending" | "processing" | "success" | "error" | "out_of_scope";
   candidates?: BatchRowCandidate[];
   company?: string;
   error?: string;
+  notes?: string;
 }
 
 export function getCleanSourceLabel(urlStr?: string): string {
@@ -37,7 +40,6 @@ export function getCleanSourceLabel(urlStr?: string): string {
     if (host.includes('pdfcoffee.com')) return 'PDF Document Archive';
     if (host.includes('locatefamily.com')) return 'LocateFamily Directory';
 
-    // Default clean hostname
     const cleanHost = host.replace(/^www\./, '');
     return cleanHost.charAt(0).toUpperCase() + cleanHost.slice(1);
   } catch {
@@ -51,7 +53,6 @@ export function getOwnerTag(candidate: BatchRowCandidate, subjectName: string): 
   const ownerUpper = candidate.owner.toUpperCase().trim();
   const subjectUpper = subjectName.toUpperCase().trim();
 
-  // Check relationship tag
   let relTag = candidate.relationship || '';
   if (relTag === 'self' || ownerUpper === subjectUpper || subjectUpper.includes(ownerUpper)) {
     relTag = 'Self';
@@ -79,149 +80,125 @@ export async function exportToExcel(
   const { filename = 'investigation_results.xlsx', minConfidence = 25 } = options;
 
   const workbook = new ExcelJS.Workbook();
-  workbook.creator = 'Contact Finder Batch Engine';
+  workbook.creator = 'Contact Finder Batch Engine v2.0';
   workbook.created = new Date();
 
-  const worksheet = workbook.addWorksheet('Refined Investigation Results', {
-    views: [{ showGridLines: true }]
-  });
+  // Create 4 sheets
+  const callSheet = workbook.addWorksheet('Daily Call Sheet (A-C)', { views: [{ showGridLines: true }] });
+  const reviewSheet = workbook.addWorksheet('Manual Review (Cat D)', { views: [{ showGridLines: true }] });
+  const unresolvedSheet = workbook.addWorksheet('Unresolved Cases', { views: [{ showGridLines: true }] });
+  const rejectedSheet = workbook.addWorksheet('Rejected Candidates', { views: [{ showGridLines: true }] });
 
-  // Define columns
-  worksheet.columns = [
-    { header: 'Status', key: 'status', width: 14 },
+  const columns = [
+    { header: 'Status / Category', key: 'status', width: 18 },
     { header: 'Folio', key: 'folio', width: 16 },
-    { header: 'Name', key: 'name', width: 32 },
-    { header: 'Address', key: 'address', width: 50 },
-    { header: 'Phone Found (Refined)', key: 'phone', width: 42 },
-    { header: 'Confidence', key: 'confidence', width: 15 },
-    { header: 'Source Domain', key: 'source', width: 38 },
+    { header: 'Shareholder Name', key: 'name', width: 32 },
+    { header: 'Registered Address', key: 'address', width: 50 },
+    { header: 'Verified Phone Leads', key: 'phone', width: 42 },
+    { header: 'Confidence / Score', key: 'confidence', width: 18 },
+    { header: 'Evidence Source', key: 'source', width: 38 },
   ];
 
-  // Format Header Row
-  const headerRow = worksheet.getRow(1);
-  headerRow.height = 32;
-  headerRow.eachCell((cell) => {
-    cell.font = { name: 'Segoe UI', size: 11, bold: true, color: { argb: 'FFFFFFFF' } };
-    cell.fill = {
-      type: 'pattern',
-      pattern: 'solid',
-      fgColor: { argb: 'FF0F172A' } // Deep slate navy
-    };
-    cell.alignment = { vertical: 'middle', horizontal: 'center', wrapText: true };
-    cell.border = {
-      top: { style: 'thin', color: { argb: 'FF020617' } },
-      left: { style: 'thin', color: { argb: 'FF020617' } },
-      bottom: { style: 'medium', color: { argb: 'FF020617' } },
-      right: { style: 'thin', color: { argb: 'FF020617' } }
-    };
-  });
-
-  // Populate Rows
-  rows.forEach((r, idx) => {
-    // Filter candidates: Eliminate dummy/spam phones & candidates under minConfidence
-    let rawCandidates = r.candidates || [];
-    let candidates = rawCandidates.filter(c => {
-      if (!c.phone || c.phone === 'Not Found') return false;
-      if (isDummyOrSpamPhone(c.phone, c.sourceUrl)) return false;
-      if (c.confidence < minConfidence) return false;
-      return true;
-    });
-
-    // If filtering eliminated all numbers, but raw candidates had high confidence numbers, fall back to non-dummy ones
-    if (candidates.length === 0 && rawCandidates.length > 0) {
-      candidates = rawCandidates.filter(c => c.phone && c.phone !== 'Not Found' && !isDummyOrSpamPhone(c.phone, c.sourceUrl));
-    }
-
-    const hasMatches = candidates.length > 0;
-
-    let statusText = 'Pending';
-    if (r.status === 'success') {
-      statusText = hasMatches ? 'Matched' : 'No Match';
-    } else if (r.status === 'error') {
-      statusText = 'Error';
-    }
-
-    const phoneTexts: string[] = [];
-    const confidenceTexts: string[] = [];
-    const sourceTexts: string[] = [];
-
-    if (hasMatches) {
-      candidates.forEach(c => {
-        const ownerTag = getOwnerTag(c, r.name);
-        const hasOwner = Boolean(ownerTag);
-        
-        const phoneVal = hasOwner ? `${c.phone}\n(${ownerTag})` : c.phone;
-        const confVal = hasOwner ? `${c.confidence}%\n ` : `${c.confidence}%`;
-        
-        const cleanLabel = getCleanSourceLabel(c.sourceUrl);
-        const sourceVal = hasOwner ? `${cleanLabel}\n ` : cleanLabel;
-
-        phoneTexts.push(phoneVal);
-        confidenceTexts.push(confVal);
-        sourceTexts.push(sourceVal);
-      });
-    } else {
-      phoneTexts.push('Not Found');
-      confidenceTexts.push('-');
-      sourceTexts.push('-');
-    }
-
-    const row = worksheet.addRow({
-      status: statusText,
-      folio: r.folio || '',
-      name: r.name || '',
-      address: r.address || '',
-      phone: phoneTexts.join('\n\n'),
-      confidence: confidenceTexts.join('\n\n'),
-      source: sourceTexts.join('\n\n')
-    });
-
-    // Row styling
-    row.alignment = { vertical: 'top', wrapText: true };
-    row.font = { name: 'Segoe UI', size: 10, color: { argb: 'FF1E293B' } };
-
-    // Status badge styling
-    const statusCell = row.getCell('status');
-    statusCell.alignment = { vertical: 'top', horizontal: 'center', wrapText: true };
-    if (statusText === 'Matched') {
-      statusCell.font = { name: 'Segoe UI', size: 10, bold: true, color: { argb: 'FF166534' } };
-      statusCell.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FFDCFCE7' } };
-    } else if (statusText === 'No Match') {
-      statusCell.font = { name: 'Segoe UI', size: 10, color: { argb: 'FF991B1B' } };
-      statusCell.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FFFEE2E2' } };
-    }
-
-    const folioCell = row.getCell('folio');
-    folioCell.font = { name: 'Consolas', size: 10, color: { argb: 'FF2563EB' } };
-
-    const confCell = row.getCell('confidence');
-    confCell.alignment = { vertical: 'top', horizontal: 'center', wrapText: true };
-
-    // Hyperlink Source Cell
-    const sourceCell = row.getCell('source');
-    if (hasMatches && candidates[0]?.sourceUrl) {
-      // Add hyperlink to first candidate source if available
-      sourceCell.font = { name: 'Segoe UI', size: 10, color: { argb: 'FF2563EB' }, underline: true };
-    }
-
-    // Zebra striping
-    const isEven = idx % 2 === 0;
-    const bgRowColor = isEven ? 'FFFFFFFF' : 'FFF8FAFC';
-
-    row.eachCell((cell, colNumber) => {
-      if (colNumber !== 1) {
-        cell.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: bgRowColor } };
-      }
+  [callSheet, reviewSheet, unresolvedSheet, rejectedSheet].forEach(sheet => {
+    sheet.columns = columns;
+    const headerRow = sheet.getRow(1);
+    headerRow.height = 32;
+    headerRow.eachCell((cell) => {
+      cell.font = { name: 'Segoe UI', size: 11, bold: true, color: { argb: 'FFFFFFFF' } };
+      cell.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FF0F172A' } };
+      cell.alignment = { vertical: 'middle', horizontal: 'center', wrapText: true };
       cell.border = {
-        top: { style: 'thin', color: { argb: 'FFE2E8F0' } },
-        bottom: { style: 'thin', color: { argb: 'FFE2E8F0' } },
-        left: { style: 'thin', color: { argb: 'FFE2E8F0' } },
-        right: { style: 'thin', color: { argb: 'FFE2E8F0' } }
+        top: { style: 'thin', color: { argb: 'FF020617' } },
+        left: { style: 'thin', color: { argb: 'FF020617' } },
+        bottom: { style: 'medium', color: { argb: 'FF020617' } },
+        right: { style: 'thin', color: { argb: 'FF020617' } }
       };
     });
   });
 
-  // Write & Download
+  rows.forEach((r, idx) => {
+    const rawCandidates = r.candidates || [];
+    
+    // Strict Gated Filtering - NO LOW CONFIDENCE FALLBACK (Patch 4.a)
+    const validCandidates = rawCandidates.filter(c => {
+      if (!c.phone || c.phone === 'Not Found') return false;
+      if (isDummyOrSpamPhone(c.phone, c.sourceUrl)) return false;
+      if (c.confidence < minConfidence && c.category === 'Rejected') return false;
+      return true;
+    });
+
+    const callLeads = validCandidates.filter(c => c.category === 'A' || c.category === 'B' || c.category === 'C').slice(0, 3);
+    const reviewLeads = validCandidates.filter(c => c.category === 'D');
+    const rejectedLeads = validCandidates.filter(c => c.category === 'Rejected');
+
+    // Populate Sheet 1: Daily Call Sheet (A-C)
+    if (callLeads.length > 0) {
+      const phoneTexts = callLeads.map(c => getOwnerTag(c, r.name) ? `${c.phone}\n(${getOwnerTag(c, r.name)})` : c.phone);
+      const confTexts = callLeads.map(c => `[Cat ${c.category || 'A'}] ${c.confidence}%`);
+      const srcTexts = callLeads.map(c => getCleanSourceLabel(c.sourceUrl));
+
+      const row = callSheet.addRow({
+        status: `Matched [${callLeads[0].category}]`,
+        folio: r.folio || '',
+        name: r.name || '',
+        address: r.address || '',
+        phone: phoneTexts.join('\n\n'),
+        confidence: confTexts.join('\n\n'),
+        source: srcTexts.join('\n\n')
+      });
+      styleRow(row, idx, 'MATCHED');
+    }
+
+    // Populate Sheet 2: Manual Review (Cat D)
+    if (reviewLeads.length > 0) {
+      const phoneTexts = reviewLeads.map(c => c.phone);
+      const confTexts = reviewLeads.map(c => `[Cat D] ${c.confidence}%`);
+      const srcTexts = reviewLeads.map(c => `${getCleanSourceLabel(c.sourceUrl)} (${c.reason || 'Needs Manual Review'})`);
+
+      const row = reviewSheet.addRow({
+        status: 'Needs Review',
+        folio: r.folio || '',
+        name: r.name || '',
+        address: r.address || '',
+        phone: phoneTexts.join('\n\n'),
+        confidence: confTexts.join('\n\n'),
+        source: srcTexts.join('\n\n')
+      });
+      styleRow(row, idx, 'REVIEW');
+    }
+
+    // Populate Sheet 3: Unresolved Cases (Foreign or No Candidate)
+    if (callLeads.length === 0 && reviewLeads.length === 0) {
+      const isOut = r.status === 'out_of_scope' || r.notes === 'OUT_OF_SCOPE_FOREIGN_ADDRESS';
+      const row = unresolvedSheet.addRow({
+        status: isOut ? 'Out of Scope (Foreign)' : 'Unresolved',
+        folio: r.folio || '',
+        name: r.name || '',
+        address: r.address || '',
+        phone: 'No Qualified Lead',
+        confidence: '-',
+        source: '-'
+      });
+      styleRow(row, idx, 'UNRESOLVED');
+    }
+
+    // Populate Sheet 4: Rejected Candidates
+    if (rejectedLeads.length > 0) {
+      rejectedLeads.forEach(c => {
+        const row = rejectedSheet.addRow({
+          status: 'Rejected',
+          folio: r.folio || '',
+          name: r.name || '',
+          address: r.address || '',
+          phone: c.phone,
+          confidence: `${c.confidence}%`,
+          source: `${getCleanSourceLabel(c.sourceUrl)} — Reason: ${c.reason || 'No Anchor'}`
+        });
+        styleRow(row, idx, 'REJECTED');
+      });
+    }
+  });
+
   const buffer = await workbook.xlsx.writeBuffer();
   const blob = new Blob([buffer], {
     type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
@@ -232,4 +209,41 @@ export async function exportToExcel(
   anchor.download = filename;
   anchor.click();
   window.URL.revokeObjectURL(url);
+}
+
+function styleRow(row: ExcelJS.Row, idx: number, type: 'MATCHED' | 'REVIEW' | 'UNRESOLVED' | 'REJECTED') {
+  row.alignment = { vertical: 'top', wrapText: true };
+  row.font = { name: 'Segoe UI', size: 10, color: { argb: 'FF1E293B' } };
+
+  const statusCell = row.getCell('status');
+  statusCell.alignment = { vertical: 'top', horizontal: 'center', wrapText: true };
+
+  if (type === 'MATCHED') {
+    statusCell.font = { name: 'Segoe UI', size: 10, bold: true, color: { argb: 'FF166534' } };
+    statusCell.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FFDCFCE7' } };
+  } else if (type === 'REVIEW') {
+    statusCell.font = { name: 'Segoe UI', size: 10, bold: true, color: { argb: 'FF92400E' } };
+    statusCell.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FFFEEBC8' } };
+  } else {
+    statusCell.font = { name: 'Segoe UI', size: 10, color: { argb: 'FF991B1B' } };
+    statusCell.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FFFEE2E2' } };
+  }
+
+  const folioCell = row.getCell('folio');
+  folioCell.font = { name: 'Consolas', size: 10, color: { argb: 'FF2563EB' } };
+
+  const isEven = idx % 2 === 0;
+  const bgRowColor = isEven ? 'FFFFFFFF' : 'FFF8FAFC';
+
+  row.eachCell((cell, colNumber) => {
+    if (colNumber !== 1) {
+      cell.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: bgRowColor } };
+    }
+    cell.border = {
+      top: { style: 'thin', color: { argb: 'FFE2E8F0' } },
+      bottom: { style: 'thin', color: { argb: 'FFE2E8F0' } },
+      left: { style: 'thin', color: { argb: 'FFE2E8F0' } },
+      right: { style: 'thin', color: { argb: 'FFE2E8F0' } }
+    };
+  });
 }

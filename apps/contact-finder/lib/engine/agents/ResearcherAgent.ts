@@ -22,11 +22,14 @@ export class ResearcherAgent {
     const parsed = parseAddress(subject.address);
     if (subject.city && !parsed.city) parsed.city = subject.city.toUpperCase();
 
-    // SERP Pre-filtering to discard noise/waste data before fetching web pages
-    const filteredResults = searchResults.filter(sr => this.isRelevantSERPResult(sr, subject, parsed));
+    // SERP Pre-filtering and relevance ranking to fetch only top-scored documents
+    const scoredResults = searchResults
+      .map(sr => ({ sr, score: this.scoreSERPResult(sr, subject, parsed) }))
+      .filter(item => item.score > 0);
 
-    // If pre-filtering left results, use filtered; fallback to original if filtered is empty but query was very targeted
-    const finalResults = filteredResults.length > 0 ? filteredResults : searchResults;
+    scoredResults.sort((a, b) => b.score - a.score);
+
+    const finalResults = scoredResults.length > 0 ? scoredResults.map(i => i.sr).slice(0, 4) : searchResults.slice(0, 3);
     
     const providers = finalResults.map(r => r.provider);
     const urls = finalResults.map(r => r.url).filter(Boolean) as string[];
@@ -39,28 +42,28 @@ export class ResearcherAgent {
     return { docs, providers, serps: finalResults };
   }
 
-  private isRelevantSERPResult(result: SearchResult, subject: Subject, parsed: ParsedAddress): boolean {
+  private scoreSERPResult(result: SearchResult, subject: Subject, parsed: ParsedAddress): number {
+    let score = 0;
     const text = `${result.title || ''} ${result.snippet || ''} ${result.url || ''}`.toLowerCase();
     
-    // Name tokens check
-    const nameTokens = (subject.name || '').toLowerCase().split(/\s+/).filter(t => t.length > 2);
-    const surname = nameTokens[nameTokens.length - 1];
-    const hasNameMatch = surname ? text.includes(surname) : nameTokens.some(t => text.includes(t));
-    
-    // Company match check
-    const hasCompanyMatch = subject.company ? text.includes(subject.company.toLowerCase()) : false;
-    
-    // Locality / City match check
+    const subjectNameLower = (subject.name || '').toLowerCase();
+    if (text.includes(subjectNameLower)) score += 40;
+
+    if (parsed.houseNumber && text.includes(parsed.houseNumber.toLowerCase())) score += 35;
+
     const city = (parsed.city || subject.city || '').toLowerCase();
     const area = (parsed.area || '').toLowerCase();
-    const hasLocalityMatch = (city && text.includes(city)) || (area && text.includes(area));
+    if (area && text.includes(area)) score += 20;
+    if (city && text.includes(city)) score += 10;
 
-    if (hasCompanyMatch) return true;
-    if (hasNameMatch && (hasLocalityMatch || !city)) return true;
+    if (subject.company && text.includes(subject.company.toLowerCase())) score += 30;
 
-    // Special providers always kept
-    if (result.provider === 'explorium' || result.provider === 'apify-zauba') return true;
+    // Special authoritative B2B providers
+    if (['explorium', 'apify-zauba', 'zaubacorp'].includes(result.provider)) score += 25;
 
-    return false;
+    // Penalties for noisy directory indexes
+    if (text.includes('cause list') || text.includes('voter list')) score -= 30;
+
+    return score;
   }
 }

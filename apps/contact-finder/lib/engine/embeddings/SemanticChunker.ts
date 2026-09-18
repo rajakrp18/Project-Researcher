@@ -45,13 +45,21 @@ export class SemanticChunker {
     }
 
     try {
+      // Fast Lexical Pre-Filter: keep only chunks containing at least 1 keyword
+      const candidateChunks = chunks.filter(c => {
+        const lower = c.toLowerCase();
+        return queryKeywords.some(kw => lower.includes(kw.toLowerCase()));
+      });
+
+      const chunksToEmbed = candidateChunks.length > 0 ? candidateChunks.slice(0, 5) : chunks.slice(0, maxChunks);
+
       const query = queryKeywords.join(' ');
       const queryOutput = await this.extractor(query, { pooling: 'mean', normalize: true });
       const queryVec = Array.from(queryOutput.data) as number[];
 
       const scoredChunks = [];
-      for (const chunk of chunks) {
-        // Embed each chunk
+      for (const chunk of chunksToEmbed) {
+        // Embed candidate chunks
         const chunkOutput = await this.extractor(chunk, { pooling: 'mean', normalize: true });
         const chunkVec = Array.from(chunkOutput.data) as number[];
         

@@ -4,7 +4,7 @@ export const EngineConfig = {
   fetchTimeoutMs: 8000, // 8s timeout for rapid page scraping
   fetchBatchSize: 5,
   maxDocumentLength: 30000,
-  contextWindowChars: 200,
+  contextWindowChars: 500,
 
   confidence: {
     highThreshold: 75,

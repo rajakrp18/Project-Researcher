@@ -20,7 +20,6 @@ export class GeminiService implements LLMExtractor {
           contents: prompt,
           config: {
             temperature: 0.1,
-            tools: [{ googleSearch: {} }],
             responseMimeType: 'application/json',
             responseSchema: {
               type: Type.OBJECT,

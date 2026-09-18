@@ -54,6 +54,15 @@ export function classifyAttribution(
 ): { attribution: AttributionType; owner?: string; relationship?: string } {
   const context = phone.context;
 
+  // 0. Pre-flight check: If context is a document table line containing Folio / Account / DP ID headers
+  const lowerCtx = context.toLowerCase();
+  const folioTableKeywords = ['folio', 'dp id', 'dpid', 'client id', 'clientid', 'account no', 'cert no', 's.no', 'sl.no', 'serial no'];
+  const hasFolioKeyword = folioTableKeywords.some(kw => lowerCtx.includes(kw));
+
+  if (hasFolioKeyword && (/00|000|\d{10}00/.test(phone.phone) || phone.phone.endsWith('0000'))) {
+    return { attribution: 'UNKNOWN', relationship: 'folio_document_artifact' };
+  }
+
   for (const pattern of RWA_PATTERNS) {
     if (pattern.test(context)) {
       return { attribution: 'RWA', relationship: 'rwa_official' };
@@ -111,19 +120,16 @@ export function classifyAttribution(
     }
   }
 
-  const surnameWords = subjectName.toUpperCase().split(/\s+/);
+  const surnameWords = subjectName.toUpperCase().trim().split(/\s+/);
   const surname = surnameWords[surnameWords.length - 1];
-  const surnameInContext = context.toUpperCase().includes(surname);
+  const surnameInContext = surname && surname.length >= 3 ? context.toUpperCase().includes(surname) : false;
 
-  if (surnameInContext && surname.length >= 3) {
-    if (otherNames.length === 0) {
-      return { attribution: 'PROXY_PERSON', relationship: 'surname_match' };
-    }
-    return { attribution: 'AMBIGUOUS' };
+  if (surnameInContext) {
+    return { attribution: 'AMBIGUOUS', relationship: 'surname_match' };
   }
 
   if (names.length > 0) {
-    return { attribution: 'PROXY_PERSON', owner: names[0]?.name, relationship: 'unknown_person' };
+    return { attribution: 'AMBIGUOUS', owner: names[0]?.name, relationship: 'unverified_name_nearby' };
   }
 
   return { attribution: 'UNKNOWN' };

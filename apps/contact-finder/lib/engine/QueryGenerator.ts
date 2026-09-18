@@ -1,71 +1,66 @@
 import { Subject, ParsedAddress } from './types';
-import { extractSurname, buildManualSearchQuery } from './address/AddressParser';
 
 export function generateQueries(subject: Subject, parsed: ParsedAddress): string[] {
   const queries: string[] = [];
-  const name = subject.name;
-  const surname = extractSurname(name);
-  const fullAddress = subject.address ? subject.address.trim().replace(/"/g, '') : '';
-  const city = parsed.city || subject.city || '';
-  const area = parsed.area || '';
-  const house = parsed.houseNumber || '';
-  const father = subject.fatherName || '';
-  const company = subject.company || '';
-
+  const name = subject.name.replace(/["']/g, '').trim();
+  const city = (parsed.city || subject.city || '').replace(/["']/g, '').trim();
+  const area = (parsed.area || '').replace(/["']/g, '').trim();
+  const house = (parsed.houseNumber || '').replace(/["']/g, '').trim();
+  const father = (subject.fatherName || '').replace(/["']/g, '').trim();
+  const company = (subject.company || '').replace(/["']/g, '').trim();
   const locality = area || city;
 
-  // Strategy 1: Full Address FIRST, then Name SECOND with AND operator in double quotes
-  if (fullAddress) {
-    queries.push(`"${fullAddress}" AND "${name}"`);
-    queries.push(`"${fullAddress}" AND "${name}" (phone OR mobile OR contact OR office)`);
+  // 1. High-Yield Name + City/Locality Dorks
+  if (name && city) {
+    queries.push(`"${name}" "${city}"`);
+  }
+  if (name && area && area.toLowerCase() !== city.toLowerCase()) {
+    queries.push(`"${name}" "${area}"`);
   }
 
-  if (house && locality) {
-    queries.push(`"${house} ${locality}" AND "${name}"`);
-    if (surname) {
-      queries.push(`"${house} ${locality}" AND "${surname}"`);
+  // 2. High-Yield Corporate / Director / MCA Registry Dorks
+  if (name) {
+    queries.push(`"${name}" (director OR partner OR proprietor OR signatory)`);
+    if (city) {
+      queries.push(`"${name}" "${city}" (site:zaubacorp.com OR site:thecompanycheck.com OR site:quickcompany.in)`);
+    } else {
+      queries.push(`"${name}" (site:zaubacorp.com OR site:thecompanycheck.com OR site:quickcompany.in)`);
     }
   }
 
-  if (locality) {
-    // Primary Locality FIRST -> Full Name SECOND with AND
-    queries.push(`"${locality}" AND "${name}"`);
-    queries.push(`"${locality}" AND "${name}" (phone OR mobile OR contact OR office OR address)`);
-    if (area && city && area.toLowerCase() !== city.toLowerCase()) {
-      queries.push(`"${area} ${city}" AND "${name}"`);
-    }
+  // 3. High-Yield B2B & Local Directory Dorks
+  if (name && city) {
+    queries.push(`"${name}" "${city}" (site:indiamart.com OR site:tradeindia.com OR site:justdial.com)`);
   }
 
-  // Strategy 2: Exact Company & Father Context (Address First)
+  // 4. Exact House / Premises Dorks
+  if (name && house && locality) {
+    queries.push(`"${house}" "${locality}" "${name}"`);
+  }
+
+  // 5. Company / Firm Specific Dorks
   if (company) {
-    if (locality) {
-      queries.push(`"${locality}" AND "${name}" "${company}"`);
+    queries.push(`"${name}" "${company}"`);
+    if (city) queries.push(`"${company}" "${city}" (contact OR phone OR mobile)`);
+  }
+
+  // 6. Relationship / Father Name Dork
+  if (name && father) {
+    queries.push(`"${name}" "${father}"`);
+    if (locality) queries.push(`"${name}" "${father}" "${locality}"`);
+  }
+
+  // 7. Clean Address Token Dork (Extracts building/society names without exact quote locks)
+  if (subject.address) {
+    const addressClean = subject.address.replace(/[^a-zA-Z0-9\s]/g, ' ');
+    const tokens = addressClean.split(/\s+/).filter(w => w.length >= 4 && !/^(INDIA|MAHARASHTRA|GUJARAT|DELHI|ROAD|STREET|NEAR|OPP|DIST|POST)$/i.test(w));
+    if (tokens.length >= 2) {
+      const addressSnippet = tokens.slice(0, 3).join(' ');
+      queries.push(`"${name}" "${addressSnippet}"`);
     }
-    queries.push(`"${company}" AND "${name}" contact`);
   }
 
-  if (father && locality) {
-    queries.push(`"${locality}" AND "${name}" "${father}"`);
-  }
-
-  // Strategy 3: Domain-Scoped Search with Address First + AND
-  if (locality) {
-    queries.push(`"${locality}" AND "${name}" (site:locatefamily.com OR site:timesofindia.indiatimes.com OR site:webindia123.com)`);
-    queries.push(`"${locality}" AND "${name}" (site:indiamart.com OR site:justdial.com OR site:exportersindia.com OR site:tradeindia.com)`);
-    queries.push(`"${locality}" AND "${name}" (site:zaubacorp.com OR site:linkedin.com OR site:apollo.io OR site:advisorkhoj.com)`);
-    queries.push(`"${locality}" AND "${name}" (site:pdfcoffee.com OR site:scribd.com OR filetype:pdf)`);
-    queries.push(`"${locality}" AND "${name}" (directory OR association OR member OR NGO OR voters)`);
-  } else {
-    queries.push(`"${name}" (site:zaubacorp.com OR site:linkedin.com OR site:apollo.io)`);
-    queries.push(`"${name}" (directory OR association OR member OR voters)`);
-  }
-
-  // Strategy 4: Surname + Locality fallbacks (Address First)
-  if (surname && locality) {
-    queries.push(`"${locality}" AND "${surname}" (phone OR contact OR directory)`);
-  }
-
-  // Deduplicate and return
+  // Deduplicate while preserving intent staging order
   const seen = new Set<string>();
   const unique: string[] = [];
   for (const q of queries) {
@@ -76,5 +71,21 @@ export function generateQueries(subject: Subject, parsed: ParsedAddress): string
     }
   }
 
-  return unique.slice(0, 15);
+  return unique.slice(0, 6);
+}
+
+export function generateReversePhoneQueries(phone: string, subjectName?: string): string[] {
+  const cleanPhone = phone.replace(/\D/g, '');
+  if (cleanPhone.length !== 10) return [];
+
+  const queries = [
+    `"${cleanPhone}"`,
+    `"${cleanPhone}" (business OR owner OR contact OR address)`
+  ];
+
+  if (subjectName) {
+    queries.push(`"${cleanPhone}" "${subjectName}"`);
+  }
+
+  return queries;
 }

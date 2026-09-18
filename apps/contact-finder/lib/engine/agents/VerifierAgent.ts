@@ -3,8 +3,8 @@ import { DatabaseService } from '../db/DatabaseService';
 import { CallerIdService } from '../providers/CallerIdService';
 import { classifyAttribution } from '../attribution/ContactAttributionResolver';
 import { resolveEntity } from '../attribution/EntityResolver';
-import { scoreCandidate } from '../attribution/ConfidenceScorer';
-import { normalizePhone } from '../extractors/PhoneExtractor';
+import { scoreCandidate, scoreCandidateGated } from '../attribution/ConfidenceScorer';
+import { normalizePhone, isValidIndianMobile } from '../extractors/PhoneExtractor';
 import { EngineConfig } from '../config';
 
 export class VerifierAgent {
@@ -46,8 +46,8 @@ export class VerifierAgent {
     existingCandidate?: PhoneCandidate,
     forceAttribution?: any
   ): Promise<PhoneCandidate | null> {
-    const normalized = normalizePhone(phone.phone) || phone.phone;
-    if (!EngineConfig.phone.indianMobileRegex.test(normalized)) return null;
+    const normalized = normalizePhone(phone.phone, subject) || phone.phone;
+    if (!isValidIndianMobile(normalized, subject, phone.context, phone.sourceUrl)) return null;
 
     let attribution = forceAttribution?.attribution || 'UNKNOWN';
     let owner = forceAttribution?.owner || null;

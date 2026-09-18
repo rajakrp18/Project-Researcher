@@ -113,7 +113,7 @@ export class CoordinatorAgent {
         // Process fast SERP snippets
         for (const sr of serps) {
           if (!sr.snippet) continue;
-          const snippetPhones = extractPhones(sr.snippet, sr.url || 'SERP');
+          const snippetPhones = extractPhones(sr.snippet, sr.url || 'SERP', subject);
           for (const phone of snippetPhones) {
             const evidenceTpl = { sourceUrl: sr.url || 'SERP', provider: sr.provider, snippet: phone.context.slice(0, 300), fetchedAt: Date.now() };
             const candidate = await this.verifier.verifyAndScore(phone, subject, parsed, evidenceTpl, false, allCandidates.get(phone.phone));

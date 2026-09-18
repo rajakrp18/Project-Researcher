@@ -14,7 +14,7 @@ export class ExtractorAgent {
   }
 
   async extractFromDocument(doc: FetchedDocument, subject: Subject, budgetLeft: boolean): Promise<{ regexPhones: ExtractedPhone[], llmPhones: ExtractedPhone[] }> {
-    let regexPhones = extractPhones(doc.content, doc.url);
+    let regexPhones = extractPhones(doc.content, doc.url, subject);
     let llmPhones: ExtractedPhone[] = [];
 
     // 1. FAST PATH SHORT-CIRCUIT: If Regex found phones and we are in Pass 1 (!budgetLeft), SKIP LLM completely!
@@ -31,14 +31,23 @@ export class ExtractorAgent {
     
     if (budgetLeft && doc.content.length > 100 && hasKeyword) {
       try {
-        const relevantContent = await this.chunker.getRelevantChunks(doc.content, keywords);
-        const llmResult = await this.llm.extractContacts(relevantContent, subject);
-        llmPhones = llmResult.phones.map(p => ({
-          phone: p.number,
-          raw: p.number,
-          context: [p.owner, p.relationship, p.business, p.address].filter(Boolean).join(' | '),
-          sourceUrl: doc.url,
-        }));
+        let snippetText = '';
+        if (regexPhones.length > 0) {
+          // Pass only the local 500-char context windows of candidate phones to LLM!
+          snippetText = regexPhones.slice(0, 5).map(p => p.context).join('\n---\n');
+        } else {
+          snippetText = await this.chunker.getRelevantChunks(doc.content, keywords);
+        }
+
+        if (snippetText.length > 50) {
+          const llmResult = await this.llm.extractContacts(snippetText, subject);
+          llmPhones = llmResult.phones.map(p => ({
+            phone: p.number,
+            raw: p.number,
+            context: [p.owner, p.relationship, p.business, p.address].filter(Boolean).join(' | '),
+            sourceUrl: doc.url,
+          }));
+        }
       } catch (err) {
         console.error('LLM Extraction failed', err);
       }

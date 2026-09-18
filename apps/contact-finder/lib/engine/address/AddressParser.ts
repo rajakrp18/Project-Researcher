@@ -70,7 +70,15 @@ export function parseAddress(raw: string): ParsedAddress {
   working = working.replace(/[,|]+/g, ' ').replace(/\s{2,}/g, ' ').trim();
 
   if (working) {
-    result.area = working;
+    // Only set area if remainder contains a recognized area suffix or sector/vihar/nagar token
+    const hasAreaKeyword = AREA_SUFFIXES.some(suffix => new RegExp(`\\b${suffix}\\b`, 'i').test(working));
+    if (hasAreaKeyword || result.area) {
+      const areaText = working.replace(/^[,\s]+|[,\s]+$/g, '').trim();
+      // Avoid assigning if remainder is longer than 50 chars of unparsed text
+      if (areaText.length <= 50) {
+        result.area = result.area ? `${result.area} ${areaText}` : areaText;
+      }
+    }
   }
 
   if (result.area) {

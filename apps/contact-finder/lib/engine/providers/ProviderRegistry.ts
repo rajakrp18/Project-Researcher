@@ -70,27 +70,56 @@ export class ProviderRegistry {
 
   async searchAll(query: string, options?: SearchOptions): Promise<SearchResult[]> {
     const searchProviders = this.getSearchProviders();
+    
+    // Classify providers: REAL_SEARCH (SerpAPI, Perplexity, TinyFish) vs SYNTHETIC_URL (JustDial, IndiaMart, etc.)
+    const realSearchProviders = searchProviders.filter(p => 
+      ['serpapi', 'perplexity', 'tinyfish', 'explorium', 'apify-zauba'].includes(p.name)
+    );
+    const syntheticUrlProviders = searchProviders.filter(p => 
+      !['serpapi', 'perplexity', 'tinyfish', 'explorium', 'apify-zauba'].includes(p.name)
+    );
+
     const allResults: SearchResult[] = [];
     const seenUrls = new Set<string>();
 
-    const searchPromises = searchProviders.map(async (provider) => {
+    // 1. Run real search engine providers first
+    const realPromises = realSearchProviders.map(async (provider) => {
       try {
-        const results = await provider.search(query, options);
-        return results;
+        return await provider.search(query, options);
       } catch (err: any) {
         console.error(`Provider ${provider.name} failed: ${err.message}`);
         return [];
       }
     });
 
-    const resultsPerProvider = await Promise.all(searchPromises);
-
-    for (const results of resultsPerProvider) {
+    const realResultsList = await Promise.all(realPromises);
+    for (const results of realResultsList) {
       for (const result of results) {
         const normalizedUrl = this.normalizeUrl(result.url);
         if (!seenUrls.has(normalizedUrl)) {
           seenUrls.add(normalizedUrl);
           allResults.push(result);
+        }
+      }
+    }
+
+    // 2. If real search yielded results, skip synthetic URL generators to avoid scraping noise!
+    if (allResults.length === 0) {
+      const syntheticPromises = syntheticUrlProviders.map(async (provider) => {
+        try {
+          return await provider.search(query, options);
+        } catch {
+          return [];
+        }
+      });
+      const syntheticResultsList = await Promise.all(syntheticPromises);
+      for (const results of syntheticResultsList) {
+        for (const result of results) {
+          const normalizedUrl = this.normalizeUrl(result.url);
+          if (!seenUrls.has(normalizedUrl)) {
+            seenUrls.add(normalizedUrl);
+            allResults.push(result);
+          }
         }
       }
     }
