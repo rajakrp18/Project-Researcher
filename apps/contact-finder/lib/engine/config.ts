@@ -1,15 +1,15 @@
 export const EngineConfig = {
   queryBudget: 12, // Doubled to allow for fallback queries
   maxRetriesPerCase: 2,
-  fetchTimeoutMs: 8000, // 8s timeout for rapid page scraping
+  fetchTimeoutMs: 15000, // Increased from 8s to 15s to allow slower sites to load
   fetchBatchSize: 5,
   maxDocumentLength: 30000,
   contextWindowChars: 500,
 
   confidence: {
-    highThreshold: 75,
+    highThreshold: 65, // Lowered from 75 to let more high-quality partial matches pass
     mediumThreshold: 45,
-    minReportable: 25, // Refined threshold to filter out random noise numbers < 25%
+    minReportable: 20, // Lowered from 25 to catch more edge-case contacts
   },
 
   scoring: {
@@ -55,9 +55,9 @@ export const EngineConfig = {
   },
 
   rateLimit: {
-    geminiRetries: 2,
-    geminiBaseDelayMs: 1500, // Reduced from 20000ms to prevent hanging timeouts
-    geminiMaxDelayMs: 6000,  // Max 6s delay
+    geminiRetries: 3,
+    geminiBaseDelayMs: 4000, // Increased to prevent 429 rate limit errors
+    geminiMaxDelayMs: 10000, 
     searchDelayMs: 300,
   },
 

@@ -2,10 +2,12 @@ import fs from 'fs/promises';
 import path from 'path';
 import crypto from 'crypto';
 import { Subject, InvestigationResult } from '../types';
+import { isDummyOrSpamPhone } from '../extractors/PhoneExtractor';
+import { isJunkPhone } from '../attribution/EvidenceGate';
 
-export const CURRENT_PARSER_VERSION = '2.0.0';
-export const CURRENT_ENGINE_VERSION = '2.0.0';
-export const CURRENT_SCORING_VERSION = '2.0.0';
+export const CURRENT_PARSER_VERSION = '3.0.0';
+export const CURRENT_ENGINE_VERSION = '3.0.0';
+export const CURRENT_SCORING_VERSION = '3.0.0';
 
 export interface VersionedInvestigationResult extends InvestigationResult {
   parserVersion?: string;
@@ -40,12 +42,11 @@ export class FileCacheService {
       await fs.access(this.cacheFile);
       const content = await fs.readFile(this.cacheFile, 'utf-8');
       const cache = JSON.parse(content);
-      // Check if cache contains legacy unversioned entries (Patch 0.4)
       const keys = Object.keys(cache);
       if (keys.length > 0) {
         const firstEntry = cache[keys[0]];
         if (!firstEntry.engineVersion || firstEntry.engineVersion !== CURRENT_ENGINE_VERSION) {
-          console.warn(`[Cache Quarantine] Archiving legacy unversioned cache to investigations.json.bak`);
+          console.warn(`[Cache Quarantine] Archiving legacy v2 cache to investigations.json.bak`);
           await fs.rename(this.cacheFile, this.backupFile);
           await fs.writeFile(this.cacheFile, JSON.stringify({}), 'utf-8');
         }
@@ -69,10 +70,20 @@ export class FileCacheService {
           entry.scoringVersion === CURRENT_SCORING_VERSION &&
           entry.parserVersion === CURRENT_PARSER_VERSION
         ) {
-          console.log(`[Cache] ⚡ HIT! Returning version-stamped result for: ${subject.name}`);
-          return entry;
+          // Filter out any stale candidate numbers that match folio/junk rules
+          const cleanPhones = (entry.phones || []).filter(p => {
+            if (isJunkPhone(p.phone)) return false;
+            if (isDummyOrSpamPhone(p.phone, p.evidence[0]?.sourceUrl, subject, p.evidence[0]?.snippet)) return false;
+            return true;
+          });
+
+          console.log(`[Cache] ⚡ HIT! Returning version 3.0.0 result for: ${subject.name}`);
+          return {
+            ...entry,
+            phones: cleanPhones
+          };
         } else {
-          console.log(`[Cache] ⚠️ STALE VERSION. Invalidating cache entry for: ${subject.name}`);
+          console.log(`[Cache] ⚠️ STALE VERSION (${entry.engineVersion || 'v1'}). Invalidating cache entry for: ${subject.name}`);
           delete cache[hash];
           await fs.writeFile(this.cacheFile, JSON.stringify(cache, null, 2), 'utf-8');
         }
@@ -102,7 +113,7 @@ export class FileCacheService {
 
       cache[hash] = versionedResult;
       await fs.writeFile(this.cacheFile, JSON.stringify(cache, null, 2), 'utf-8');
-      console.log(`[Cache] 💾 SAVED version-stamped result to Database Cache for: ${subject.name}`);
+      console.log(`[Cache] 💾 SAVED version 3.0.0 result for: ${subject.name}`);
     } catch (e) {
       console.error('[Cache] Error saving cache:', e);
     }

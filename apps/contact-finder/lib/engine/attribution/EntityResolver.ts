@@ -131,6 +131,7 @@ function isVariant(a: string[], b: string[]): boolean {
   if (a.length === 0 || b.length === 0) return false;
 
   const matchCount = a.filter(part => b.includes(part)).length;
-  const ratio = matchCount / Math.max(a.length, b.length);
-  return ratio >= 0.6 && matchCount >= 2;
+  const minLen = Math.min(a.length, b.length);
+  const ratio = matchCount / minLen;
+  return ratio >= 0.6 && matchCount >= Math.min(minLen, 2);
 }

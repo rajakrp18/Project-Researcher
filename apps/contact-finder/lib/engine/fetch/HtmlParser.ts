@@ -4,7 +4,8 @@ export function parseHtml(html: string): string {
   if (!html) return '';
 
   try {
-    const $ = cheerio.load(html);
+    // Inject spaces between tags before loading to prevent text from adjacent tags gluing together
+    const $ = cheerio.load(html.replace(/>/g, '> '));
 
     $('script, style, nav, footer, header, noscript, iframe, svg, link, meta').remove();
     $('[role="navigation"], [role="banner"], [role="contentinfo"]').remove();

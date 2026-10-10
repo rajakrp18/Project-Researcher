@@ -4,29 +4,36 @@ import { CallerIdService } from '../providers/CallerIdService';
 import { classifyAttribution } from '../attribution/ContactAttributionResolver';
 import { resolveEntity } from '../attribution/EntityResolver';
 import { scoreCandidate, scoreCandidateGated } from '../attribution/ConfidenceScorer';
-import { normalizePhone, isValidIndianMobile } from '../extractors/PhoneExtractor';
+import { normalizePhone, isValidIndianMobile, isDummyOrSpamPhone } from '../extractors/PhoneExtractor';
+import { isJunkPhone } from '../attribution/EvidenceGate';
+import { UpiVerificationService } from '../providers/UpiVerificationService';
+import { MessagingVerificationService } from '../providers/MessagingVerificationService';
 import { EngineConfig } from '../config';
 
 export class VerifierAgent {
   constructor(
     private db: DatabaseService,
     private callerId: CallerIdService,
-    private llm: LLMExtractor
+    private llm: LLMExtractor,
+    private upiService: UpiVerificationService,
+    private messagingService: MessagingVerificationService
   ) {}
 
   getKnownCandidates(subject: Subject): PhoneCandidate[] {
     const existingPhones = this.db.findPhonesForEntity(subject.name);
-    return existingPhones.map(ep => ({
-      phone: ep.phone, 
-      owner: subject.name, 
-      attribution: 'DIRECT_PERSON', 
-      confidence: ep.confidence,
-      matchType: 'EXACT', 
-      relationship: 'self',
-      evidence: ep.source && ep.source !== 'OSINT Engine' 
-        ? [{ sourceUrl: ep.source, provider: 'Knowledge Graph', snippet: 'Loaded from past investigation memory.', phone: ep.phone, ownerName: subject.name, extractionMethod: 'regex', fetchedAt: Date.now() }] 
-        : []
-    }));
+    return existingPhones
+      .filter(ep => !isJunkPhone(ep.phone) && !isDummyOrSpamPhone(ep.phone, ep.source, subject))
+      .map(ep => ({
+        phone: ep.phone, 
+        owner: subject.name, 
+        attribution: 'DIRECT_PERSON', 
+        confidence: ep.confidence,
+        matchType: 'EXACT', 
+        relationship: 'self',
+        evidence: ep.source && ep.source !== 'OSINT Engine' 
+          ? [{ sourceUrl: ep.source, provider: 'Knowledge Graph', snippet: 'Loaded from past investigation memory.', phone: ep.phone, ownerName: subject.name, extractionMethod: 'regex', fetchedAt: Date.now() }] 
+          : []
+      }));
   }
 
   saveConfirmedCandidates(subject: Subject, candidates: PhoneCandidate[]) {
@@ -79,6 +86,28 @@ export class VerifierAgent {
       ? await resolveEntity(owner, subject.name, subject.fatherName, this.llm)
       : { matchType: 'NONE' as const, matchedParts: [] as string[] };
 
+    let confidenceOverride: number | undefined;
+    
+    // UPI Match
+    const upiResult = await this.upiService.verifyPhone(normalized);
+    if (upiResult.isValid && upiResult.registeredName) {
+      const upiEntityMatch = await resolveEntity(upiResult.registeredName, subject.name, subject.fatherName, this.llm);
+      if (upiEntityMatch.matchType === 'EXACT' || upiEntityMatch.matchType === 'PARTIAL') {
+        confidenceOverride = 100;
+        attribution = 'DIRECT_PERSON';
+        owner = upiResult.registeredName;
+      }
+    }
+
+    // WhatsApp Match
+    let whatsappBonus = 0;
+    const waResult = await this.messagingService.verifyWhatsApp(normalized);
+    if (waResult.hasWhatsApp && waResult.isBusiness && waResult.businessProfileName) {
+      if (subject.company && waResult.businessProfileName.toLowerCase().includes(subject.company.toLowerCase())) {
+         whatsappBonus = 25;
+      }
+    }
+
     const evidence: Evidence = {
       ...(evidenceTemplate as Evidence),
       phone: normalized,
@@ -88,16 +117,32 @@ export class VerifierAgent {
 
     if (existingCandidate) {
       existingCandidate.evidence.push(evidence);
-      existingCandidate.confidence = scoreCandidate(
-        normalized, existingCandidate.attribution, existingCandidate.matchType,
-        existingCandidate.evidence, parsed, phone.context
+      let newScore = scoreCandidate(
+        normalized,
+        existingCandidate.attribution,
+        existingCandidate.matchType,
+        existingCandidate.evidence,
+        parsed,
+        phone.context,
+        subject
       );
+      newScore += whatsappBonus;
+      if (confidenceOverride !== undefined) newScore = confidenceOverride;
+      existingCandidate.confidence = Math.min(100, Math.max(0, newScore));
       return existingCandidate;
     } else {
-      const confidence = scoreCandidate(
-        normalized, attribution, entityMatch.matchType,
-        [evidence], parsed, phone.context
+      let confidence = scoreCandidate(
+        normalized,
+        attribution,
+        entityMatch.matchType,
+        [evidence],
+        parsed,
+        phone.context,
+        subject
       );
+      confidence += whatsappBonus;
+      if (confidenceOverride !== undefined) confidence = confidenceOverride;
+      confidence = Math.min(100, Math.max(0, confidence));
 
       return {
         phone: normalized,

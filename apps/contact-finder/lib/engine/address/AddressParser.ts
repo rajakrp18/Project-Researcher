@@ -1,8 +1,8 @@
 import { ParsedAddress } from '../types';
 import { detectCity, INDIAN_CITIES } from './cityTable';
+import { cleanName as cleanNameGate, careOfTokens } from '../attribution/EvidenceGate';
 
-const CARE_OF_REGEX = /^C\s*\/\s*O\s+(.+?)(?=\s+[A-Z]-?\d|\s+\d{1,5}\s|$)/i;
-
+const CARE_OF_REGEX = /^(?:C\s*\/\s*O|CARE OF|S\s*\/\s*O|D\s*\/\s*O|W\s*\/\s*O)\s+(.+?)(?=\s+[A-Z]-?\d|\s+\d{1,5}\s|$)/i;
 const HOUSE_NUMBER_REGEX = /\b([A-Z]?\s*-?\s*\d{1,5}\s*(?:\/\s*\d{1,5})?(?:\s*[A-Z])?)\b/i;
 
 const FLOOR_NOISE = /\b(?:\d+(?:ST|ND|RD|TH)\s+FL(?:OOR|R)?|GROUND\s+FL(?:OOR|R)?|BASEMENT)\b/gi;
@@ -16,6 +16,15 @@ const AREA_SUFFIXES = [
   'LANE', 'GALI', 'MARG', 'ROAD', 'CHOWK', 'GATE',
   'BHAWAN', 'BHAVAN',
 ];
+
+export function cleanName(raw?: string): string {
+  if (!raw) return '';
+  return cleanNameGate(raw);
+}
+
+export function extractCareOf(address?: string): string[] {
+  return careOfTokens(address);
+}
 
 export function parseAddress(raw: string): ParsedAddress {
   const result: ParsedAddress = { raw };
@@ -70,13 +79,19 @@ export function parseAddress(raw: string): ParsedAddress {
   working = working.replace(/[,|]+/g, ' ').replace(/\s{2,}/g, ' ').trim();
 
   if (working) {
-    // Only set area if remainder contains a recognized area suffix or sector/vihar/nagar token
-    const hasAreaKeyword = AREA_SUFFIXES.some(suffix => new RegExp(`\\b${suffix}\\b`, 'i').test(working));
+    const hasAreaKeyword = AREA_SUFFIXES.some(
+      suffix => new RegExp(`\\b${suffix}\\b`, 'i').test(working)
+    );
+
     if (hasAreaKeyword || result.area) {
-      const areaText = working.replace(/^[,\s]+|[,\s]+$/g, '').trim();
-      // Avoid assigning if remainder is longer than 50 chars of unparsed text
+      const areaText = working
+        .replace(/^[,\s]+|[,\s]+$/g, '')
+        .trim();
+
       if (areaText.length <= 50) {
-        result.area = result.area ? `${result.area} ${areaText}` : areaText;
+        result.area = result.area
+          ? `${result.area} ${areaText}`
+          : areaText;
       }
     }
   }
@@ -97,7 +112,7 @@ export function buildSearchAddress(parsed: ParsedAddress): string {
 }
 
 export function extractSurname(name: string): string | undefined {
-  const parts = name.trim().split(/\s+/);
+  const parts = cleanName(name).trim().split(/\s+/);
   if (parts.length >= 2) {
     return parts[parts.length - 1];
   }

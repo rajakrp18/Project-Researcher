@@ -22,9 +22,26 @@ export function tokens(s?: string): string[] {
   return norm(s).split(/\s+/).filter(t => t.length > 1 && !STOPWORDS.has(t));
 }
 
-// Strip care-of glued onto the name (ingestion safety net).
+const ADDRESS_KEYWORDS = new Set([
+  'NEW','FINE','STEEL','WORKS','BAZAR','GANJ','OPP','SABZI','NAGAR','ROAD','STREET','LANE',
+  'APPT','APARTMENT','FLAT','PLOT','HOUSE','NO','DIST','DISTRICT','TALUKA','VILLAGE','VILL',
+  'MAHARASHTRA','GUJARAT','DELHI','MUMBAI','PUNE','BULDHANA','LAKHIMPUR','KHERI','RAJASTHAN',
+  'KARNATAKA','TAMIL','NADU','ANDHRA','PRADESH','TELANGANA','KERALA','BENGAL','KOLKATA'
+]);
+
+// Strip care-of and trailing address/business tokens glued onto the name
 export function cleanName(raw?: string): string {
-  return norm(raw).split(/C\s*\/\s*O|CARE OF|S\s*\/\s*O|D\s*\/\s*O|W\s*\/\s*O/)[0].trim();
+  const baseName = norm(raw).split(/C\s*\/\s*O|CARE OF|S\s*\/\s*O|D\s*\/\s*O|W\s*\/\s*O/)[0].trim();
+  const rawToks = baseName.split(/\s+/).filter(Boolean);
+  
+  // Find first index of any address/business keyword
+  const cleanToks: string[] = [];
+  for (const t of rawToks) {
+    if (cleanToks.length >= 2 && ADDRESS_KEYWORDS.has(t)) break;
+    cleanToks.push(t);
+  }
+  
+  return cleanToks.join(' ');
 }
 
 export function careOfTokens(address?: string): string[] {
@@ -44,19 +61,30 @@ function tokenIn(tok: string, targetTokens: string[]): boolean {
 export function nameMatch(subjectTokens: string[], surname: string, text: string): NameMatchType {
   const tt = tokens(text);
   if (!subjectTokens.length) return 'NONE';
-  const hits = subjectTokens.filter(t => tokenIn(t, tt)).length;
-  if (hits === subjectTokens.length && subjectTokens.length >= 2) {
-    return subjectTokens.every(t => tt.includes(t)) ? 'EXACT' : 'VARIANT';
+  
+  // Focus on core person name tokens (first 2-3 tokens)
+  const coreTokens = subjectTokens.slice(0, 3);
+  const coreHits = coreTokens.filter(t => tokenIn(t, tt)).length;
+
+  if (coreHits >= 2) {
+    const allCoreInText = coreTokens.every(t => tt.includes(t));
+    return allCoreInText ? 'EXACT' : 'VARIANT';
   }
-  if (hits === subjectTokens.length && subjectTokens.length === 1) return 'PARTIAL';
+
+  const totalHits = subjectTokens.filter(t => tokenIn(t, tt)).length;
+  if (totalHits >= 2 && totalHits >= Math.min(subjectTokens.length, 2)) {
+    return 'VARIANT';
+  }
+
+  if (coreHits === 1 && subjectTokens.length === 1) return 'PARTIAL';
   if (surname && tokenIn(surname, tt)) return 'SURNAME_ONLY';
-  return hits >= 1 ? 'PARTIAL' : 'NONE';
+  return totalHits >= 1 ? 'PARTIAL' : 'NONE';
 }
 
 export function isJunkPhone(phone: string): boolean {
   if (!/^[6-9]\d{9}$/.test(phone)) return true;
   if (new Set(phone).size <= 3) return true;          // 9999999999, 9090909090
-  if (/(\d)\1{4,}/.test(phone)) return true;          // any digit run >= 5
+  if (/(\d)\1{5,}/.test(phone)) return true;          // any digit run >= 6
   if (/0{4,}/.test(phone)) return true;               // templated list numbers e.g. 6950000022
   return false;
 }
@@ -100,11 +128,17 @@ export function applyGate(
   const surname = nameToks[nameToks.length - 1];
   const coTokens = careOfTokens(subject.address);
   const house = (parsed.houseNumber || '').toUpperCase();
-  const areaToks = tokens(parsed.area).filter(t => !nameToks.includes(t)).slice(0, 4);
+  const areaToks = tokens(parsed.area).filter(t => !nameToks.includes(t) && !['INDIA', 'PINCODE', 'PIN', 'STATE', 'DISTRICT', 'DIST', 'TALUKA'].includes(t));
 
   const doms = new Set<string>();
   const urls: string[] = [];
   const rank: Record<NameMatchType, number> = { EXACT: 4, VARIANT: 3, SURNAME_ONLY: 2, PARTIAL: 1, NONE: 0 };
+
+  const houseTokens = house ? [house] : [];
+  if (house) {
+    const strippedHouse = house.replace(/^0+(\d+)/, '$1');
+    if (strippedHouse !== house) houseTokens.push(strippedHouse);
+  }
 
   for (const e of evidence) {
     const d = domainOf(e.sourceUrl); if (d) doms.add(d);
@@ -113,7 +147,7 @@ export function applyGate(
     const nm = nameMatch(nameToks, surname, block);
     if (rank[nm] > rank[anchors.nameMatch]) anchors.nameMatch = nm;
     const bt = tokens(block);
-    if (house && new RegExp(`\\b${house.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`).test(norm(block))) anchors.house = true;
+    if (houseTokens.length > 0 && houseTokens.some(h => new RegExp(`\\b${h.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`).test(norm(block)))) anchors.house = true;
     if (areaToks.some(a => tokenIn(a, bt))) anchors.area = true;
     if (coTokens.length && coTokens.every(c => tokenIn(c, bt))) anchors.careOf = true;
   }
@@ -128,10 +162,12 @@ export function applyGate(
   const identity = anchors.nameMatch === 'EXACT' || anchors.nameMatch === 'VARIANT';
   const family = anchors.careOf;
   const premises = anchors.house && anchors.area;
-  const weakPremises = anchors.nameMatch === 'SURNAME_ONLY' && (anchors.house || anchors.area);
+  const weakPremises = (anchors.nameMatch === 'SURNAME_ONLY' || anchors.nameMatch === 'PARTIAL') && (anchors.house || anchors.area);
 
-  if (!(identity || family || premises || weakPremises)) {
-    return { pass: false, reason: `NO_ANCHOR(name=${anchors.nameMatch})`, anchors, isListOnly: isList && nonListDomains < 1, isNonContact: false, distinctDomains: doms.size };
-  }
-  return { pass: true, reason: 'ANCHOR_OK', anchors, isListOnly: isList && nonListDomains < 1, isNonContact: false, distinctDomains: doms.size };
+  const result = (!(identity || family || premises || weakPremises))
+    ? { pass: false, reason: `NO_ANCHOR(name=${anchors.nameMatch})`, anchors, isListOnly: isList && nonListDomains < 1, isNonContact: false, distinctDomains: doms.size }
+    : { pass: true, reason: 'ANCHOR_OK', anchors, isListOnly: isList && nonListDomains < 1, isNonContact: false, distinctDomains: doms.size };
+
+  console.log(`[DEBUG][GATE] ${phone} | name=${anchors.nameMatch} | house=${anchors.house} | area=${anchors.area} | careOf=${anchors.careOf} | pass=${result.pass} | reason=${result.reason}`);
+  return result;
 }

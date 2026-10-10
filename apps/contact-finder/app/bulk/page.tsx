@@ -117,7 +117,7 @@ export default function BulkPage() {
     
     for (let i = 0; i < rows.length; i++) {
       if (isCancelledRef.current) break;
-      if (rows[i].status === "success") continue;
+      if (rows[i].status === "success" && !forceRerun) continue;
 
       setRows(prev => {
         const next = [...prev];
@@ -145,6 +145,7 @@ export default function BulkPage() {
               address: finalAddress,
               company: finalCompany,
               city: rows[i].city,
+              notes: rows[i].folio,
               forceRerun: forceRerun
             }),
             signal: abortControllerRef.current.signal

@@ -1,13 +1,3366 @@
 {
-  "0c2d434049b757a1db537e54d214dcbb": {
+  "b70e0d8da2eacfbf790b43dae1519642": {
     "subject": {
-      "name": "CHINUBHAI CHAMANLAL JAVERI",
-      "address": "SHANTI NIWAS 38 N S PATKAR MARG MUM BAI INDIA    Maharashtra - 400007"
+      "name": "AMEY SHASTRI",
+      "address": "WARD NO 29 STATION ROAD BALAGHAT BALAGHAT  INDIA   Ma dhya Pradesh - 481001",
+      "notes": "IC00120106010013580"
     },
     "parsedAddress": {
-      "raw": "SHANTI NIWAS 38 N S PATKAR MARG MUM BAI INDIA    Maharashtra - 400007",
+      "raw": "WARD NO 29 STATION ROAD BALAGHAT BALAGHAT  INDIA   Ma dhya Pradesh - 481001",
+      "pinCode": "481001",
+      "houseNumber": "29"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 7,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 196560,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1790076464400,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "ae9dc4f215728a42ccbb8fc40a7526c8": {
+    "subject": {
+      "name": "ANILKUMAR GOVINDLAL CHANDAK",
+      "address": "01 SAROJ APPT TAGOR NAGAR BHD RAJA STHAN HIGH SCHOOL LATU R INDIA    Maharashtra - 413512",
+      "notes": "IC00120106000085601"
+    },
+    "parsedAddress": {
+      "raw": "01 SAROJ APPT TAGOR NAGAR BHD RAJA STHAN HIGH SCHOOL LATU R INDIA    Maharashtra - 413512",
+      "pinCode": "413512",
+      "houseNumber": "01"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 6,
+    "totalEvidenceItems": 3,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 269316,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1790075980287,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "c1e2c9d783032796f9c7b08abee68381": {
+    "subject": {
+      "name": "SURESH TOLARAM SARDA",
+      "address": "AT POST ANSING DIST :- WASHIM ANSING INDIA Maharashtra - 444507",
+      "notes": "IC00120106010011758"
+    },
+    "parsedAddress": {
+      "raw": "AT POST ANSING DIST :- WASHIM ANSING INDIA Maharashtra - 444507",
+      "pinCode": "444507"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 8,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 234898,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1790076241768,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "11bca8a5fc849270a39e52e2333f61a6": {
+    "subject": {
+      "name": "SANJAY KUMAR",
+      "address": "HARADVARI LAL VILL- NARAT POST- BUHANA JHUNJHUN U INDIA Rajasthan - 333502",
+      "notes": "IC00120106050044001"
+    },
+    "parsedAddress": {
+      "raw": "HARADVARI LAL VILL- NARAT POST- BUHANA JHUNJHUN U INDIA Rajasthan - 333502",
+      "pinCode": "333502"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 11,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 310293,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1790076894692,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "490972e9cdea58c30b3d818faec97ed5": {
+    "subject": {
+      "name": "MADHULATA SHUKLA NAURANGABAD LAKHIMPUR-KHERI",
+      "address": "INDIA    Uttar Prades h - 262701",
+      "notes": "IC00120106060003333"
+    },
+    "parsedAddress": {
+      "raw": "INDIA    Uttar Prades h - 262701",
+      "pinCode": "262701"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 7,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia"
+    ],
+    "durationMs": 198322,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1790077118901,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "df86ae3d34d51c9a222d8a6c76b5bf13": {
+    "subject": {
+      "name": "AWDHESH KUMAR VERMA",
+      "address": "MOHALLA-MAHARAJ NAGAR TRIMURTI TRADERS KHERI  ROAD NEAR ANUPAM NURSING HOM E INDIA    Uttar Pradesh - 262701",
+      "notes": "IC00120106060004480"
+    },
+    "parsedAddress": {
+      "raw": "MOHALLA-MAHARAJ NAGAR TRIMURTI TRADERS KHERI  ROAD NEAR ANUPAM NURSING HOM E INDIA    Uttar Pradesh - 262701",
+      "pinCode": "262701"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 3,
+    "totalEvidenceItems": 3,
+    "providersUsed": [
+      "tinyfish"
+    ],
+    "durationMs": 83518,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1790077228442,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "4695b9be9a26db733927a8179faa4438": {
+    "subject": {
+      "name": "ANIL KUMAR YADAV",
+      "address": "WARD NO. 35 OLD CHHAPAKHANA DIST. CHHINDWARA CHHINDWAR A INDIA   Madhya Pradesh - 480001",
+      "notes": "IC00120107000017775"
+    },
+    "parsedAddress": {
+      "raw": "WARD NO. 35 OLD CHHAPAKHANA DIST. CHHINDWARA CHHINDWAR A INDIA   Madhya Pradesh - 480001",
+      "pinCode": "480001",
+      "houseNumber": "35"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 10,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 248324,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1790077502375,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "0191b205e0683b31d7f3fcca2cc6c655": {
+    "subject": {
+      "name": "HARISHBHAI CHIMANLAL BRAHMBHATT",
+      "address": "26 MANAV MANDIR PLOT VISTAR PA NCHVATI VISTAR TAL - KALOL BORISAN A INDIA Gujarat - 382721",
+      "notes": "IC00120108000003724"
+    },
+    "parsedAddress": {
+      "raw": "26 MANAV MANDIR PLOT VISTAR PA NCHVATI VISTAR TAL - KALOL BORISAN A INDIA Gujarat - 382721",
+      "pinCode": "382721",
+      "houseNumber": "26"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 5,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 126045,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1790077726361,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "97423cbc6e99eb3d31cc4706606ba310": {
+    "subject": {
+      "name": "TEDLA KRISHNA MOHAN",
+      "address": "H.NO:23-26 MAIN BAZAR MIRYALGUDA MIRYALGUD A INDIA   Andhra Pradesh - 508207",
+      "notes": "IC00120109000132930"
+    },
+    "parsedAddress": {
+      "raw": "H.NO:23-26 MAIN BAZAR MIRYALGUDA MIRYALGUD A INDIA   Andhra Pradesh - 508207",
+      "pinCode": "508207",
+      "houseNumber": "23"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 9,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 195207,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1790077985166,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "c7153bd5443a8db8888239d7f72f9b87": {
+    "subject": {
+      "name": "SUVARNA C ALANKARE",
+      "address": "STATION AREA, AT PO.MURTIZAPUR NEAR SAI MANDIR , DIST. AKOLA MURTIZAPU R INDIA    Maharashtra - 444107",
+      "notes": "IC00120109000209283"
+    },
+    "parsedAddress": {
+      "raw": "STATION AREA, AT PO.MURTIZAPUR NEAR SAI MANDIR , DIST. AKOLA MURTIZAPU R INDIA    Maharashtra - 444107",
+      "pinCode": "444107"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 7,
+    "totalEvidenceItems": 3,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia"
+    ],
+    "durationMs": 173066,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1790078262955,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "8caa5479332559d2e3b9757a4c9c4271": {
+    "subject": {
+      "name": "MANJUSHREE RANDER",
+      "address": "120,MAKRANA TH.MAKRANA DIST. NAGAUR INDIA Ra jasthan - 341505",
+      "notes": "IC00120109000241082"
+    },
+    "parsedAddress": {
+      "raw": "120,MAKRANA TH.MAKRANA DIST. NAGAUR INDIA Ra jasthan - 341505",
+      "pinCode": "341505",
+      "houseNumber": "120"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 11,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 328332,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1790078617492,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "7d8b208c4bfd3192643c3edcdfd67a6b": {
+    "subject": {
+      "name": "SEEMA RAZDAN",
+      "address": "H.NO:565, SEC-4 CHANNI HIMMAT JAMMU INDIA  Jammu an - 180015",
+      "notes": "IC00120109000322710"
+    },
+    "parsedAddress": {
+      "raw": "H.NO:565, SEC-4 CHANNI HIMMAT JAMMU INDIA  Jammu an - 180015",
+      "pinCode": "180015",
+      "city": "JAMMU",
+      "houseNumber": "565"
+    },
+    "phones": [],
+    "queriesUsed": 6,
+    "queryBudget": 12,
+    "documentsFetched": 8,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish"
+    ],
+    "durationMs": 223050,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1790078866453,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "74d524887d395af275ab04fbca773c2c": {
+    "subject": {
+      "name": "MUPPALLA C DHARMADEEP",
+      "address": "A-203 GOPALAN GRANDEUR.NEAR HOODI CIRCLE.BROOKE FIELD RD HOODI VILLAGE K R INDIA Karnataka - 560048",
+      "notes": "IC00120109000456875"
+    },
+    "parsedAddress": {
+      "raw": "A-203 GOPALAN GRANDEUR.NEAR HOODI CIRCLE.BROOKE FIELD RD HOODI VILLAGE K R INDIA Karnataka - 560048",
+      "pinCode": "560048",
+      "houseNumber": "A-203"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 8,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia"
+    ],
+    "durationMs": 154365,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1790079047617,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "67feca74f0384c57b2b1278cc42c302b": {
+    "subject": {
+      "name": "MANISHA N PUROHIT",
+      "address": "70, NR. MOHANLAL DHARAMSHALA PARISAR, STATION ROAD , GONDIA DESHBANDHU WARD , INDIA    Maharashtra - 441601",
+      "notes": "IC00120113000037123"
+    },
+    "parsedAddress": {
+      "raw": "70, NR. MOHANLAL DHARAMSHALA PARISAR, STATION ROAD , GONDIA DESHBANDHU WARD , INDIA    Maharashtra - 441601",
+      "pinCode": "441601",
+      "houseNumber": "70"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 6,
+    "totalEvidenceItems": 1,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia"
+    ],
+    "durationMs": 144205,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1790079941307,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "f6f5f44e6d66e09fb4a75ce3e1c5c3ec": {
+    "subject": {
+      "name": "RAMANAND BIHANI",
+      "address": "201, SUNDER NAGAR-B BHESTAN SURAT INDIA GUJARAT - 394023",
+      "notes": "IC00120121000002751"
+    },
+    "parsedAddress": {
+      "raw": "201, SUNDER NAGAR-B BHESTAN SURAT INDIA GUJARAT - 394023",
+      "pinCode": "394023",
+      "city": "SURAT",
+      "houseNumber": "201",
+      "area": "SUNDER NAGAR-B BHESTAN INDIA GUJARAT -"
+    },
+    "phones": [],
+    "queriesUsed": 6,
+    "queryBudget": 12,
+    "documentsFetched": 13,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 400215,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1790080368061,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "6bdc9ac06f03cfe1690524665f634a80": {
+    "subject": {
+      "name": "INDU BALA MATHUR",
+      "address": "128,HOLI KA CHOWK NAYA BAS JODHPUR INDIA Rajast han - 342001",
+      "notes": "IC00120121010006683"
+    },
+    "parsedAddress": {
+      "raw": "128,HOLI KA CHOWK NAYA BAS JODHPUR INDIA Rajast han - 342001",
+      "pinCode": "342001",
+      "city": "JODHPUR",
+      "houseNumber": "128",
+      "area": "HOLI KA CHOWK NAYA BAS INDIA RAJAST HAN -"
+    },
+    "phones": [],
+    "queriesUsed": 6,
+    "queryBudget": 12,
+    "documentsFetched": 10,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 305762,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1790080699955,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "97657e367cb2708cdec00fd8e1475d6d": {
+    "subject": {
+      "name": "SARITA TRIPATHI",
+      "address": "C/O. S.C TRIPATHI 49 BRTF , NEAR DTO OFFICE, HANUMANGARHJN. HANUMANGARHJK N INDIA Rajasthan - 335512",
+      "notes": "IC00120121010047606"
+    },
+    "parsedAddress": {
+      "raw": "C/O. S.C TRIPATHI 49 BRTF , NEAR DTO OFFICE, HANUMANGARHJN. HANUMANGARHJK N INDIA Rajasthan - 335512",
+      "pinCode": "335512",
+      "houseNumber": "49"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 9,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 271371,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1790080997970,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "b6db731392bd136cbf0a252dcc9cd533": {
+    "subject": {
+      "name": "CHIRAG KUMAR SHAH",
+      "address": "H. NO. 5-6-98/14A VIVEK NAGAR NIRMAL NIRMAL I NDIA   Andhra Pradesh - 504106",
+      "notes": "IC00120133000005223"
+    },
+    "parsedAddress": {
+      "raw": "H. NO. 5-6-98/14A VIVEK NAGAR NIRMAL NIRMAL I NDIA   Andhra Pradesh - 504106",
+      "pinCode": "504106",
+      "houseNumber": "5"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 9,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish"
+    ],
+    "durationMs": 267693,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1790081291563,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "5bde27edec0b2ad99b2c65032d3ec147": {
+    "subject": {
+      "name": "KIRAN BABULAL GELOT",
+      "address": "SHERGANJ  -DEESA TA- DEESA  DIST- B K PALA NPUR DEEES A INDIA Gujarat - 385535",
+      "notes": "IC00120158000012515"
+    },
+    "parsedAddress": {
+      "raw": "SHERGANJ  -DEESA TA- DEESA  DIST- B K PALA NPUR DEEES A INDIA Gujarat - 385535",
+      "pinCode": "385535"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 11,
+    "totalEvidenceItems": 3,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 253511,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1790081571506,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "5b9ccf421b4200952a52d55293b53dc8": {
+    "subject": {
+      "name": "AARTI D CHABRIA",
+      "address": "12, DADI MANSION CINEMA ROAD, DOBHI TALAO, MUMBA I INDIA    Maharashtra - 400020",
+      "notes": "IC00120168010000417"
+    },
+    "parsedAddress": {
+      "raw": "12, DADI MANSION CINEMA ROAD, DOBHI TALAO, MUMBA I INDIA    Maharashtra - 400020",
+      "pinCode": "400020",
+      "houseNumber": "12"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 8,
+    "totalEvidenceItems": 6,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia"
+    ],
+    "durationMs": 238286,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1790082480908,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "a4219e417e00c1ef1e0b10058a00981a": {
+    "subject": {
+      "name": "GOPI DEVI CHANDAK",
+      "address": "W/O J.K. CHANDAK DHARAM NAGAR DWAR . BIKANER INDIA Rajasthan - 334004",
+      "notes": "IC00120177010070267"
+    },
+    "parsedAddress": {
+      "raw": "W/O J.K. CHANDAK DHARAM NAGAR DWAR . BIKANER INDIA Rajasthan - 334004",
+      "careOf": "J.K. CHANDAK DHARAM NAGAR DWAR . BIKANER INDIA RAJASTHAN - 334004"
+    },
+    "phones": [
+      {
+        "phone": "7701007073",
+        "owner": "BIKANER INDIA",
+        "attribution": "AMBIGUOUS",
+        "confidence": 43,
+        "matchType": "NONE",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.scribd.com/document/443572726/Tata-Investment-2016-pdf",
+            "provider": "tinyfish",
+            "snippet": "2016 GOPI DEVI CHANDAK W/O J.K. CHANDAK DHARAM NAGAR DWAR . BIKANER INDIA Rajasthan 334004 IC001201770100702673Amount for unclaimed and unpaid Dividend ...",
+            "fetchedAt": 1790082624207,
+            "phone": "7701007073",
+            "ownerName": "BIKANER INDIA",
+            "extractionMethod": "regex"
+          },
+          {
+            "sourceUrl": "https://www.scribd.com/document/856422696/Unclaimed-unpaid-dividend-account-details",
+            "provider": "tinyfish",
+            "snippet": "2018 GOPI DEVI CHANDAK W/O J.K. CHANDAK DHARAM NAGAR DWAR . BIKANER INDIA Rajasthan 334004 00IC1201770100702673 400.00 27-SEP-2025. Dividend Amount for ...",
+            "fetchedAt": 1790082624588,
+            "phone": "7701007073",
+            "ownerName": "BIKANER INDIA",
+            "extractionMethod": "regex"
+          }
+        ]
+      }
+    ],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 4,
+    "totalEvidenceItems": 1,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 188368,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1790082697643,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "2fdf5edf9ae5ac497ce18f661f6dc0e2": {
+    "subject": {
+      "name": "GOURI SANKAR NATH",
+      "address": "DIGBOI GOLAI NO. 3 . DIGBOI INDIA Assam - 786171",
+      "notes": "I"
+    },
+    "parsedAddress": {
+      "raw": "DIGBOI GOLAI NO. 3 . DIGBOI INDIA Assam - 786171",
+      "pinCode": "786171",
+      "houseNumber": "3"
+    },
+    "phones": [
+      {
+        "phone": "6000343002",
+        "owner": "Mondira Kataki",
+        "attribution": "AMBIGUOUS",
+        "confidence": 55,
+        "matchType": "NONE",
+        "evidence": [
+          {
+            "sourceUrl": "https://nagaon.assam.gov.in/departments-level-two/details-contact-number-officials/district-agricultural-office",
+            "provider": "tinyfish",
+            "snippet": "Details of contact number of Officials ; 68. Sri Gouri Sankar Nath. AEA. 6000343002 ; 69. Mrs Mondira Kataki. AEA. 9101808123 ; 70. Sri Anarul ...",
+            "fetchedAt": 1790082813149,
+            "phone": "6000343002",
+            "ownerName": "Mondira Kataki",
+            "extractionMethod": "regex"
+          }
+        ]
+      },
+      {
+        "phone": "9101808123",
+        "owner": "Mondira Kataki",
+        "attribution": "AMBIGUOUS",
+        "confidence": 55,
+        "matchType": "NONE",
+        "evidence": [
+          {
+            "sourceUrl": "https://nagaon.assam.gov.in/departments-level-two/details-contact-number-officials/district-agricultural-office",
+            "provider": "tinyfish",
+            "snippet": "Details of contact number of Officials ; 68. Sri Gouri Sankar Nath. AEA. 6000343002 ; 69. Mrs Mondira Kataki. AEA. 9101808123 ; 70. Sri Anarul ...",
+            "fetchedAt": 1790082813849,
+            "phone": "9101808123",
+            "ownerName": "Mondira Kataki",
+            "extractionMethod": "regex"
+          }
+        ]
+      }
+    ],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 8,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 233207,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1790082957898,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "4f59182b7d7d9c50c303dc006367e272": {
+    "subject": {
+      "name": "ANKITA ANILBHAI DESAI",
+      "address": "A 1 RANGKRUPA CO OP SOCIETY MANKODIA VIJALPORE NAVSARI NAVSAR I INDIA Gujarat - 396445",
+      "notes": "IC00120186000035796"
+    },
+    "parsedAddress": {
+      "raw": "A 1 RANGKRUPA CO OP SOCIETY MANKODIA VIJALPORE NAVSARI NAVSAR I INDIA Gujarat - 396445",
+      "pinCode": "396445",
+      "houseNumber": "A1"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 4,
+    "totalEvidenceItems": 3,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 354223,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1790083989644,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "319be74f50f6aa27804c72762afa8236": {
+    "subject": {
+      "name": "ABHAY BHASKARRAO PHAND",
+      "address": "HOUSE NO- 163-A GAVATIL MEN RASLYACHI D AKSHIN BAJU TER Osmanabad INDIA    Maharashtra - 413509",
+      "notes": "IC00120191010123031"
+    },
+    "parsedAddress": {
+      "raw": "HOUSE NO- 163-A GAVATIL MEN RASLYACHI D AKSHIN BAJU TER Osmanabad INDIA    Maharashtra - 413509",
+      "pinCode": "413509",
+      "houseNumber": "-163"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 8,
+    "totalEvidenceItems": 3,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 255624,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1790084292343,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "7941cd2f531700b3f90ce42199a222d5": {
+    "subject": {
+      "name": "SUDEEP KUMAR",
+      "address": "B-130, PALLAV PURAM, PHASE-I, MEERUT INDIA    Uttar P radesh - 250110",
+      "notes": "IC00120191010302223"
+    },
+    "parsedAddress": {
+      "raw": "B-130, PALLAV PURAM, PHASE-I, MEERUT INDIA    Uttar P radesh - 250110",
+      "pinCode": "250110",
+      "city": "MEERUT",
+      "houseNumber": "B-130"
+    },
+    "phones": [
+      {
+        "phone": "9415517693",
+        "owner": "SUDEEP KUMAR",
+        "attribution": "DIRECT_PERSON",
+        "confidence": 55,
+        "matchType": "EXACT",
+        "evidence": [
+          {
+            "sourceUrl": "https://uppolice.gov.in/site/writereaddata/siteContent/CONTACT%20US/202608171519362136Teleph%202026.pdf",
+            "provider": "tinyfish",
+            "snippet": "SRI SUDEEP KUMAR. 9415517693. SRI PRITEESH KUMAR. 9839172121. MISS ... M.H. 36 PALLAV PURAM PHASE-2. 9410454012. P.O. MODIPURAM, MEERUT. 24 ...",
+            "fetchedAt": 1790084597513,
+            "phone": "9415517693",
+            "ownerName": "SUDEEP KUMAR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "self"
+      },
+      {
+        "phone": "9839172121",
+        "owner": "SUDEEP KUMAR",
+        "attribution": "DIRECT_PERSON",
+        "confidence": 55,
+        "matchType": "EXACT",
+        "evidence": [
+          {
+            "sourceUrl": "https://uppolice.gov.in/site/writereaddata/siteContent/CONTACT%20US/202608171519362136Teleph%202026.pdf",
+            "provider": "tinyfish",
+            "snippet": "SRI SUDEEP KUMAR. 9415517693. SRI PRITEESH KUMAR. 9839172121. MISS ... M.H. 36 PALLAV PURAM PHASE-2. 9410454012. P.O. MODIPURAM, MEERUT. 24 ...",
+            "fetchedAt": 1790084597535,
+            "phone": "9839172121",
+            "ownerName": "SUDEEP KUMAR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "self"
+      },
+      {
+        "phone": "9410454012",
+        "owner": "SUDEEP KUMAR",
+        "attribution": "DIRECT_PERSON",
+        "confidence": 55,
+        "matchType": "EXACT",
+        "evidence": [
+          {
+            "sourceUrl": "https://uppolice.gov.in/site/writereaddata/siteContent/CONTACT%20US/202608171519362136Teleph%202026.pdf",
+            "provider": "tinyfish",
+            "snippet": "SRI SUDEEP KUMAR. 9415517693. SRI PRITEESH KUMAR. 9839172121. MISS ... M.H. 36 PALLAV PURAM PHASE-2. 9410454012. P.O. MODIPURAM, MEERUT. 24 ...",
+            "fetchedAt": 1790084597554,
+            "phone": "9410454012",
+            "ownerName": "SUDEEP KUMAR",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "self"
+      }
+    ],
+    "queriesUsed": 6,
+    "queryBudget": 12,
+    "documentsFetched": 7,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish"
+    ],
+    "durationMs": 278160,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1790084597574,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "5efe9c3ed995545b2b9f4df487048d9b": {
+    "subject": {
+      "name": "PARTHA MAITRA",
+      "address": "G.T. ROAD (EAST) NR. PARBIRHATA P.O-SRIPALLY BURDWA N INDIA    West Bengal - 713103",
+      "notes": "IC00120191030019708"
+    },
+    "parsedAddress": {
+      "raw": "G.T. ROAD (EAST) NR. PARBIRHATA P.O-SRIPALLY BURDWA N INDIA    West Bengal - 713103",
+      "pinCode": "713103"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 9,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 236783,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1790084860462,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "75b8d3156619ea4bf75082959b388e1c": {
+    "subject": {
+      "name": "SANGRAMSINGH   DURGASINGH BAYAS",
+      "address": "MAIN ROAD SANJAVES OSMANABAD INDI A    Maharashtra - 413501",
+      "notes": "IC00120200000007958"
+    },
+    "parsedAddress": {
+      "raw": "MAIN ROAD SANJAVES OSMANABAD INDI A    Maharashtra - 413501",
+      "pinCode": "413501",
+      "area": "MAIN ROAD SANJAVES OSMANABAD INDI A MAHARASHTRA -"
+    },
+    "phones": [
+      {
+        "phone": "7958812020",
+        "attribution": "AMBIGUOUS",
+        "confidence": 43,
+        "matchType": "NONE",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.kothariproducts.in/downloads/KPL%20UNPAID%20DIVIDEND%20WARRANTS%202016.pdf",
+            "provider": "tinyfish",
+            "snippet": "SANGRAMSINGH DURGASINGH. BAYAS. DURGASINGH. MAIN ROAD SANJAVES OSMANABADINDIA. Maharashtra. Osmanabad. 413501. C020000-1202000000079588-120200.",
+            "fetchedAt": 1790084944175,
+            "phone": "7958812020",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "surname_match"
+      }
+    ],
+    "queriesUsed": 4,
+    "queryBudget": 12,
+    "documentsFetched": 6,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia"
+    ],
+    "durationMs": 160309,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1790085046657,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "b6b3c7a1ce5df270417151a1e8646db1": {
+    "subject": {
+      "name": "DEEPAK PRAKASH JADHAV",
+      "address": "NEAR UMAJI NAIK TALIM TAL - WALWA DIST - SANGLI ISLAMPU R INDIA    Maharashtra - 415409",
+      "notes": "IC00120200000009051"
+    },
+    "parsedAddress": {
+      "raw": "NEAR UMAJI NAIK TALIM TAL - WALWA DIST - SANGLI ISLAMPU R INDIA    Maharashtra - 415409",
+      "pinCode": "415409"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 4,
+    "totalEvidenceItems": 6,
+    "providersUsed": [
+      "tinyfish"
+    ],
+    "durationMs": 146866,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1790085219711,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "725cdc5dd4604e3524e07fa9fd0227c4": {
+    "subject": {
+      "name": "SURESH NANDUMAL TALREJA",
+      "address": "R NO.460 NANAK NAGAR, SIDHI COLONY, BH USAWAL. JALGAO N INDIA    Maharashtra - 425201",
+      "city": "FOREIGN_OUT_OF_SCOPE"
+    },
+    "parsedAddress": {
+      "raw": "R NO.460 NANAK NAGAR, SIDHI COLONY, BH USAWAL. JALGAO N INDIA    Maharashtra - 425201",
+      "pinCode": "425201",
+      "houseNumber": "460",
+      "city": "FOREIGN_OUT_OF_SCOPE"
+    },
+    "phones": [],
+    "queriesUsed": 6,
+    "queryBudget": 12,
+    "documentsFetched": 10,
+    "totalEvidenceItems": 3,
+    "providersUsed": [
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "tinyfish",
+      "quickcompany"
+    ],
+    "durationMs": 226143,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789721701877,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "395ae6c114e02bcf90a12c33e0b60e34": {
+    "subject": {
+      "name": "PRAKASH SHANTILAL KASLIWAL",
+      "address": "08 BALAJI NAGAR OPP BALAJI MANGAL K ARYALAY AURANGABA D INDIA    Maharashtra - 431005"
+    },
+    "parsedAddress": {
+      "raw": "08 BALAJI NAGAR OPP BALAJI MANGAL K ARYALAY AURANGABA D INDIA    Maharashtra - 431005",
+      "pinCode": "431005",
+      "houseNumber": "08"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 5,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 85190,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789721816489,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "33560d2bbbbf44d8c8e1ca690363bc5a": {
+    "subject": {
+      "name": "ATUL CHANDRAKANT    KOTHARI",
+      "address": "B / 704, RUBY APPARTMENT, MAHAVIR NAG AR, KANDIVALI ( W ), MUMBA I INDIA    Maharashtra - 400067"
+    },
+    "parsedAddress": {
+      "raw": "B / 704, RUBY APPARTMENT, MAHAVIR NAG AR, KANDIVALI ( W ), MUMBA I INDIA    Maharashtra - 400067",
+      "pinCode": "400067",
+      "houseNumber": "704"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 4,
+    "totalEvidenceItems": 1,
+    "providersUsed": [
+      "tinyfish"
+    ],
+    "durationMs": 60345,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789721905851,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "bf064214f1f6963b53206627fdf84174": {
+    "subject": {
+      "name": "VINAY KUMAR JAIN",
+      "address": "H NO 666, NEAR MADHAR NAGAR, GATE SHANTI NAGAR KATN I INDIA   Madhya Pradesh - 483501"
+    },
+    "parsedAddress": {
+      "raw": "H NO 666, NEAR MADHAR NAGAR, GATE SHANTI NAGAR KATN I INDIA   Madhya Pradesh - 483501",
+      "pinCode": "483501",
+      "houseNumber": "666"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 5,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish"
+    ],
+    "durationMs": 83720,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789722017452,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "b217b27edc2d621ec26472896c9474ac": {
+    "subject": {
+      "name": "MARTIN JOSE",
+      "address": "`MURALIKA ` MECHERRY ROAD POONITHURA P O PETTAH KOCH I INDIA Kerala - 682038"
+    },
+    "parsedAddress": {
+      "raw": "`MURALIKA ` MECHERRY ROAD POONITHURA P O PETTAH KOCH I INDIA Kerala - 682038",
+      "pinCode": "682038"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 6,
+    "totalEvidenceItems": 5,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 94396,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789722138788,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "040cc41e11dc6dc64c7bcabb83cf4e95": {
+    "subject": {
+      "name": "THIRUPPATHIGOWDE R PALANISWAMI",
+      "address": "95-A1 GREEN FIELDS OOTACAMUND THE NILGIRIS    INDIA Tamil Nadu - 643001"
+    },
+    "parsedAddress": {
+      "raw": "95-A1 GREEN FIELDS OOTACAMUND THE NILGIRIS    INDIA Tamil Nadu - 643001",
+      "pinCode": "643001",
+      "houseNumber": "95"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 5,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia"
+    ],
+    "durationMs": 96969,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789722266159,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "760bc1110ffc79eb86da4bab03875232": {
+    "subject": {
+      "name": "MILIND MADHUKARRAO   JOT",
+      "address": "65 SAINAGAR MANDIRA SAMORIL PARISAR N P MURTIZAPUR MURTIZAPU R INDIA    Maharashtra - 444107"
+    },
+    "parsedAddress": {
+      "raw": "65 SAINAGAR MANDIRA SAMORIL PARISAR N P MURTIZAPUR MURTIZAPU R INDIA    Maharashtra - 444107",
+      "pinCode": "444107",
+      "houseNumber": "65"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 4,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish"
+    ],
+    "durationMs": 65327,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789722361898,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "0b713ec7a0b9a75014b8db116ef8112f": {
+    "subject": {
+      "name": "KANTA KUMARI",
+      "address": "SMT. KANTA KUMARI W/O SH. VIJAY KUMAR ( TEACHER ) KHAL WALI GALI , DHARIWA L INDIA Punjab - 143519"
+    },
+    "parsedAddress": {
+      "raw": "SMT. KANTA KUMARI W/O SH. VIJAY KUMAR ( TEACHER ) KHAL WALI GALI , DHARIWA L INDIA Punjab - 143519",
+      "pinCode": "143519"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 5,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish"
+    ],
+    "durationMs": 90769,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789722482279,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "46e2d709cee893f5c07a9c8ca49c9bb7": {
+    "subject": {
+      "name": "ANISH JAIN",
+      "address": "P NO 22 NR INDRA PUBLIC SCHOOL B K KAUL NAGAR CINEMA ROAD AJME R INDIA Rajasthan - 305001"
+    },
+    "parsedAddress": {
+      "raw": "P NO 22 NR INDRA PUBLIC SCHOOL B K KAUL NAGAR CINEMA ROAD AJME R INDIA Rajasthan - 305001",
+      "pinCode": "305001",
+      "houseNumber": "22"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 5,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish"
+    ],
+    "durationMs": 78332,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789722587918,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "ffbc045f1a3055e38ae230a1e092a534": {
+    "subject": {
+      "name": "RISHI SAREEN",
+      "address": "239 SURYA NIKETAN VIKAS MARG EXTENSION NEW   INDIA Delhi - 110092"
+    },
+    "parsedAddress": {
+      "raw": "239 SURYA NIKETAN VIKAS MARG EXTENSION NEW   INDIA Delhi - 110092",
+      "pinCode": "110092",
+      "city": "DELHI",
+      "houseNumber": "239",
+      "area": "SURYA NIKETAN VIKAS MARG EXTENSION NEW INDIA -"
+    },
+    "phones": [],
+    "queriesUsed": 6,
+    "queryBudget": 12,
+    "documentsFetched": 5,
+    "totalEvidenceItems": 1,
+    "providersUsed": [
+      "tinyfish"
+    ],
+    "durationMs": 120725,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789722734859,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "3a11f7b0e8da9260e5882c983df9ede5": {
+    "subject": {
+      "name": "RANDHIR SINGH",
+      "address": "H NO. 75, RAM VIHAR COLONY, BALTHANA NEAR HARMILAP PHATAK ZIRAKPU R INDIA Punjab - 140603"
+    },
+    "parsedAddress": {
+      "raw": "H NO. 75, RAM VIHAR COLONY, BALTHANA NEAR HARMILAP PHATAK ZIRAKPU R INDIA Punjab - 140603",
+      "pinCode": "140603",
+      "houseNumber": "75"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 7,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish"
+    ],
+    "durationMs": 112707,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789722876535,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "dd322d7e5d2e39d3b338b46e1abd8f36": {
+    "subject": {
+      "name": "SHANTIPRAKASH   GOPILAL GANDHI",
+      "address": "SARSWATI BHAWAN NEW R.K.PLOTS AKO LA AKOLA  INDIA    Maharashtra - 444001"
+    },
+    "parsedAddress": {
+      "raw": "SARSWATI BHAWAN NEW R.K.PLOTS AKO LA AKOLA  INDIA    Maharashtra - 444001",
+      "pinCode": "444001"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 4,
+    "totalEvidenceItems": 1,
+    "providersUsed": [
+      "tinyfish"
+    ],
+    "durationMs": 118457,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789723023285,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "43c636f3fc2573567667938be23e8a4a": {
+    "subject": {
+      "name": "SURENDRA MORARJI",
+      "address": "601, GAYATRI DHAM 6TH FLR, DERASAR LANE M.G. ROAD , GHATKOPAR ( E ) MUMBA I INDIA    Maharashtra - 400077"
+    },
+    "parsedAddress": {
+      "raw": "601, GAYATRI DHAM 6TH FLR, DERASAR LANE M.G. ROAD , GHATKOPAR ( E ) MUMBA I INDIA    Maharashtra - 400077",
+      "pinCode": "400077",
+      "houseNumber": "601"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 1,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 66612,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789723119201,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "736dc7a14869b48c9c18c6ca4334dcba": {
+    "subject": {
+      "name": "VIDYA SHANTIPRAKASH   GANDHI",
+      "address": "SARSWATI BHAWAN NEW R.K. PLOT AKOLA AKOLA   INDIA    Maharashtra - 444001"
+    },
+    "parsedAddress": {
+      "raw": "SARSWATI BHAWAN NEW R.K. PLOT AKOLA AKOLA   INDIA    Maharashtra - 444001",
+      "pinCode": "444001"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 6,
+    "totalEvidenceItems": 2,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia"
+    ],
+    "durationMs": 78442,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789723224821,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "bfd5a258b915880bcead62121e8af17a": {
+    "subject": {
+      "name": "SOHINI ANIL KAZI",
+      "address": "1/A, MARINA MANSION, FIRST FLOOR, CHOWPATTY, MUMBA I INDIA    Maharashtra - 400007"
+    },
+    "parsedAddress": {
+      "raw": "1/A, MARINA MANSION, FIRST FLOOR, CHOWPATTY, MUMBA I INDIA    Maharashtra - 400007",
       "pinCode": "400007",
-      "houseNumber": "38N"
+      "houseNumber": "1"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 7,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish"
+    ],
+    "durationMs": 87806,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789723340532,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "451d36940792c797d2766455a36f37d0": {
+    "subject": {
+      "name": "PRASHANTKUMAR  MANOHAR CHATUR NAVA MOHALLA MALKAPUR BULDHANA Ma",
+      "address": "lkapur    INDIA    Maharashtra - 443101"
+    },
+    "parsedAddress": {
+      "raw": "lkapur    INDIA    Maharashtra - 443101",
+      "pinCode": "443101"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 4,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia"
+    ],
+    "durationMs": 80530,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789723449359,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "4635c3e0d510b9d4d2fc1df0055710b0": {
+    "subject": {
+      "name": "N V RAMYAASRI",
+      "address": "AP 238 ,II SECTOR 13th STREET K .K. NAGAR CHENNA I  INDIA Tamil Nadu - 600078"
+    },
+    "parsedAddress": {
+      "raw": "AP 238 ,II SECTOR 13th STREET K .K. NAGAR CHENNA I  INDIA Tamil Nadu - 600078",
+      "pinCode": "600078",
+      "houseNumber": "238"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 4,
+    "totalEvidenceItems": 3,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia"
+    ],
+    "durationMs": 150516,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789723628457,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "2a290904c34d4fbca868d3e98999de50": {
+    "subject": {
+      "name": "NILESH KASHIRAMBHAI    PRAJAPATI",
+      "address": "T/101 VISHWAS CITY-II OPP VISHWA S BUGLW NR SAYONA CITY RC TECH RD GHATLODIY A INDIA Gujarat - 380061"
+    },
+    "parsedAddress": {
+      "raw": "T/101 VISHWAS CITY-II OPP VISHWA S BUGLW NR SAYONA CITY RC TECH RD GHATLODIY A INDIA Gujarat - 380061",
+      "pinCode": "380061",
+      "houseNumber": "101"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 2,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia"
+    ],
+    "durationMs": 104092,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789723765175,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "923408f62e601a19967c9ee6c8f95244": {
+    "subject": {
+      "name": "RINKI RAVI SARAF",
+      "address": "FLAT NO 03 SAMRAT TOWER OPP AROMA THEATRE SATANA NAKA MALEGAO N INDIA    Maharashtra - 423203"
+    },
+    "parsedAddress": {
+      "raw": "FLAT NO 03 SAMRAT TOWER OPP AROMA THEATRE SATANA NAKA MALEGAO N INDIA    Maharashtra - 423203",
+      "pinCode": "423203",
+      "houseNumber": "03"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 4,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 135409,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789723929954,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "4a31b2aba17dfcf61b4221119f379e6e": {
+    "subject": {
+      "name": "AJIT S NAIR",
+      "address": "101-102 A TEJAS APTI PLOT NO 109 SECTOR-44 NERUL ( W ) NAVI MUMBA I INDIA    Maharashtra - 400706"
+    },
+    "parsedAddress": {
+      "raw": "101-102 A TEJAS APTI PLOT NO 109 SECTOR-44 NERUL ( W ) NAVI MUMBA I INDIA    Maharashtra - 400706",
+      "pinCode": "400706",
+      "area": "SECTOR-44",
+      "houseNumber": "101"
+    },
+    "phones": [],
+    "queriesUsed": 5,
+    "queryBudget": 12,
+    "documentsFetched": 10,
+    "totalEvidenceItems": 9,
+    "providersUsed": [
+      "tinyfish"
+    ],
+    "durationMs": 226618,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789724186247,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "b8ef699fbbbdfb11fc146c5913f969e2": {
+    "subject": {
+      "name": "KRISHNAVENI SURENDRA BILOLIKAR",
+      "address": "SAIKRUPA HOSPITAL TALAV LAY OUT NEAR TV CENTRE PUSA D INDIA    Maharashtra - 445204",
+      "city": "FOREIGN_OUT_OF_SCOPE"
+    },
+    "parsedAddress": {
+      "raw": "SAIKRUPA HOSPITAL TALAV LAY OUT NEAR TV CENTRE PUSA D INDIA    Maharashtra - 445204",
+      "pinCode": "445204",
+      "city": "FOREIGN_OUT_OF_SCOPE"
+    },
+    "phones": [],
+    "queriesUsed": 5,
+    "queryBudget": 12,
+    "documentsFetched": 8,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "tinyfish"
+    ],
+    "durationMs": 205948,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789724422940,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "10f779e6571957ccca82bf4a9eb9853c": {
+    "subject": {
+      "name": "KASTURIBAI KISHANGAUD BILOLIKAR",
+      "address": "SAI KRUPA HOSPITAL NEAR TV CEN TRE TALAV LAY OUT PUSAD PUSA D INDIA    Maharashtra - 445204",
+      "city": "FOREIGN_OUT_OF_SCOPE"
+    },
+    "parsedAddress": {
+      "raw": "SAI KRUPA HOSPITAL NEAR TV CEN TRE TALAV LAY OUT PUSAD PUSA D INDIA    Maharashtra - 445204",
+      "pinCode": "445204",
+      "city": "FOREIGN_OUT_OF_SCOPE"
+    },
+    "phones": [],
+    "queriesUsed": 5,
+    "queryBudget": 12,
+    "documentsFetched": 11,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "tinyfish"
+    ],
+    "durationMs": 311764,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789724929099,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "7360e79a257971109db5a8cae7274b7a": {
+    "subject": {
+      "name": "PRABHAKAR SHRIRAMRAO BANDEWAR",
+      "address": "21 PUSAD CITY WARD 22 GYANESHWAR NAGAR TAL PUSAD DIST YAVATMAL PUSA D INDIA    Maharashtra - 445204",
+      "city": "FOREIGN_OUT_OF_SCOPE"
+    },
+    "parsedAddress": {
+      "raw": "21 PUSAD CITY WARD 22 GYANESHWAR NAGAR TAL PUSAD DIST YAVATMAL PUSA D INDIA    Maharashtra - 445204",
+      "pinCode": "445204",
+      "houseNumber": "21",
+      "city": "FOREIGN_OUT_OF_SCOPE"
+    },
+    "phones": [],
+    "queriesUsed": 6,
+    "queryBudget": 12,
+    "documentsFetched": 13,
+    "totalEvidenceItems": 2,
+    "providersUsed": [
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "tinyfish",
+      "quickcompany"
+    ],
+    "durationMs": 247154,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789735148991,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "dd01ccb733602cfdd4b1252293f8861a": {
+    "subject": {
+      "name": "KAILASH HARIKISAN BAJAJ",
+      "address": "SHIVANI DIGNOSTIC CENTER TALAV LAYOUT OPP COURT PUSAD DIST YAWATMAL YAWATMA L INDIA    Maharashtra - 445204",
+      "city": "FOREIGN_OUT_OF_SCOPE"
+    },
+    "parsedAddress": {
+      "raw": "SHIVANI DIGNOSTIC CENTER TALAV LAYOUT OPP COURT PUSAD DIST YAWATMAL YAWATMA L INDIA    Maharashtra - 445204",
+      "pinCode": "445204",
+      "city": "FOREIGN_OUT_OF_SCOPE"
+    },
+    "phones": [],
+    "queriesUsed": 5,
+    "queryBudget": 12,
+    "documentsFetched": 10,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "tinyfish"
+    ],
+    "durationMs": 200040,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789735634094,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "d9bf477eda20294265742c2ab1ac8653": {
+    "subject": {
+      "name": "JAVED GULSHER KHAN",
+      "address": "NEAR JAMA MASJID CYCLEPURA NANDURA INDIA    Maha rashtra - 443404"
+    },
+    "parsedAddress": {
+      "raw": "NEAR JAMA MASJID CYCLEPURA NANDURA INDIA    Maha rashtra - 443404",
+      "pinCode": "443404"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 6,
+    "totalEvidenceItems": 219,
+    "providersUsed": [
+      "tinyfish"
+    ],
+    "durationMs": 713937,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789802869147,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "edfe3161e745d0096bc335fd247c24f8": {
+    "subject": {
+      "name": "VISHAL SARDA",
+      "address": "77/1-N.S.B RD, RANI GANJ, RANI GANJ, INDIA    West Be ngal - 713347"
+    },
+    "parsedAddress": {
+      "raw": "77/1-N.S.B RD, RANI GANJ, RANI GANJ, INDIA    West Be ngal - 713347",
+      "pinCode": "713347",
+      "houseNumber": "77/1"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 5,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 187306,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789803082965,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "d37ddf8855fe8b02e100a9be2425c3a5": {
+    "subject": {
+      "name": "DURGA SHANKAR NAIK",
+      "address": "FLAT NO G-2, GRD FLR, MERCURY CHAMBERS, FONDVEM WADA , RIBANDER-GOA , RIBANDE R INDIA Goa - 403006"
+    },
+    "parsedAddress": {
+      "raw": "FLAT NO G-2, GRD FLR, MERCURY CHAMBERS, FONDVEM WADA , RIBANDER-GOA , RIBANDE R INDIA Goa - 403006",
+      "pinCode": "403006",
+      "houseNumber": "G-2"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 2,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 134452,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789803244493,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "9f746be1903d8a490cf19306222ff372": {
+    "subject": {
+      "name": "CHADA MUNI PAVANKUMARREDD",
+      "address": "Y 104 PENNA QUARTERS MAMATHA HOSPITAL GIRI PRASAD NAGAR KHAMMA M INDIA   Andhra Pradesh - 507002"
+    },
+    "parsedAddress": {
+      "raw": "Y 104 PENNA QUARTERS MAMATHA HOSPITAL GIRI PRASAD NAGAR KHAMMA M INDIA   Andhra Pradesh - 507002",
+      "pinCode": "507002",
+      "houseNumber": "Y104"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 0,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "serpapi",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 52594,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789803323508,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "00801d4941764834df0d91641b0c6c7a": {
+    "subject": {
+      "name": "ZARAN DATTANI",
+      "address": "H NO 13 DHABAR TOWER BYRON BAZAR RAIPUR INDIA    Chh attisgarh - 492001"
+    },
+    "parsedAddress": {
+      "raw": "H NO 13 DHABAR TOWER BYRON BAZAR RAIPUR INDIA    Chh attisgarh - 492001",
+      "pinCode": "492001",
+      "city": "RAIPUR",
+      "houseNumber": "13",
+      "area": "H NODHABAR TOWER BYRON BAZAR INDIA CHH ATTISGARH -"
+    },
+    "phones": [],
+    "queriesUsed": 6,
+    "queryBudget": 12,
+    "documentsFetched": 7,
+    "totalEvidenceItems": 1,
+    "providersUsed": [
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "serpapi"
+    ],
+    "durationMs": 198749,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789803548393,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "b5aff0de40fcea408a44146de45568c6": {
+    "subject": {
+      "name": "PRIYABRATA SHARMA",
+      "address": "RANIR BAGAN 1 NO SANKARI PUKUR NEAR ULEX COMPUTER BURDWA N INDIA    West Bengal - 713103"
+    },
+    "parsedAddress": {
+      "raw": "RANIR BAGAN 1 NO SANKARI PUKUR NEAR ULEX COMPUTER BURDWA N INDIA    West Bengal - 713103",
+      "pinCode": "713103",
+      "houseNumber": "1"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 0,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "serpapi",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 75173,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789803650754,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "4f16f973688b2f9cdcff237220e4cb1b": {
+    "subject": {
+      "name": "V NARAYANAN",
+      "address": "H NO 7 MURUGUVINAYAGAR NAGAR COLLEGE ROAD MUSIRI TRICHY TRICH Y INDIA Tamil Nadu - 621211"
+    },
+    "parsedAddress": {
+      "raw": "H NO 7 MURUGUVINAYAGAR NAGAR COLLEGE ROAD MUSIRI TRICHY TRICH Y INDIA Tamil Nadu - 621211",
+      "pinCode": "621211",
+      "city": "TRICHY",
+      "houseNumber": "7"
+    },
+    "phones": [],
+    "queriesUsed": 6,
+    "queryBudget": 12,
+    "documentsFetched": 2,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "serpapi"
+    ],
+    "durationMs": 141272,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789804964743,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "a969e29d0f76eafc398c2a9255ed5abc": {
+    "subject": {
+      "name": "M DEVARAJU",
+      "address": "H NO 4F/4G KAMATCHIAMMAN KOIL STREET METTUPALAYAM MUSIRI TRICH Y INDIA Tamil Nadu - 621210"
+    },
+    "parsedAddress": {
+      "raw": "H NO 4F/4G KAMATCHIAMMAN KOIL STREET METTUPALAYAM MUSIRI TRICH Y INDIA Tamil Nadu - 621210",
+      "pinCode": "621210",
+      "houseNumber": "4F"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 4,
+    "totalEvidenceItems": 2,
+    "providersUsed": [
+      "tinyfish",
+      "serpapi"
+    ],
+    "durationMs": 71709,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789805126865,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "b9938bf47e96182ef8dc440eedb1e4d0": {
+    "subject": {
+      "name": "GEETA AGARWAL",
+      "address": "A 5,6 INDUSTRIAL ESTATE HATHRAS INDIA    Uttar Prade sh - 204101"
+    },
+    "parsedAddress": {
+      "raw": "A 5,6 INDUSTRIAL ESTATE HATHRAS INDIA    Uttar Prade sh - 204101",
+      "pinCode": "204101",
+      "houseNumber": "A5"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 9,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish"
+    ],
+    "durationMs": 194154,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789805346825,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "3fac2bd8a12c37899242d6d57384d0cf": {
+    "subject": {
+      "name": "GOPAL MAHESHWARI",
+      "address": "1217 RADHA KRISHAN NIWAS GOPI GANJ SADABAD GATE HATHRA S INDIA    Uttar Pradesh - 204101"
+    },
+    "parsedAddress": {
+      "raw": "1217 RADHA KRISHAN NIWAS GOPI GANJ SADABAD GATE HATHRA S INDIA    Uttar Pradesh - 204101",
+      "pinCode": "204101",
+      "houseNumber": "1217"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 6,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish"
+    ],
+    "durationMs": 67529,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789805595749,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "ea70339459f16a7342571e9c87547719": {
+    "subject": {
+      "name": "RADHIKA DARA",
+      "address": "D NO 10/173 NEAR I TOWN POLICE STATION GUNTAKAL GUNTAKA L INDIA   Andhra Pradesh - 515801"
+    },
+    "parsedAddress": {
+      "raw": "D NO 10/173 NEAR I TOWN POLICE STATION GUNTAKAL GUNTAKA L INDIA   Andhra Pradesh - 515801",
+      "pinCode": "515801",
+      "houseNumber": "10/173"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 4,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish"
+    ],
+    "durationMs": 146601,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789805794881,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "f7aac77031c37e633bbb4dc8d9f7e077": {
+    "subject": {
+      "name": "SANJEEV KUMAR",
+      "address": "115/11, MODEL TOWN, NARWANA, DIST- JIND, INDIA H aryana - 126116"
+    },
+    "parsedAddress": {
+      "raw": "115/11, MODEL TOWN, NARWANA, DIST- JIND, INDIA H aryana - 126116",
+      "pinCode": "126116",
+      "houseNumber": "115/11"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 6,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish"
+    ],
+    "durationMs": 104892,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789806438684,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "b193338232f8f1a77ea53bd5394d0c82": {
+    "subject": {
+      "name": "KUSUM LATA CHATURVEDI",
+      "address": "KALPATARU APAT FLAT J-1 , BLOCK-3 , 1ST FLOOR 50/A COLLEGE ROAD PS: SHIBPUR HOWRA H INDIA    West Bengal - 711103"
+    },
+    "parsedAddress": {
+      "raw": "KALPATARU APAT FLAT J-1 , BLOCK-3 , 1ST FLOOR 50/A COLLEGE ROAD PS: SHIBPUR HOWRA H INDIA    West Bengal - 711103",
+      "pinCode": "711103",
+      "houseNumber": "J-1"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 5,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish"
+    ],
+    "durationMs": 61237,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789810305824,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "5772cf4c7c41e29dadc6662092c10dff": {
+    "subject": {
+      "name": "MANOJ KUMAR SAHU",
+      "address": "WARD NO-10 KARAN DEV GALI DATIA INDIA   Madhya Pr adesh - 475661"
+    },
+    "parsedAddress": {
+      "raw": "WARD NO-10 KARAN DEV GALI DATIA INDIA   Madhya Pr adesh - 475661",
+      "pinCode": "475661",
+      "houseNumber": "-10"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 8,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 193786,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789810560046,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "770c69ea9064d8bc936c226d46813a92": {
+    "subject": {
+      "name": "CHITTARANJAN SEN",
+      "address": "T N MUKHERJEE ROAD DANKUNI DANKUNI INDIA    West Bengal - 712311"
+    },
+    "parsedAddress": {
+      "raw": "T N MUKHERJEE ROAD DANKUNI DANKUNI INDIA    West Bengal - 712311",
+      "pinCode": "712311"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 8,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "serpapi",
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 88914,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789810916902,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "dd70664b0f20622354c6aec013c88717": {
+    "subject": {
+      "name": "UMA KRISHNAN",
+      "address": "HDFC BANK LIMITED SANDOZ HOUSE DR. A. B ROAD, Mumbai City, Maharashtra, INDIA - 400018",
+      "city": "Mumbai City"
+    },
+    "parsedAddress": {
+      "raw": "HDFC BANK LIMITED SANDOZ HOUSE DR. A. B ROAD, Mumbai City, Maharashtra, INDIA - 400018",
+      "pinCode": "400018",
+      "city": "MUMBAI"
+    },
+    "phones": [],
+    "queriesUsed": 5,
+    "queryBudget": 12,
+    "documentsFetched": 8,
+    "totalEvidenceItems": 2,
+    "providersUsed": [
+      "tinyfish",
+      "serpapi"
+    ],
+    "durationMs": 276125,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789821342356,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "3dd9122f8d21168de05a2114fdf4c263": {
+    "subject": {
+      "name": "P MADHUSUD AN",
+      "address": "HOUSE DR. A. B ROAD WORLI MUMBAI CO HDFC BANK LTD 26A NARAYAN PROPERTIES CHANDIVLI OFF SAKI VIHAR, Mumbai Suburban, Maharashtra, INDIA - 400073",
+      "city": "Mumbai Suburban"
+    },
+    "parsedAddress": {
+      "raw": "HOUSE DR. A. B ROAD WORLI MUMBAI CO HDFC BANK LTD 26A NARAYAN PROPERTIES CHANDIVLI OFF SAKI VIHAR, Mumbai Suburban, Maharashtra, INDIA - 400073",
+      "pinCode": "400073",
+      "city": "MUMBAI",
+      "houseNumber": "26A"
+    },
+    "phones": [],
+    "queriesUsed": 6,
+    "queryBudget": 12,
+    "documentsFetched": 12,
+    "totalEvidenceItems": 558,
+    "providersUsed": [
+      "tinyfish"
+    ],
+    "durationMs": 387355,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789818417576,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "e6f3f7c36a66e7bde7a33f857e1c3bef": {
+    "subject": {
+      "name": "MAHESH BHAGWAT",
+      "address": "ROAD SAKI NAKA ANDHERI E MUMBAI G1 GURUPUSHYAMRUI COOP HSG SOC GAVANPADA MULUND, Mumbai Suburban, Maharashtra, INDIA - 400081",
+      "city": "Mumbai Suburban"
+    },
+    "parsedAddress": {
+      "raw": "ROAD SAKI NAKA ANDHERI E MUMBAI G1 GURUPUSHYAMRUI COOP HSG SOC GAVANPADA MULUND, Mumbai Suburban, Maharashtra, INDIA - 400081",
+      "pinCode": "400081",
+      "city": "MUMBAI",
+      "houseNumber": "G1"
+    },
+    "phones": [],
+    "queriesUsed": 6,
+    "queryBudget": 12,
+    "documentsFetched": 10,
+    "totalEvidenceItems": 4,
+    "providersUsed": [
+      "tinyfish",
+      "serpapi"
+    ],
+    "durationMs": 129086,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789818572288,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "66949fb2867b1eed2ef012029a0a7475": {
+    "subject": {
+      "name": "ARCHANA SHIROOR",
+      "address": "GAVANPADA MULUND EAST MUMBAI 501, ANI APTS., ST. ANTHONY CHURCH ROAD, VAKOLA,, Mumbai Suburban, Maharashtra, INDIA - 400055",
+      "city": "Mumbai Suburban"
+    },
+    "parsedAddress": {
+      "raw": "GAVANPADA MULUND EAST MUMBAI 501, ANI APTS., ST. ANTHONY CHURCH ROAD, VAKOLA,, Mumbai Suburban, Maharashtra, INDIA - 400055",
+      "pinCode": "400055",
+      "city": "MUMBAI",
+      "houseNumber": "501"
+    },
+    "phones": [],
+    "queriesUsed": 6,
+    "queryBudget": 12,
+    "documentsFetched": 13,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish",
+      "serpapi",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 130947,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789818906770,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "3cd616fc6a7bef794f8b25f8bf63faf8": {
+    "subject": {
+      "name": "RAHUL AGARWAL",
+      "address": "SANTACRUZ (EAST), MUMBAI D22539 SECTOR D POCKET II VASANTKUNJ NEW DELHI, New Delhi, Delhi, INDIA - 110070",
+      "city": "New Delhi"
+    },
+    "parsedAddress": {
+      "raw": "SANTACRUZ (EAST), MUMBAI D22539 SECTOR D POCKET II VASANTKUNJ NEW DELHI, New Delhi, Delhi, INDIA - 110070",
+      "pinCode": "110070",
+      "city": "DELHI",
+      "houseNumber": "D22539"
+    },
+    "phones": [],
+    "queriesUsed": 6,
+    "queryBudget": 12,
+    "documentsFetched": 15,
+    "totalEvidenceItems": 6,
+    "providersUsed": [
+      "tinyfish",
+      "serpapi",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 139104,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789819071387,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "748ec643129d3e843bfae54efbb0b06b": {
+    "subject": {
+      "name": "SUNIL MEHTA",
+      "address": "B-2, SAI CHAND TARA, SAIBABA COMPLEX,GOREGAON , MUMBAI, Mumbai Suburban, Maharashtra, INDIA - 400063",
+      "city": "Mumbai Suburban"
+    },
+    "parsedAddress": {
+      "raw": "B-2, SAI CHAND TARA, SAIBABA COMPLEX,GOREGAON , MUMBAI, Mumbai Suburban, Maharashtra, INDIA - 400063",
+      "pinCode": "400063",
+      "city": "MUMBAI",
+      "houseNumber": "B-2"
+    },
+    "phones": [],
+    "queriesUsed": 6,
+    "queryBudget": 12,
+    "documentsFetched": 15,
+    "totalEvidenceItems": 1,
+    "providersUsed": [
+      "tinyfish",
+      "serpapi"
+    ],
+    "durationMs": 113683,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789819210532,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "caea1cb07c0bb602e952fdb1578082f0": {
+    "subject": {
+      "name": "HEMANT TAKALKAR",
+      "address": "G BLOCK, SHRI SADASHIV SOCIETY, PLAT NO.41 A, 6TH ROAD SANTACRUZ (EAST), MUMBAI, Mumbai Suburban, Maharashtra, INDIA - 400055",
+      "city": "Mumbai Suburban"
+    },
+    "parsedAddress": {
+      "raw": "G BLOCK, SHRI SADASHIV SOCIETY, PLAT NO.41 A, 6TH ROAD SANTACRUZ (EAST), MUMBAI, Mumbai Suburban, Maharashtra, INDIA - 400055",
+      "pinCode": "400055",
+      "city": "MUMBAI",
+      "houseNumber": "41A"
+    },
+    "phones": [],
+    "queriesUsed": 6,
+    "queryBudget": 12,
+    "documentsFetched": 10,
+    "totalEvidenceItems": 2,
+    "providersUsed": [
+      "tinyfish",
+      "serpapi",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 111232,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789819347221,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "cac87670f31b5811702f9ea269122cac": {
+    "subject": {
+      "name": "PARAG GOPAL",
+      "address": "E-32, LAJPAT NAGAR, PART 1, NEW DELHI, New Delhi, Delhi, INDIA",
+      "city": "New Delhi"
+    },
+    "parsedAddress": {
+      "raw": "E-32, LAJPAT NAGAR, PART 1, NEW DELHI, New Delhi, Delhi, INDIA",
+      "city": "DELHI",
+      "houseNumber": "E-32",
+      "area": "LAJPAT NAGAR PART 1 NEW DELHI DELHI INDIA"
+    },
+    "phones": [],
+    "queriesUsed": 6,
+    "queryBudget": 12,
+    "documentsFetched": 16,
+    "totalEvidenceItems": 7,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "serpapi"
+    ],
+    "durationMs": 137753,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789819510457,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "801e45ed6b5e526886771fd451bf0485": {
+    "subject": {
+      "name": "SEEMA KAILASH",
+      "address": "L73 JALVAYU VIHAR HIRANANDANI GARDEN POWAI MUMBAI, Mumbai Suburban, Maharashtra, INDIA - 400076",
+      "city": "Mumbai Suburban"
+    },
+    "parsedAddress": {
+      "raw": "L73 JALVAYU VIHAR HIRANANDANI GARDEN POWAI MUMBAI, Mumbai Suburban, Maharashtra, INDIA - 400076",
+      "pinCode": "400076",
+      "city": "MUMBAI",
+      "houseNumber": "L73"
+    },
+    "phones": [],
+    "queriesUsed": 6,
+    "queryBudget": 12,
+    "documentsFetched": 21,
+    "totalEvidenceItems": 7,
+    "providersUsed": [
+      "tinyfish",
+      "serpapi"
+    ],
+    "durationMs": 112032,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789819647937,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "f9e6fe0f8a520bb3ebac93c4d36deead": {
+    "subject": {
+      "name": "V BALAJI",
+      "address": "B 308 SUNSHINE RAHEJA VIHAR POWAI MUMBAI, Mumbai Suburban, Maharashtra, INDIA - 400072",
+      "city": "Mumbai Suburban"
+    },
+    "parsedAddress": {
+      "raw": "B 308 SUNSHINE RAHEJA VIHAR POWAI MUMBAI, Mumbai Suburban, Maharashtra, INDIA - 400072",
+      "pinCode": "400072",
+      "city": "MUMBAI",
+      "houseNumber": "B308"
+    },
+    "phones": [],
+    "queriesUsed": 6,
+    "queryBudget": 12,
+    "documentsFetched": 8,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish",
+      "serpapi"
+    ],
+    "durationMs": 142385,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789819815809,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "df368a26501aa0d1294fdbc2581bcbdc": {
+    "subject": {
+      "name": "PARAMJIT ARORA",
+      "address": "C/O HDFC BANK LIMITED., 169 A,MOUNT ROAD NO.3, CHENNAI, Chennai, Tamil Nadu, INDIA - 600002",
+      "city": "Chennai"
+    },
+    "parsedAddress": {
+      "raw": "C/O HDFC BANK LIMITED., 169 A,MOUNT ROAD NO.3, CHENNAI, Chennai, Tamil Nadu, INDIA - 600002",
+      "careOf": "HDFC BANK LIMITED.,",
+      "pinCode": "600002",
+      "city": "CHENNAI",
+      "houseNumber": "169A",
+      "area": "MOUNT ROAD NO.3 CHENNAI TAMIL NADU INDIA -"
+    },
+    "phones": [],
+    "queriesUsed": 6,
+    "queryBudget": 12,
+    "documentsFetched": 10,
+    "totalEvidenceItems": 2,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "serpapi"
+    ],
+    "durationMs": 142870,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789819984137,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "6bd010d88693235dfbbecf3fb04e0ebb": {
+    "subject": {
+      "name": "BIRESWAR BISWAS",
+      "address": "36/1, GOURIBARI LANE, CALCUTTA, Kolkata, West Bengal, INDIA - 700004",
+      "city": "Kolkata"
+    },
+    "parsedAddress": {
+      "raw": "36/1, GOURIBARI LANE, CALCUTTA, Kolkata, West Bengal, INDIA - 700004",
+      "pinCode": "700004",
+      "city": "KOLKATA",
+      "houseNumber": "36/1",
+      "area": "GOURIBARI LANE KOLKATA WEST BENGAL INDIA -"
+    },
+    "phones": [],
+    "queriesUsed": 6,
+    "queryBudget": 12,
+    "documentsFetched": 8,
+    "totalEvidenceItems": 6,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "serpapi"
+    ],
+    "durationMs": 122107,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789820131695,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "6000ef7d5ea0eb59a507835988d0c991": {
+    "subject": {
+      "name": "INDU AGARWAL",
+      "address": "AGARWAL HOUSE, MEHTA MAHAL COMPOUND, 89, DSP ROAD, DADAR TT, MUMBAI, Mumbai City, Maharashtra, INDIA - 400014",
+      "city": "Mumbai City"
+    },
+    "parsedAddress": {
+      "raw": "AGARWAL HOUSE, MEHTA MAHAL COMPOUND, 89, DSP ROAD, DADAR TT, MUMBAI, Mumbai City, Maharashtra, INDIA - 400014",
+      "pinCode": "400014",
+      "city": "MUMBAI",
+      "houseNumber": "89"
+    },
+    "phones": [],
+    "queriesUsed": 6,
+    "queryBudget": 12,
+    "documentsFetched": 18,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish"
+    ],
+    "durationMs": 133821,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789820290975,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "1c89368494ea8ee3135d7cc211fe5a38": {
+    "subject": {
+      "name": "DHIRAJ SACHDEV",
+      "address": "47 F/102, MANISH NAGAR, ANDHERI (WEST),MUMBAI, Mumbai Suburban, Maharashtra, INDIA - 400053",
+      "city": "Mumbai Suburban"
+    },
+    "parsedAddress": {
+      "raw": "47 F/102, MANISH NAGAR, ANDHERI (WEST),MUMBAI, Mumbai Suburban, Maharashtra, INDIA - 400053",
+      "pinCode": "400053",
+      "city": "MUMBAI",
+      "houseNumber": "47F"
+    },
+    "phones": [],
+    "queriesUsed": 6,
+    "queryBudget": 12,
+    "documentsFetched": 15,
+    "totalEvidenceItems": 3,
+    "providersUsed": [
+      "tinyfish",
+      "serpapi",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 139990,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789820456492,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "c6484b87afaaba43c154f0220586c63c": {
+    "subject": {
+      "name": "KAPIL KATYAL",
+      "address": "7/45, SOUTH PATEL NAGAR, DELHI, New Delhi, Delhi, INDIA - 110008",
+      "city": "New Delhi"
+    },
+    "parsedAddress": {
+      "raw": "7/45, SOUTH PATEL NAGAR, DELHI, New Delhi, Delhi, INDIA - 110008",
+      "pinCode": "110008",
+      "city": "DELHI",
+      "houseNumber": "7/45",
+      "area": "SOUTH PATEL NAGAR DELHI DELHI INDIA -"
+    },
+    "phones": [],
+    "queriesUsed": 6,
+    "queryBudget": 12,
+    "documentsFetched": 19,
+    "totalEvidenceItems": 7,
+    "providersUsed": [
+      "tinyfish",
+      "serpapi",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 112932,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789820594894,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "f021b7ff2ade7f9db81c2c95aa8fcd3b": {
+    "subject": {
+      "name": "PREMKUMAR BHAGWATSA RAN",
+      "address": "FLAT NO.A1, 146, R.M.V.CLUSTERS,LOTTEGO LLA, HALLI, R.M.V. EXTN., PHASE II, BANGALORE, Bangalore Rural, Karnataka, INDIA - 560094",
+      "city": "Bangalore Rural"
+    },
+    "parsedAddress": {
+      "raw": "FLAT NO.A1, 146, R.M.V.CLUSTERS,LOTTEGO LLA, HALLI, R.M.V. EXTN., PHASE II, BANGALORE, Bangalore Rural, Karnataka, INDIA - 560094",
+      "pinCode": "560094",
+      "city": "BANGALORE",
+      "houseNumber": "A1"
+    },
+    "phones": [],
+    "queriesUsed": 6,
+    "queryBudget": 12,
+    "documentsFetched": 13,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "serpapi",
+      "tinyfish"
+    ],
+    "durationMs": 125734,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789820746080,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "f518daca81bbe9160898ef63a8c10fe3": {
+    "subject": {
+      "name": "RAJA RAO",
+      "address": "C/50, VANASHRI, OPP. DIAMOND TALKIES,L.T. ROAD, BORIVALI (WEST), MUMBAI, Mumbai Suburban, Maharashtra, INDIA - 400092",
+      "city": "Mumbai Suburban"
+    },
+    "parsedAddress": {
+      "raw": "C/50, VANASHRI, OPP. DIAMOND TALKIES,L.T. ROAD, BORIVALI (WEST), MUMBAI, Mumbai Suburban, Maharashtra, INDIA - 400092",
+      "pinCode": "400092",
+      "city": "MUMBAI",
+      "houseNumber": "50"
+    },
+    "phones": [],
+    "queriesUsed": 6,
+    "queryBudget": 12,
+    "documentsFetched": 14,
+    "totalEvidenceItems": 2,
+    "providersUsed": [
+      "serpapi",
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 118708,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789820890223,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "658b73be768cf8dff47e8ecafe7a0dc7": {
+    "subject": {
+      "name": "VARUN JUNEJA",
+      "address": "NO. 353, SECTOR 9-D, CHANDIGARH, Chandigarh, Chandigarh, INDIA",
+      "city": "Chandigarh"
+    },
+    "parsedAddress": {
+      "raw": "NO. 353, SECTOR 9-D, CHANDIGARH, Chandigarh, Chandigarh, INDIA",
+      "city": "CHANDIGARH",
+      "area": "SECTOR 9 NO. -D CHANDIGARH CHANDIGARH INDIA",
+      "houseNumber": "353"
+    },
+    "phones": [],
+    "queriesUsed": 6,
+    "queryBudget": 12,
+    "documentsFetched": 13,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish",
+      "serpapi",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 130341,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789821046016,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "e28ff61378c0a79a3cdac34fe16068c2": {
+    "subject": {
+      "name": "NAVNEET KUMAR",
+      "address": "UTKARSH-6, PART-II MAHANAGAR BAREILLY INDIA    Uttar Pradesh - 243001"
+    },
+    "parsedAddress": {
+      "raw": "UTKARSH-6, PART-II MAHANAGAR BAREILLY INDIA    Uttar Pradesh - 243001",
+      "pinCode": "243001",
+      "houseNumber": "-6"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 10,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 106538,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789973805037,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "a5c5b49587805bdb4e5d6e57096f4c42": {
+    "subject": {
+      "name": "BHADRA DEVENDRA VORA",
+      "address": "270/6519, SAMTA COLONY, PANT NAGAR, GHATK OPAR ( E ), MUMBA I INDIA    Maharashtra - 400086"
+    },
+    "parsedAddress": {
+      "raw": "270/6519, SAMTA COLONY, PANT NAGAR, GHATK OPAR ( E ), MUMBA I INDIA    Maharashtra - 400086",
+      "pinCode": "400086",
+      "houseNumber": "270/6519"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 7,
+    "totalEvidenceItems": 47,
+    "providersUsed": [
+      "tinyfish",
+      "serpapi",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 159798,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789973990899,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "67e91071e5156c77f7740347edb35499": {
+    "subject": {
+      "name": "SUSMITA BALKRISHNA KULKARNI",
+      "address": "C-604, SUKUR GARDEN CO.OP.HSG DHOK ALI NAKA, KOLSHET ROAD , THANE ( WEST ) INDIA    Maharashtra - 400602"
+    },
+    "parsedAddress": {
+      "raw": "C-604, SUKUR GARDEN CO.OP.HSG DHOK ALI NAKA, KOLSHET ROAD , THANE ( WEST ) INDIA    Maharashtra - 400602",
+      "pinCode": "400602",
+      "city": "THANE",
+      "houseNumber": "C-604"
+    },
+    "phones": [],
+    "queriesUsed": 6,
+    "queryBudget": 12,
+    "documentsFetched": 9,
+    "totalEvidenceItems": 506,
+    "providersUsed": [
+      "tinyfish",
+      "serpapi"
+    ],
+    "durationMs": 433000,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789974450093,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "a4490f4890c96939b212bbd5f7da5fd1": {
+    "subject": {
+      "name": "GUNJAHALLI RENUKA",
+      "address": "NO - 903, BARTON CENTRE M G ROAD BANGALORE    I NDIA Karnataka - 560001"
+    },
+    "parsedAddress": {
+      "raw": "NO - 903, BARTON CENTRE M G ROAD BANGALORE    I NDIA Karnataka - 560001",
+      "pinCode": "560001",
+      "city": "BANGALORE",
+      "houseNumber": "-903",
+      "area": "NO BARTON CENTRE M G ROAD I NDIA KARNATAKA -"
+    },
+    "phones": [],
+    "queriesUsed": 6,
+    "queryBudget": 12,
+    "documentsFetched": 16,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "serpapi"
+    ],
+    "durationMs": 106078,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789974582066,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "6f0b69d8ae3b9779905c2c684dc87cc9": {
+    "subject": {
+      "name": "VIJAYA VIJAY BHAMBURKAR",
+      "address": "C/O KESHAO GOVINDRAO THAKARE RUKHMINI NAGAR VIJAY COLONY AMRAVAT I INDIA    Maharashtra - 444606"
+    },
+    "parsedAddress": {
+      "raw": "C/O KESHAO GOVINDRAO THAKARE RUKHMINI NAGAR VIJAY COLONY AMRAVAT I INDIA    Maharashtra - 444606",
+      "careOf": "KESHAO GOVINDRAO THAKARE RUKHMINI NAGAR VIJAY COLONY AMRAVAT I INDIA    MAHARASHTRA - 444606"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 3,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish"
+    ],
+    "durationMs": 55612,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789974914106,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "e46ce7358d40255f6d067215869edec2": {
+    "subject": {
+      "name": "SHYLA REJI V",
+      "address": "VEEMBUKATTU HOUSE MARANI MALLAPPALLY EAST P O MALLAPPALL Y INDIA Kerala - 689584"
+    },
+    "parsedAddress": {
+      "raw": "VEEMBUKATTU HOUSE MARANI MALLAPPALLY EAST P O MALLAPPALL Y INDIA Kerala - 689584",
+      "pinCode": "689584"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 6,
+    "totalEvidenceItems": 219,
+    "providersUsed": [
+      "tinyfish"
+    ],
+    "durationMs": 129818,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789975277974,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "f2700b0a2713d7c23907dee407020082": {
+    "subject": {
+      "name": "RAGHUNANDAN    B SINGH",
+      "address": "59/A UDHYOG NAGAR SOC B/H AYURVEDIC COLLEG E O/S PANIGET VADODAR A INDIA Gujarat - 390017"
+    },
+    "parsedAddress": {
+      "raw": "59/A UDHYOG NAGAR SOC B/H AYURVEDIC COLLEG E O/S PANIGET VADODAR A INDIA Gujarat - 390017",
+      "pinCode": "390017",
+      "houseNumber": "59"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 4,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish",
+      "serpapi"
+    ],
+    "durationMs": 65564,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789975369504,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "16d930e4e96e43abdc9d0659831bf4fb": {
+    "subject": {
+      "name": "BHAGIRATH MAHALA",
+      "address": "H NO E/3 KANTA KHATURIA COLONY BIKANER INDIA R ajasthan - 334001"
+    },
+    "parsedAddress": {
+      "raw": "H NO E/3 KANTA KHATURIA COLONY BIKANER INDIA R ajasthan - 334001",
+      "pinCode": "334001",
+      "houseNumber": "3"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 10,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish"
+    ],
+    "durationMs": 89080,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789975484945,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "c21a0b7a66f2132be0b63c81f13a1dd7": {
+    "subject": {
+      "name": "YARAGUTI VIJAYA KUMARI",
+      "address": "D NO 24C-3-18 MANCHINELLATHOTA PATHEBAD INDIA   Andhra Pradesh - 534002"
+    },
+    "parsedAddress": {
+      "raw": "D NO 24C-3-18 MANCHINELLATHOTA PATHEBAD INDIA   Andhra Pradesh - 534002",
+      "pinCode": "534002",
+      "houseNumber": "24C"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 5,
+    "totalEvidenceItems": 2,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 109401,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789975621522,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "bdaf975d5baa9f884104b14be68858cf": {
+    "subject": {
+      "name": "PANDURANGA RAO G",
+      "address": "19/1276 NANDAGOKUL CHALAPURAM CALICUT INDIA Ker ala - 673002"
+    },
+    "parsedAddress": {
+      "raw": "19/1276 NANDAGOKUL CHALAPURAM CALICUT INDIA Ker ala - 673002",
+      "pinCode": "673002",
+      "houseNumber": "19/1276"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 2,
+    "totalEvidenceItems": 1,
+    "providersUsed": [
+      "tinyfish"
+    ],
+    "durationMs": 75241,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789975723005,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "7da2f6632f5a5e9be411d3f62c48facf": {
+    "subject": {
+      "name": "SEEMA BABULAL VAISHNAV",
+      "address": "B/37, PUSHPAM BUNGLOWS, KHARAWALA COMPOUND , VATVA ROAD , ISANPUR , AHMEDABA D INDIA Gujarat - 382443"
+    },
+    "parsedAddress": {
+      "raw": "B/37, PUSHPAM BUNGLOWS, KHARAWALA COMPOUND , VATVA ROAD , ISANPUR , AHMEDABA D INDIA Gujarat - 382443",
+      "pinCode": "382443",
+      "houseNumber": "37"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 6,
+    "totalEvidenceItems": 219,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 138211,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789975886863,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "cece4195da3fcb576d4a17ece446aaec": {
+    "subject": {
+      "name": "ANILKUMAR GOVINDLAL CHANDAK",
+      "address": "01 saroj apartments tagore nagar bhd, rajasthan high school, latur india mahashtra 413512"
+    },
+    "parsedAddress": {
+      "raw": "01 saroj apartments tagore nagar bhd, rajasthan high school, latur india mahashtra 413512",
+      "pinCode": "413512",
+      "houseNumber": "01"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 4,
+    "totalEvidenceItems": 3,
+    "providersUsed": [
+      "tinyfish",
+      "serpapi"
+    ],
+    "durationMs": 153536,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789977097358,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "a617f6c19e6e53250c7ffbd6be83ca79": {
+    "subject": {
+      "name": "ANILKUMAR GOVINDLAL CHANDAK",
+      "address": "01 saroj apartments tagore nagar bhd, rajasthan high school, latur india mahashtra pincode: 413512"
+    },
+    "parsedAddress": {
+      "raw": "01 saroj apartments tagore nagar bhd, rajasthan high school, latur india mahashtra pincode: 413512",
+      "pinCode": "413512",
+      "houseNumber": "01",
+      "area": "SAROJ APARTMENTS TAGORE NAGAR BHD RAJASTHAN HIGH SCHOOL LATUR INDIA MAHASHTRA PINCODE:"
+    },
+    "phones": [],
+    "queriesUsed": 5,
+    "queryBudget": 12,
+    "documentsFetched": 5,
+    "totalEvidenceItems": 3,
+    "providersUsed": [
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "tinyfish",
+      "serpapi"
+    ],
+    "durationMs": 198683,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789977646722,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "1ea7af74737df1e37841645c3484952e": {
+    "subject": {
+      "name": "ANILKUMAR GOVINDLAL CHANDAK",
+      "address": "01 SAROJ APPT TAGOR NAGAR BHD RAJA STHAN HIGH SCHOOL LATU R INDIA Maharashtra - 413512"
+    },
+    "parsedAddress": {
+      "raw": "01 SAROJ APPT TAGOR NAGAR BHD RAJA STHAN HIGH SCHOOL LATU R INDIA Maharashtra - 413512",
+      "pinCode": "413512",
+      "houseNumber": "01",
+      "area": "SAROJ APPT TAGOR NAGAR BHD RAJA STHAN HIGH SCHOOL LATU R INDIA MAHARASHTRA -"
+    },
+    "phones": [],
+    "queriesUsed": 5,
+    "queryBudget": 12,
+    "documentsFetched": 16,
+    "totalEvidenceItems": 7,
+    "providersUsed": [
+      "tinyfish",
+      "serpapi",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 282515,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789986301142,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "accd9791f9d91bd0103af6fe77ae9b4b": {
+    "subject": {
+      "name": "NANDA GULAB HANDE",
+      "address": "PLOT NO 11 CHANDAN SHILP NAVSHYA GANPATI ROAD ANANWALLI NASHI K INDIA    Maharashtra - 422013"
+    },
+    "parsedAddress": {
+      "raw": "PLOT NO 11 CHANDAN SHILP NAVSHYA GANPATI ROAD ANANWALLI NASHI K INDIA    Maharashtra - 422013",
+      "pinCode": "422013",
+      "houseNumber": "11",
+      "area": "PLOT NOCHANDAN SHILP NAVSHYA GANPATI ROAD ANANWALLI NASHI K INDIA MAHARASHTRA -"
+    },
+    "phones": [],
+    "queriesUsed": 5,
+    "queryBudget": 12,
+    "documentsFetched": 15,
+    "totalEvidenceItems": 3,
+    "providersUsed": [
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "tinyfish"
+    ],
+    "durationMs": 312781,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789991858055,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "46d3ed8e42d0f0f89345eaff85796766": {
+    "subject": {
+      "name": "ANAND GANAPATI TONAPE",
+      "address": "KRISHNA, PLOT NO-11,RAJENDRA HOUSING SOCIETY , KUPWAD , YASHWANTNAGAR PHATA , INDIA    Maharashtra - 416416"
+    },
+    "parsedAddress": {
+      "raw": "KRISHNA, PLOT NO-11,RAJENDRA HOUSING SOCIETY , KUPWAD , YASHWANTNAGAR PHATA , INDIA    Maharashtra - 416416",
+      "pinCode": "416416",
+      "houseNumber": "-11",
+      "area": "KRISHNA PLOT NO RAJENDRA HOUSING SOCIETY KUPWAD YASHWANTNAGAR PHATA INDIA MAHARASHTRA -"
+    },
+    "phones": [],
+    "queriesUsed": 5,
+    "queryBudget": 12,
+    "documentsFetched": 17,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "tinyfish"
+    ],
+    "durationMs": 329571,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789992336014,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "fa713a196c457da4f61c2ad1fd89348a": {
+    "subject": {
+      "name": "DEVESH JINDAL NEW FINE STEEL WORKS BAZAR GANJ OPP. SABZI",
+      "address": "MANDI MORADABA D INDIA    Uttar Pradesh - 244001"
+    },
+    "parsedAddress": {
+      "raw": "MANDI MORADABA D INDIA    Uttar Pradesh - 244001",
+      "pinCode": "244001",
+      "area": "MANDI MORADABA D INDIA UTTAR PRADESH -"
+    },
+    "phones": [],
+    "queriesUsed": 4,
+    "queryBudget": 12,
+    "documentsFetched": 8,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "tinyfish"
+    ],
+    "durationMs": 258122,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789993348558,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "ef94803b27ac0c84e9cd930568d927df": {
+    "subject": {
+      "name": "SUBHASH DINKARRAO CHAUBAL",
+      "address": "SHIYA BAUG BORDI FLIA VADODARA INDIA G ujarat - 390001"
+    },
+    "parsedAddress": {
+      "raw": "SHIYA BAUG BORDI FLIA VADODARA INDIA G ujarat - 390001",
+      "pinCode": "390001",
+      "city": "VADODARA",
+      "area": "SHIYA BAUG BORDI FLIA INDIA G UJARAT -"
+    },
+    "phones": [],
+    "queriesUsed": 6,
+    "queryBudget": 12,
+    "documentsFetched": 19,
+    "totalEvidenceItems": 9,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 451682,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789993866100,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "c8255681b109c170050d0201286fcbea": {
+    "subject": {
+      "name": "M ARCHANA",
+      "address": "PLOT NO: 71, MADHAV NAGAR, POST IRUNGATTUKOTTAI CHENNA I INDIA Tamil Nadu - 602117"
+    },
+    "parsedAddress": {
+      "raw": "PLOT NO: 71, MADHAV NAGAR, POST IRUNGATTUKOTTAI CHENNA I INDIA Tamil Nadu - 602117",
+      "pinCode": "602117",
+      "houseNumber": "71",
+      "area": "PLOT NO: MADHAV NAGAR POST IRUNGATTUKOTTAI CHENNA I INDIA TAMIL NADU -"
+    },
+    "phones": [],
+    "queriesUsed": 5,
+    "queryBudget": 12,
+    "documentsFetched": 14,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "tinyfish",
+      "companycheck"
+    ],
+    "durationMs": 370587,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789994364706,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "520d85548a1fb0317c70799b9e87a71e": {
+    "subject": {
+      "name": "M PRIYADARSHINI",
+      "address": "NO.24/6, BHAGIRATHY AMMAL STREET T. NAGAR CHENNA I INDIA Tamil Nadu - 600017"
+    },
+    "parsedAddress": {
+      "raw": "NO.24/6, BHAGIRATHY AMMAL STREET T. NAGAR CHENNA I INDIA Tamil Nadu - 600017",
+      "pinCode": "600017",
+      "houseNumber": "24/6",
+      "area": "NO. BHAGIRATHY AMMAL STREET T. NAGAR CHENNA I INDIA TAMIL NADU -"
+    },
+    "phones": [],
+    "queriesUsed": 5,
+    "queryBudget": 12,
+    "documentsFetched": 10,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "tinyfish",
+      "companycheck"
+    ],
+    "durationMs": 240439,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789994635666,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "4816dca2fcb183e072d311ccff747506": {
+    "subject": {
+      "name": "DWARKIBAI GURDASMAL LALWANI",
+      "address": "HEERABAI PLOTS, EAST GANDHI NAGAR, KACCHI KHOLI , SINDHI CAMP , AKOL A INDIA    Maharashtra - 444001"
+    },
+    "parsedAddress": {
+      "raw": "HEERABAI PLOTS, EAST GANDHI NAGAR, KACCHI KHOLI , SINDHI CAMP , AKOL A INDIA    Maharashtra - 444001",
+      "pinCode": "444001",
+      "area": "HEERABAI PLOTS EAST GANDHI NAGAR KACCHI KHOLI SINDHI CAMP AKOL A INDIA MAHARASHTRA -"
+    },
+    "phones": [],
+    "queriesUsed": 4,
+    "queryBudget": 12,
+    "documentsFetched": 15,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "tinyfish"
+    ],
+    "durationMs": 205631,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789994867200,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "0128af56c909bfdc4c53734b94f120b1": {
+    "subject": {
+      "name": "ANAND GURUDASMAL LALWANI",
+      "address": "HEERABAI PLOTS, EAST GANDHI NAGAR, KA CCHI KHOLI , SINDHI CAMP , AKOL A INDIA    Maharashtra - 444001"
+    },
+    "parsedAddress": {
+      "raw": "HEERABAI PLOTS, EAST GANDHI NAGAR, KA CCHI KHOLI , SINDHI CAMP , AKOL A INDIA    Maharashtra - 444001",
+      "pinCode": "444001",
+      "area": "HEERABAI PLOTS EAST GANDHI NAGAR KA CCHI KHOLI SINDHI CAMP AKOL A INDIA MAHARASHTRA -"
+    },
+    "phones": [],
+    "queriesUsed": 4,
+    "queryBudget": 12,
+    "documentsFetched": 12,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "tinyfish"
+    ],
+    "durationMs": 259760,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789995153609,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "5c0f0dcb87af737ec13969ea09988db6": {
+    "subject": {
+      "name": "SHAILESH JUGALKISHOR SHARMA",
+      "address": "C/O K.G.SHARMA KIRANA BAZAR AKOLA I NDIA    Maharashtra - 444001"
+    },
+    "parsedAddress": {
+      "raw": "C/O K.G.SHARMA KIRANA BAZAR AKOLA I NDIA    Maharashtra - 444001",
+      "careOf": "K.G.SHARMA KIRANA BAZAR AKOLA I NDIA    MAHARASHTRA - 444001"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 4,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish"
+    ],
+    "durationMs": 79051,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789995258525,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "91a629eb0cc5bf0ceec2ab84abf939d6": {
+    "subject": {
+      "name": "REKHA ANAND LALWANI",
+      "address": "HEERABAI PLOTS, EAST GANDHI NAGAR, KACCHI KHOLI , SINDHI CAMP , AKOL A INDIA    Maharashtra - 444001"
+    },
+    "parsedAddress": {
+      "raw": "HEERABAI PLOTS, EAST GANDHI NAGAR, KACCHI KHOLI , SINDHI CAMP , AKOL A INDIA    Maharashtra - 444001",
+      "pinCode": "444001",
+      "area": "HEERABAI PLOTS EAST GANDHI NAGAR KACCHI KHOLI SINDHI CAMP AKOL A INDIA MAHARASHTRA -"
+    },
+    "phones": [],
+    "queriesUsed": 4,
+    "queryBudget": 12,
+    "documentsFetched": 11,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "tinyfish"
+    ],
+    "durationMs": 210196,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789995494370,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "58a02b977a9163db96a2684efd3a7174": {
+    "subject": {
+      "name": "KAVITA VINAY LALWANI",
+      "address": "HEERABAI PLOTS, EAST GANDHI NAGAR, KACCHI KHOLI , SINDHI CAMP , AKOL A INDIA    Maharashtra - 444001"
+    },
+    "parsedAddress": {
+      "raw": "HEERABAI PLOTS, EAST GANDHI NAGAR, KACCHI KHOLI , SINDHI CAMP , AKOL A INDIA    Maharashtra - 444001",
+      "pinCode": "444001",
+      "area": "HEERABAI PLOTS EAST GANDHI NAGAR KACCHI KHOLI SINDHI CAMP AKOL A INDIA MAHARASHTRA -"
+    },
+    "phones": [],
+    "queriesUsed": 4,
+    "queryBudget": 12,
+    "documentsFetched": 12,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "tinyfish"
+    ],
+    "durationMs": 240519,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1789997260954,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "61ae4866097593f3ce81c83c5581ef15": {
+    "subject": {
+      "name": "VINAY GURDASMAL LALWANI",
+      "address": "HEERABAI PLOTS, EAST GANDHI NAGAR, KAC CHI KHOLI SINDHI CAMP , AKOL A INDIA    Maharashtra - 444001",
+      "notes": "IC00130231000002774"
+    },
+    "parsedAddress": {
+      "raw": "HEERABAI PLOTS, EAST GANDHI NAGAR, KAC CHI KHOLI SINDHI CAMP , AKOL A INDIA    Maharashtra - 444001",
+      "pinCode": "444001"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 7,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 201336,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1790143300094,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "a9600810faf3da07f97f63397e794280": {
+    "subject": {
+      "name": "MANISHA SANJAY AGRAWAL",
+      "address": "C/O SANJAYKUMAR VIJAYKUMAR CHILLIS MERCHANT JANATA BAZAR AKOL A INDIA    Maharashtra - 444001",
+      "notes": "IC00130231000004362"
+    },
+    "parsedAddress": {
+      "raw": "C/O SANJAYKUMAR VIJAYKUMAR CHILLIS MERCHANT JANATA BAZAR AKOL A INDIA    Maharashtra - 444001",
+      "careOf": "SANJAYKUMAR VIJAYKUMAR CHILLIS MERCHANT JANATA BAZAR AKOL A INDIA    MAHARASHTRA - 444001"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 8,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish"
+    ],
+    "durationMs": 259958,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1790143586031,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "92462cd8ccff56fcc815e31313325ae7": {
+    "subject": {
+      "name": "NILESH SUWALAL JAIN",
+      "address": "DHANLAXMI CHAMBERS KIRANA BAZAR AKOLA INDIA Maharashtra - 444001",
+      "notes": "IC00130231000005047"
+    },
+    "parsedAddress": {
+      "raw": "DHANLAXMI CHAMBERS KIRANA BAZAR AKOLA INDIA Maharashtra - 444001",
+      "pinCode": "444001"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 4,
+    "totalEvidenceItems": 0,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 189835,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1790144076113,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "4f57205b00a2978386d274ad351188f2": {
+    "subject": {
+      "name": "ANUJ DEVKINANDAN MOR",
+      "address": "2, TRIVENESHWAR COMPLEX, MANGALDAS MARKET , TILAK ROAD , AKOL A INDIA    Maharashtra - 444001",
+      "notes": "IC00130231000005066"
+    },
+    "parsedAddress": {
+      "raw": "2, TRIVENESHWAR COMPLEX, MANGALDAS MARKET , TILAK ROAD , AKOL A INDIA    Maharashtra - 444001",
+      "pinCode": "444001",
+      "houseNumber": "2"
     },
     "phones": [],
     "queriesUsed": 3,
@@ -21,11 +3374,178 @@
       "tradeindia",
       "companycheck"
     ],
-    "durationMs": 45854,
+    "durationMs": 187137,
     "stopReason": "NO_MORE_QUERIES",
-    "timestamp": 1789652314383,
-    "parserVersion": "2.0.0",
-    "engineVersion": "2.0.0",
-    "scoringVersion": "2.0.0"
+    "timestamp": 1790144347311,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "51356776427ac057480ed494f6620b6a": {
+    "subject": {
+      "name": "RANGLAL CHATURBHUJ SINGHANIA",
+      "address": "KWALITY STORES M.G.ROAD AKOLA INDI A    Maharashtra - 444001",
+      "notes": "IC00130231000006986"
+    },
+    "parsedAddress": {
+      "raw": "KWALITY STORES M.G.ROAD AKOLA INDI A    Maharashtra - 444001",
+      "pinCode": "444001",
+      "area": "KWALITY STORES M.G.ROAD AKOLA INDI A MAHARASHTRA -"
+    },
+    "phones": [
+      {
+        "phone": "6010109313",
+        "owner": "DER SINGH NA NA",
+        "attribution": "AMBIGUOUS",
+        "confidence": 28,
+        "matchType": "NONE",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.yumpu.com/xx/document/view/20138464/unclaimed-dividend-and-fixed-deposit-tata-investment-",
+            "provider": "direct",
+            "snippet": "DER SINGH NA NA COL Q HQ UB AREA BAREILLY INDIACANTT Uttar Pradesh 243001 0000IN30290240689830 Amount for unclaimed and 1,200.00 unpaid Dividend 21-AUG-2012 2005 SHASHIKANT AGARWAL VADHIKRAM AGARWAK NA NA 37 VIRWANI INDUSTRIAL ESTATE INDIA WESTERN Maharashtra EXPRESS HIGHWAY 400006 GOREGAON 00000000",
+            "fetchedAt": 1790144415973,
+            "phone": "6010109313",
+            "ownerName": "DER SINGH NA NA",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unverified_name_nearby"
+      }
+    ],
+    "queriesUsed": 4,
+    "queryBudget": 12,
+    "documentsFetched": 15,
+    "totalEvidenceItems": 3,
+    "providersUsed": [
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck",
+      "tinyfish"
+    ],
+    "durationMs": 362032,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1790144741218,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "fb24508a93e024bd363518661f19384e": {
+    "subject": {
+      "name": "AJITPALSINGH NIRMALSINGH KHALSA",
+      "address": "161 , SAI NAGAR , AMRAVATI INDI A    Maharashtra - 444605",
+      "notes": "IC00130358000002487"
+    },
+    "parsedAddress": {
+      "raw": "161 , SAI NAGAR , AMRAVATI INDI A    Maharashtra - 444605",
+      "pinCode": "444605",
+      "houseNumber": "161",
+      "area": "SAI NAGAR AMRAVATI INDI A MAHARASHTRA -"
+    },
+    "phones": [
+      {
+        "phone": "6050003580",
+        "owner": "AMRAVATI INDIA",
+        "attribution": "AMBIGUOUS",
+        "confidence": 60,
+        "matchType": "NONE",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.yumpu.com/xx/document/view/20138464/unclaimed-dividend-and-fixed-deposit-tata-investment-",
+            "provider": "tinyfish",
+            "snippet": "2010 AJITPALSINGH NIRMALSINGH KHALSA NIRMALSINGH KHALSA NA NA 161 , SAI NAGAR , AMRAVATI INDIA Maharashtra 444605 00001303580000024872 ...",
+            "fetchedAt": 1790144868939,
+            "phone": "6050003580",
+            "ownerName": "AMRAVATI INDIA",
+            "extractionMethod": "regex"
+          },
+          {
+            "sourceUrl": "https://www.yumpu.com/xx/document/view/20138464/unclaimed-dividend-and-fixed-deposit-tata-investment-",
+            "provider": "tinyfish",
+            "snippet": "2010 AJITPALSINGH NIRMALSINGH KHALSA NIRMALSINGH KHALSA NA NA 161 , SAI NAGAR , AMRAVATI INDIA Maharashtra 444605 00001303580000024872 ...",
+            "fetchedAt": 1790144870698,
+            "phone": "6050003580",
+            "ownerName": "AMRAVATI INDIA",
+            "extractionMethod": "regex"
+          }
+        ]
+      },
+      {
+        "phone": "6010109313",
+        "owner": "DER SINGH NA NA",
+        "attribution": "AMBIGUOUS",
+        "confidence": 35,
+        "matchType": "NONE",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.yumpu.com/xx/document/view/20138464/unclaimed-dividend-and-fixed-deposit-tata-investment-",
+            "provider": "direct",
+            "snippet": "DER SINGH NA NA COL Q HQ UB AREA BAREILLY INDIACANTT Uttar Pradesh 243001 0000IN30290240689830 Amount for unclaimed and 1,200.00 unpaid Dividend 21-AUG-2012 2005 SHASHIKANT AGARWAL VADHIKRAM AGARWAK NA NA 37 VIRWANI INDUSTRIAL ESTATE INDIA WESTERN Maharashtra EXPRESS HIGHWAY 400006 GOREGAON 00000000",
+            "fetchedAt": 1790144842699,
+            "phone": "6010109313",
+            "ownerName": "DER SINGH NA NA",
+            "extractionMethod": "regex"
+          },
+          {
+            "sourceUrl": "https://www.yumpu.com/xx/document/view/20138464/unclaimed-dividend-and-fixed-deposit-tata-investment-",
+            "provider": "direct",
+            "snippet": "DER SINGH NA NA COL Q HQ UB AREA BAREILLY INDIACANTT Uttar Pradesh 243001 0000IN30290240689830 Amount for unclaimed and 1,200.00 unpaid Dividend 21-AUG-2012 2005 SHASHIKANT AGARWAL VADHIKRAM AGARWAK NA NA 37 VIRWANI INDUSTRIAL ESTATE INDIA WESTERN Maharashtra EXPRESS HIGHWAY 400006 GOREGAON 00000000",
+            "fetchedAt": 1790144803658,
+            "phone": "6010109313",
+            "ownerName": "DER SINGH NA NA",
+            "extractionMethod": "regex"
+          }
+        ],
+        "relationship": "unverified_name_nearby"
+      }
+    ],
+    "queriesUsed": 5,
+    "queryBudget": 12,
+    "documentsFetched": 17,
+    "totalEvidenceItems": 6,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 427418,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1790145199104,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
+  },
+  "dacc6df016386517aa5175c108efaa0c": {
+    "subject": {
+      "name": "NARAYAN PARSHURAM GOPE",
+      "address": "502 NILGIRI TOWER PL NO 7 SEC 12 KHARGH AR TAL PANVEL DIST RAIGAD NAVI MUMBA I INDIA    Maharashtra - 410210",
+      "notes": "IC00130414000145512"
+    },
+    "parsedAddress": {
+      "raw": "502 NILGIRI TOWER PL NO 7 SEC 12 KHARGH AR TAL PANVEL DIST RAIGAD NAVI MUMBA I INDIA    Maharashtra - 410210",
+      "pinCode": "410210",
+      "houseNumber": "502"
+    },
+    "phones": [],
+    "queriesUsed": 3,
+    "queryBudget": 12,
+    "documentsFetched": 8,
+    "totalEvidenceItems": 3,
+    "providersUsed": [
+      "tinyfish",
+      "justdial",
+      "indiamart",
+      "tradeindia",
+      "companycheck"
+    ],
+    "durationMs": 284040,
+    "stopReason": "NO_MORE_QUERIES",
+    "timestamp": 1790145709423,
+    "parserVersion": "3.0.0",
+    "engineVersion": "3.0.0",
+    "scoringVersion": "3.0.0"
   }
 }

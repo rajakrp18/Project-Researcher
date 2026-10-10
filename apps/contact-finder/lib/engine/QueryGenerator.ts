@@ -1,8 +1,9 @@
 import { Subject, ParsedAddress } from './types';
+import { cleanName } from './attribution/EvidenceGate';
 
 export function generateQueries(subject: Subject, parsed: ParsedAddress): string[] {
   const queries: string[] = [];
-  const name = subject.name.replace(/["']/g, '').trim();
+  const name = cleanName(subject.name.replace(/["']/g, '')).trim();
   const city = (parsed.city || subject.city || '').replace(/["']/g, '').trim();
   const area = (parsed.area || '').replace(/["']/g, '').trim();
   const house = (parsed.houseNumber || '').replace(/["']/g, '').trim();

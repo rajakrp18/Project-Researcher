@@ -51,11 +51,11 @@ export function scoreCandidateGated(
   if (identity) relationship += a.nameMatch === 'EXACT' ? 55 : 40;
   if (family) relationship += 30;
   if (premises) relationship += 35;
-  else if (weakPremises) relationship += 15;
+  else if (weakPremises) relationship += 25;
   relationship = Math.min(100, relationship);
 
   // contact reliability (0-100)
-  let reliability = 20;
+  let reliability = 30;
   if (owner) reliability += 15;
   if (gate.distinctDomains >= 2) reliability += 25;
   const doms = evidence.map(e => domainOf(e.sourceUrl));
@@ -92,8 +92,12 @@ export function scoreCandidate(
 ): number {
   if (!subject || !parsedAddress) return 0;
   const scored = scoreCandidateGated(phone, undefined, evidence, subject, parsedAddress);
-  if (scored.category === 'Rejected') return 0;
-  return Math.round((scored.relationship + scored.reliability) / 2);
+  let finalScore = 0;
+  if (scored.category !== 'Rejected') {
+    finalScore = Math.round((scored.relationship + scored.reliability) / 2);
+  }
+  console.log(`[DEBUG][SCORE] ${phone} | subject=${subject?.name} | parsedArea=${parsedAddress?.area} | score=${finalScore}`);
+  return finalScore;
 }
 
 // Ranking for call sheet: A > B > C > D > Rejected, then relationship, then reliability.

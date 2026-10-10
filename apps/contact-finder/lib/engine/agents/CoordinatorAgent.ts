@@ -11,6 +11,8 @@ import { ZaubaCorpScraper } from '../providers/ZaubaCorpScraper';
 import { DatabaseService } from '../db/DatabaseService';
 import { SemanticChunker } from '../embeddings/SemanticChunker';
 import { rankCandidates } from '../attribution/ConfidenceScorer';
+import { UpiVerificationService } from '../providers/UpiVerificationService';
+import { MessagingVerificationService } from '../providers/MessagingVerificationService';
 
 import { ResearcherAgent } from './ResearcherAgent';
 import { ExtractorAgent } from './ExtractorAgent';
@@ -21,11 +23,12 @@ export class CoordinatorAgent {
   private researcher: ResearcherAgent;
   private extractor: ExtractorAgent;
   private verifier: VerifierAgent;
+  private zauba: ZaubaCorpScraper;
 
   constructor() {
     const registry = new ProviderRegistry();
     const fetcher = new BrowserFetcher();
-    const zauba = new ZaubaCorpScraper();
+    this.zauba = new ZaubaCorpScraper();
     
     let llm;
     const openRouterService = new OpenRouterService();
@@ -38,10 +41,12 @@ export class CoordinatorAgent {
     const db = new DatabaseService();
     const chunker = new SemanticChunker();
     const callerId = new CallerIdService();
+    const upiService = new UpiVerificationService();
+    const messagingService = new MessagingVerificationService();
 
-    this.researcher = new ResearcherAgent(registry, fetcher, zauba);
+    this.researcher = new ResearcherAgent(registry, fetcher, this.zauba);
     this.extractor = new ExtractorAgent(llm, chunker);
-    this.verifier = new VerifierAgent(db, callerId, llm);
+    this.verifier = new VerifierAgent(db, callerId, llm, upiService, messagingService);
   }
 
   async investigate(subject: Subject): Promise<InvestigationResult> {
@@ -151,7 +156,7 @@ export class CoordinatorAgent {
         console.log(`[CoordinatorAgent] Initiating Parallel Deep LLM Extraction...`);
         
         for (const { docs } of batchResults) {
-          const BATCH_SIZE = 5;
+          const BATCH_SIZE = 1; // Serialize Gemini requests to prevent 429 burst rate limits
           for (let k = 0; k < docs.length; k += BATCH_SIZE) {
             const batchDocs = docs.slice(k, k + BATCH_SIZE);
             
@@ -196,6 +201,25 @@ export class CoordinatorAgent {
     if (!rankedPhones[0] || rankedPhones[0].confidence < EngineConfig.confidence.highThreshold) {
       if (subject.company) {
         console.log('[CoordinatorAgent] Primary search yielded low confidence. Triggering Proxy Social Search...');
+        
+        // --- NEW ZAUBA PROXY SEARCH ---
+        const keyPersonnel = await this.zauba.extractKeyManagementPersonnel(subject.company);
+        for (const personnel of keyPersonnel) {
+           const proxyQuery = `"${personnel}" "${subject.company}" contact OR mobile`.trim();
+           const { docs } = await this.researcher.fetchDocumentsForQuery(proxyQuery, subject, false);
+           for (const doc of docs) {
+              const { regexPhones } = await this.extractor.extractFromDocument(doc, subject, false);
+              for (const phone of regexPhones) {
+                 const evidenceTpl = { sourceUrl: doc.url, provider: 'Zauba Proxy Search', snippet: phone.context.slice(0, 300), fetchedAt: Date.now() };
+                 const candidate = await this.verifier.verifyAndScore(phone, subject, parsed, evidenceTpl, false, allCandidates.get(phone.phone), {
+                    attribution: 'PROXY_PERSON', owner: personnel, relationship: 'company_secretary'
+                 });
+                 if (candidate) allCandidates.set(candidate.phone, candidate);
+              }
+           }
+        }
+        // -----------------------------
+        
         const proxyQuery = `"${subject.company}" LinkedIn ${parsed.city || ''} (director OR manager OR employee OR contact)`.trim();
         const { docs } = await this.researcher.fetchDocumentsForQuery(proxyQuery, subject, false);
         for (const doc of docs) {
@@ -213,6 +237,7 @@ export class CoordinatorAgent {
     }
 
     const reportable = rankedPhones.filter(c => c.confidence >= EngineConfig.confidence.minReportable);
+    console.log(`[DEBUG][REPORTABLE] ${subject.name} | total=${rankedPhones.length} | reportable=${reportable.length}`);
     this.verifier.saveConfirmedCandidates(subject, reportable);
 
     return {

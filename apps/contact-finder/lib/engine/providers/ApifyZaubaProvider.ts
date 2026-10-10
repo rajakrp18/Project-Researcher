@@ -33,7 +33,8 @@ export class ApifyZaubaProvider implements SearchProvider {
       });
 
       if (!response.ok) {
-        throw new Error(`Apify API Error: ${response.statusText}`);
+        console.warn(`[ApifyZaubaProvider] Search non-ok status (${response.status}): ${response.statusText}`);
+        return [];
       }
 
       const data = await response.json();
@@ -50,8 +51,8 @@ export class ApifyZaubaProvider implements SearchProvider {
 
       return [];
 
-    } catch (error) {
-      console.error(`[ApifyZaubaProvider] Search failed:`, error);
+    } catch (error: any) {
+      console.warn(`[ApifyZaubaProvider] Search failed gracefully:`, error?.message || error);
       return [];
     }
   }

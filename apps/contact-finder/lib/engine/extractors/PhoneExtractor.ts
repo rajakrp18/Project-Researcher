@@ -49,10 +49,16 @@ export function isDummyOrSpamPhone(phone: string, sourceUrl?: string, subject?: 
 
     for (const rawStr of rawTargetStrings) {
       const cleanDigits = rawStr.replace(/\D/g, '');
-      if (cleanDigits.length >= 6) {
-        if (cleanDigits.includes(phone)) return true;
-        const coreDigits = phone.slice(2);
-        if (cleanDigits.includes(coreDigits)) return true;
+      if (cleanDigits.length >= 7) {
+        // Reject if the phone shares any sequence of 7 consecutive digits with the folio/address
+        let hasOverlap = false;
+        for (let i = 0; i <= phone.length - 7; i++) {
+          if (cleanDigits.includes(phone.slice(i, i + 7))) {
+            hasOverlap = true;
+            break;
+          }
+        }
+        if (hasOverlap) return true;
       }
     }
 
